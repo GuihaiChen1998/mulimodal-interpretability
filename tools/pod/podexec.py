@@ -11,6 +11,7 @@ POD = os.environ.get("POD_ID", "de3m2w1c58cwx1")
 TOKEN = os.environ["POD_JUPYTER_TOKEN"]  # the pod's JUPYTER_PASSWORD (Runpod console)
 BASE = f"https://{POD}-8888.proxy.runpod.net"
 CA = "/root/.ccr/ca-bundle.crt"
+PROXY = __import__("urllib.parse").parse.urlparse(os.environ.get("HTTPS_PROXY", "http://127.0.0.1:3128"))
 KFILE = os.path.join(os.path.dirname(__file__), ".kernel_id")
 
 
@@ -39,7 +40,7 @@ def run_code(code, timeout):
     kid = kernel_id()
     ws = websocket.create_connection(
         BASE.replace("https", "wss") + f"/api/kernels/{kid}/channels?token={TOKEN}",
-        http_proxy_host="127.0.0.1", http_proxy_port=45185, proxy_type="http",
+        http_proxy_host=PROXY.hostname, http_proxy_port=PROXY.port, proxy_type="http",
         sslopt={"ca_certs": CA}, timeout=30, header=["User-Agent: curl/8.5.0"])
     mid = uuid.uuid4().hex
     ws.send(json.dumps({"header": {"msg_id": mid, "username": "c", "session": uuid.uuid4().hex,

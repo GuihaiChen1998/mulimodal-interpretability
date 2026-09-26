@@ -1,0 +1,7169 @@
+{
+ "person": {
+  "coco_id": 1,
+  "supercategory": "person",
+  "phrases": [
+   "person"
+  ],
+  "n_captions": 80,
+  "primary": 31442,
+  "primary_name": "Humans and Living Beings",
+  "confidence": "review",
+  "margin": 0.09,
+  "top_by_spec": 31442,
+  "top_by_clip": 23415,
+  "candidates": [
+   {
+    "id": 27293,
+    "name": "Specific Individuals and Particularity",
+    "spec": 1.316,
+    "frac": 0.925,
+    "clip": 0.8277,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.817
+   },
+   {
+    "id": 31442,
+    "name": "Humans and Living Beings",
+    "spec": 1.729,
+    "frac": 0.575,
+    "clip": 0.8192,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.727
+   },
+   {
+    "id": 21736,
+    "name": "Person-role nouns",
+    "spec": 1.114,
+    "frac": 0.887,
+    "clip": 0.822,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.652
+   },
+   {
+    "id": 9715,
+    "name": "Boys and Girls",
+    "spec": 1.35,
+    "frac": 0.6,
+    "clip": 0.8198,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.618
+   },
+   {
+    "id": 18458,
+    "name": "Pairs, couples, and small groups",
+    "spec": 1.628,
+    "frac": 0.8,
+    "clip": 0.722,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.587
+   },
+   {
+    "id": 9050,
+    "name": "Child / Child Development",
+    "spec": 1.359,
+    "frac": 0.55,
+    "clip": 0.7564,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.549
+   }
+  ],
+  "primary_auto": 27293,
+  "override_reason": "top spec; object-level 'humans' beats 'Specific Individuals'",
+  "review_label": "exact"
+ },
+ "bicycle": {
+  "coco_id": 2,
+  "supercategory": "vehicle",
+  "phrases": [
+   "bicycle",
+   "bike"
+  ],
+  "n_captions": 80,
+  "primary": 5125,
+  "primary_name": "Bicycles and Motorcycles",
+  "confidence": "high",
+  "margin": 0.194,
+  "top_by_spec": 3537,
+  "top_by_clip": 14589,
+  "candidates": [
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "spec": 1.727,
+    "frac": 0.775,
+    "clip": 0.8327,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.856
+   },
+   {
+    "id": 29998,
+    "name": "Electric Personal Mobility Vehicles",
+    "spec": 1.282,
+    "frac": 0.388,
+    "clip": 0.7424,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.662
+   },
+   {
+    "id": 3537,
+    "name": "Cycles and Loops",
+    "spec": 2.035,
+    "frac": 0.425,
+    "clip": 0.7304,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.635
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "spec": 1.529,
+    "frac": 0.55,
+    "clip": 0.7212,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.502
+   },
+   {
+    "id": 25153,
+    "name": "Bicycles and Cycling",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8919,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.488
+   },
+   {
+    "id": 23773,
+    "name": "Bicycles and Cycling",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8919,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.488
+   }
+  ],
+  "review_label": "exact"
+ },
+ "car": {
+  "coco_id": 3,
+  "supercategory": "vehicle",
+  "phrases": [
+   "car"
+  ],
+  "n_captions": 80,
+  "primary": 21762,
+  "primary_name": "Cars and vehicles",
+  "confidence": "high",
+  "margin": 0.348,
+  "top_by_spec": 21762,
+  "top_by_clip": 21762,
+  "candidates": [
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 1.845,
+    "frac": 0.8,
+    "clip": 0.8812,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 1.0
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "spec": 1.217,
+    "frac": 0.438,
+    "clip": 0.8264,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.652
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.293,
+    "frac": 0.662,
+    "clip": 0.8047,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.542
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 1.414,
+    "frac": 0.525,
+    "clip": 0.7677,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.522
+   },
+   {
+    "id": 27863,
+    "name": "Cars and Automotive Industry",
+    "spec": 0.747,
+    "frac": 0.237,
+    "clip": 0.8239,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.521
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "spec": 1.483,
+    "frac": 0.575,
+    "clip": 0.7086,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.458
+   }
+  ],
+  "review_label": "exact"
+ },
+ "motorcycle": {
+  "coco_id": 4,
+  "supercategory": "vehicle",
+  "phrases": [
+   "motorcycle",
+   "motorbike"
+  ],
+  "n_captions": 80,
+  "primary": 5125,
+  "primary_name": "Bicycles and Motorcycles",
+  "confidence": "high",
+  "margin": 0.212,
+  "top_by_spec": 29519,
+  "top_by_clip": 17882,
+  "candidates": [
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "spec": 1.615,
+    "frac": 0.725,
+    "clip": 0.865,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.915
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "spec": 1.807,
+    "frac": 0.65,
+    "clip": 0.7445,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.703
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 1.556,
+    "frac": 0.675,
+    "clip": 0.7812,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.586
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "spec": 1.87,
+    "frac": 0.725,
+    "clip": 0.6793,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.532
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.464,
+    "frac": 0.75,
+    "clip": 0.7388,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.504
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 1.818,
+    "frac": 0.675,
+    "clip": 0.6635,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.496
+   }
+  ],
+  "review_label": "exact"
+ },
+ "airplane": {
+  "coco_id": 5,
+  "supercategory": "vehicle",
+  "phrases": [
+   "airplane",
+   "plane",
+   "jet"
+  ],
+  "n_captions": 80,
+  "primary": 10605,
+  "primary_name": "Aircraft and Aerospace Engineering",
+  "confidence": "review",
+  "margin": 0.004,
+  "top_by_spec": 10605,
+  "top_by_clip": 27877,
+  "candidates": [
+   {
+    "id": 29600,
+    "name": "Planes (geometric and aviation)",
+    "spec": 3.012,
+    "frac": 0.713,
+    "clip": 0.813,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.809
+   },
+   {
+    "id": 10605,
+    "name": "Aircraft and Aerospace Engineering",
+    "spec": 3.556,
+    "frac": 0.887,
+    "clip": 0.826,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.805
+   },
+   {
+    "id": 5963,
+    "name": "Aviation and Piloting",
+    "spec": 2.55,
+    "frac": 0.6,
+    "clip": 0.8674,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.629
+   },
+   {
+    "id": 11377,
+    "name": "Flight and Aviation",
+    "spec": 1.957,
+    "frac": 0.812,
+    "clip": 0.8685,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.547
+   },
+   {
+    "id": 13391,
+    "name": "Commercial aviation and airlines",
+    "spec": 2.032,
+    "frac": 0.562,
+    "clip": 0.847,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.524
+   },
+   {
+    "id": 30678,
+    "name": "Collider Physics Jet Analysis",
+    "spec": 1.741,
+    "frac": 0.312,
+    "clip": 0.702,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.457
+   }
+  ],
+  "primary_auto": 29600,
+  "override_reason": "higher spec and clip; 'Planes' also covers geometry",
+  "review_label": "exact"
+ },
+ "bus": {
+  "coco_id": 6,
+  "supercategory": "vehicle",
+  "phrases": [
+   "bus"
+  ],
+  "n_captions": 80,
+  "primary": 2628,
+  "primary_name": "Bus (vehicle and software)",
+  "confidence": "high",
+  "margin": 0.44,
+  "top_by_spec": 2628,
+  "top_by_clip": 31689,
+  "candidates": [
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 2.525,
+    "frac": 0.938,
+    "clip": 0.8216,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.97
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.684,
+    "frac": 0.863,
+    "clip": 0.7754,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.53
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 1.556,
+    "frac": 0.675,
+    "clip": 0.789,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.526
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "spec": 1.981,
+    "frac": 0.713,
+    "clip": 0.7271,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.512
+   },
+   {
+    "id": 31897,
+    "name": "Public Transit Infrastructure",
+    "spec": 1.302,
+    "frac": 0.438,
+    "clip": 0.8059,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.502
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "spec": 1.838,
+    "frac": 0.713,
+    "clip": 0.723,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.477
+   }
+  ],
+  "review_label": "exact"
+ },
+ "train": {
+  "coco_id": 7,
+  "supercategory": "vehicle",
+  "phrases": [
+   "train"
+  ],
+  "n_captions": 80,
+  "primary": 32179,
+  "primary_name": "Trains and Railways",
+  "confidence": "high",
+  "margin": 0.287,
+  "top_by_spec": 1780,
+  "top_by_clip": 32179,
+  "candidates": [
+   {
+    "id": 32179,
+    "name": "Trains and Railways",
+    "spec": 2.37,
+    "frac": 0.963,
+    "clip": 0.9005,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.887
+   },
+   {
+    "id": 1780,
+    "name": "Training (human and ML)",
+    "spec": 3.063,
+    "frac": 0.762,
+    "clip": 0.7179,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.6
+   },
+   {
+    "id": 2005,
+    "name": "Railways and Rail Infrastructure",
+    "spec": 1.612,
+    "frac": 0.388,
+    "clip": 0.8223,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.435
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 1.326,
+    "frac": 0.575,
+    "clip": 0.8053,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.36
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 2.054,
+    "frac": 0.762,
+    "clip": 0.7288,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.353
+   },
+   {
+    "id": 31897,
+    "name": "Public Transit Infrastructure",
+    "spec": 1.042,
+    "frac": 0.35,
+    "clip": 0.8144,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.329
+   }
+  ],
+  "review_label": "exact"
+ },
+ "truck": {
+  "coco_id": 8,
+  "supercategory": "vehicle",
+  "phrases": [
+   "truck"
+  ],
+  "n_captions": 80,
+  "primary": 29519,
+  "primary_name": "Trucks, Trailers, and RVs",
+  "confidence": "high",
+  "margin": 0.268,
+  "top_by_spec": 29519,
+  "top_by_clip": 21762,
+  "candidates": [
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "spec": 2.096,
+    "frac": 0.812,
+    "clip": 0.8186,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.998
+   },
+   {
+    "id": 25681,
+    "name": "Hired Vehicles and Freight",
+    "spec": 1.853,
+    "frac": 0.45,
+    "clip": 0.7373,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.73
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 1.499,
+    "frac": 0.65,
+    "clip": 0.8198,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.658
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 1.65,
+    "frac": 0.613,
+    "clip": 0.7486,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.596
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "spec": 1.564,
+    "frac": 0.562,
+    "clip": 0.7556,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.586
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.244,
+    "frac": 0.637,
+    "clip": 0.7806,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.543
+   }
+  ],
+  "review_label": "exact"
+ },
+ "boat": {
+  "coco_id": 9,
+  "supercategory": "vehicle",
+  "phrases": [
+   "boat"
+  ],
+  "n_captions": 80,
+  "primary": 32110,
+  "primary_name": "Ships and Maritime Activity",
+  "confidence": "high",
+  "margin": 0.201,
+  "top_by_spec": 5965,
+  "top_by_clip": 28217,
+  "candidates": [
+   {
+    "id": 32110,
+    "name": "Ships and Maritime Activity",
+    "spec": 2.312,
+    "frac": 0.8,
+    "clip": 0.7567,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.901
+   },
+   {
+    "id": 5965,
+    "name": "Kayaks and paddlecraft",
+    "spec": 2.419,
+    "frac": 0.713,
+    "clip": 0.5791,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.7
+   },
+   {
+    "id": 28217,
+    "name": "Sailing and Yachting",
+    "spec": 0.88,
+    "frac": 0.138,
+    "clip": 0.8182,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.582
+   },
+   {
+    "id": 990,
+    "name": "Sailing and Board Sports",
+    "spec": 1.086,
+    "frac": 0.35,
+    "clip": 0.7793,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.576
+   },
+   {
+    "id": 3556,
+    "name": "Watercraft Types and Descriptors",
+    "spec": 1.026,
+    "frac": 0.338,
+    "clip": 0.7031,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.468
+   },
+   {
+    "id": 2853,
+    "name": "Ship Class and Entity Categorization",
+    "spec": 1.393,
+    "frac": 0.25,
+    "clip": 0.7067,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.448
+   }
+  ],
+  "review_label": "exact"
+ },
+ "traffic light": {
+  "coco_id": 10,
+  "supercategory": "outdoor",
+  "phrases": [
+   "traffic light"
+  ],
+  "n_captions": 80,
+  "primary": 3643,
+  "primary_name": "Traffic Signals and Intersections",
+  "confidence": "review",
+  "margin": 0.126,
+  "top_by_spec": 3643,
+  "top_by_clip": 4315,
+  "candidates": [
+   {
+    "id": 3643,
+    "name": "Traffic Signals and Intersections",
+    "spec": 1.766,
+    "frac": 0.588,
+    "clip": 0.8472,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.773
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.391,
+    "frac": 0.713,
+    "clip": 0.7431,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.647
+   },
+   {
+    "id": 33219,
+    "name": "Light and Illumination",
+    "spec": 1.162,
+    "frac": 0.613,
+    "clip": 0.6896,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.521
+   },
+   {
+    "id": 6024,
+    "name": "Traffic Laws and Road Rules",
+    "spec": 1.126,
+    "frac": 0.3,
+    "clip": 0.6871,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.508
+   },
+   {
+    "id": 33316,
+    "name": "Signs, signals, signatures",
+    "spec": 1.58,
+    "frac": 0.637,
+    "clip": 0.6534,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.498
+   },
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "spec": 1.42,
+    "frac": 0.55,
+    "clip": 0.6353,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.432
+   }
+  ],
+  "review_label": "exact"
+ },
+ "fire hydrant": {
+  "coco_id": 11,
+  "supercategory": "outdoor",
+  "phrases": [
+   "fire hydrant",
+   "hydrant"
+  ],
+  "n_captions": 80,
+  "primary": 31326,
+  "primary_name": "Firefighting and Fire Safety",
+  "confidence": "review",
+  "margin": 0.065,
+  "top_by_spec": 16753,
+  "top_by_clip": 31326,
+  "candidates": [
+   {
+    "id": 31326,
+    "name": "Firefighting and Fire Safety",
+    "spec": 0.592,
+    "frac": 0.138,
+    "clip": 0.752,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.656
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "spec": 0.951,
+    "frac": 0.412,
+    "clip": 0.6654,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.591
+   },
+   {
+    "id": 32998,
+    "name": "Fire and wildfires",
+    "spec": 0.521,
+    "frac": 0.2,
+    "clip": 0.7087,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.565
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "spec": 0.943,
+    "frac": 0.9,
+    "clip": 0.6371,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.548
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "spec": 1.096,
+    "frac": 0.425,
+    "clip": 0.5815,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.538
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 0.805,
+    "frac": 0.412,
+    "clip": 0.6535,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.512
+   }
+  ],
+  "review_label": "related"
+ },
+ "stop sign": {
+  "coco_id": 13,
+  "supercategory": "outdoor",
+  "phrases": [
+   "stop sign"
+  ],
+  "n_captions": 80,
+  "primary": 33316,
+  "primary_name": "Signs, signals, signatures",
+  "confidence": "review",
+  "margin": 0.058,
+  "top_by_spec": 33316,
+  "top_by_clip": 12030,
+  "candidates": [
+   {
+    "id": 33316,
+    "name": "Signs, signals, signatures",
+    "spec": 1.766,
+    "frac": 0.713,
+    "clip": 0.7012,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.816
+   },
+   {
+    "id": 3643,
+    "name": "Traffic Signals and Intersections",
+    "spec": 1.352,
+    "frac": 0.45,
+    "clip": 0.7427,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.758
+   },
+   {
+    "id": 17351,
+    "name": "Stopping and Preventing",
+    "spec": 1.085,
+    "frac": 0.362,
+    "clip": 0.752,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.695
+   },
+   {
+    "id": 3803,
+    "name": "Posts, threads, and comments",
+    "spec": 1.322,
+    "frac": 0.4,
+    "clip": 0.6896,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.574
+   },
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "spec": 1.355,
+    "frac": 0.525,
+    "clip": 0.6806,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.571
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.098,
+    "frac": 0.562,
+    "clip": 0.7305,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.568
+   }
+  ],
+  "review_label": "related"
+ },
+ "parking meter": {
+  "coco_id": 14,
+  "supercategory": "outdoor",
+  "phrases": [
+   "parking meter"
+  ],
+  "n_captions": 80,
+  "primary": 4507,
+  "primary_name": "Parking and Driving Directions",
+  "confidence": "high",
+  "margin": 0.274,
+  "top_by_spec": 4507,
+  "top_by_clip": 9180,
+  "candidates": [
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "spec": 1.549,
+    "frac": 0.6,
+    "clip": 0.6946,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.849
+   },
+   {
+    "id": 16753,
+    "name": "ATMs, Kiosks, and Service Terminals",
+    "spec": 1.388,
+    "frac": 0.75,
+    "clip": 0.6167,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.575
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "spec": 1.122,
+    "frac": 0.575,
+    "clip": 0.661,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.559
+   },
+   {
+    "id": 3643,
+    "name": "Traffic Signals and Intersections",
+    "spec": 1.052,
+    "frac": 0.35,
+    "clip": 0.6617,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.537
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "spec": 1.008,
+    "frac": 0.963,
+    "clip": 0.6507,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.506
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "spec": 1.246,
+    "frac": 0.463,
+    "clip": 0.6013,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.505
+   }
+  ],
+  "review_label": "related"
+ },
+ "bench": {
+  "coco_id": 15,
+  "supercategory": "outdoor",
+  "phrases": [
+   "bench"
+  ],
+  "n_captions": 80,
+  "primary": 4492,
+  "primary_name": "Architectural Building Elements",
+  "confidence": "review",
+  "margin": 0.046,
+  "top_by_spec": 4492,
+  "top_by_clip": 3208,
+  "candidates": [
+   {
+    "id": 4492,
+    "name": "Architectural Building Elements",
+    "spec": 1.626,
+    "frac": 0.688,
+    "clip": 0.6666,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.656
+   },
+   {
+    "id": 32640,
+    "name": "Parks and recreational amenities",
+    "spec": 1.626,
+    "frac": 0.55,
+    "clip": 0.6324,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.61
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "spec": 1.214,
+    "frac": 0.8,
+    "clip": 0.7268,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.61
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "spec": 1.349,
+    "frac": 0.912,
+    "clip": 0.6553,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.556
+   },
+   {
+    "id": 33204,
+    "name": "Landscape and Garden Design",
+    "spec": 1.345,
+    "frac": 0.425,
+    "clip": 0.6459,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.542
+   },
+   {
+    "id": 30797,
+    "name": "Rocks and Geology",
+    "spec": 1.434,
+    "frac": 0.45,
+    "clip": 0.6048,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.514
+   }
+  ],
+  "review_label": "none"
+ },
+ "bird": {
+  "coco_id": 16,
+  "supercategory": "animal",
+  "phrases": [
+   "bird"
+  ],
+  "n_captions": 80,
+  "primary": 31730,
+  "primary_name": "Birds and Ornithology",
+  "confidence": "high",
+  "margin": 0.278,
+  "top_by_spec": 31730,
+  "top_by_clip": 31730,
+  "candidates": [
+   {
+    "id": 31730,
+    "name": "Birds and Ornithology",
+    "spec": 2.268,
+    "frac": 0.725,
+    "clip": 0.863,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 1.0
+   },
+   {
+    "id": 13646,
+    "name": "Birds and bird names",
+    "spec": 1.884,
+    "frac": 0.388,
+    "clip": 0.8073,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.722
+   },
+   {
+    "id": 7616,
+    "name": "Fish, seafood, and animals",
+    "spec": 1.915,
+    "frac": 0.637,
+    "clip": 0.7771,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.679
+   },
+   {
+    "id": 32966,
+    "name": "Insects and Arthropods",
+    "spec": 1.943,
+    "frac": 0.475,
+    "clip": 0.7702,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.574
+   },
+   {
+    "id": 11628,
+    "name": "Avian Influenza and Birds",
+    "spec": 1.053,
+    "frac": 0.163,
+    "clip": 0.7603,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.561
+   },
+   {
+    "id": 27393,
+    "name": "Waterfowl and Wetland Birds",
+    "spec": 1.439,
+    "frac": 0.338,
+    "clip": 0.7582,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.542
+   }
+  ],
+  "review_label": "exact"
+ },
+ "cat": {
+  "coco_id": 17,
+  "supercategory": "animal",
+  "phrases": [
+   "cat"
+  ],
+  "n_captions": 80,
+  "primary": 14969,
+  "primary_name": "Cats and feline references",
+  "confidence": "high",
+  "margin": 0.299,
+  "top_by_spec": 14969,
+  "top_by_clip": 18362,
+  "candidates": [
+   {
+    "id": 14969,
+    "name": "Cats and feline references",
+    "spec": 2.882,
+    "frac": 0.787,
+    "clip": 0.8256,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.959
+   },
+   {
+    "id": 18362,
+    "name": "Cats and Cat Care",
+    "spec": 0.923,
+    "frac": 0.263,
+    "clip": 0.8537,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.66
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "spec": 1.325,
+    "frac": 0.975,
+    "clip": 0.803,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.655
+   },
+   {
+    "id": 4629,
+    "name": "Feline Species",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8504,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.495
+   },
+   {
+    "id": 8379,
+    "name": "Feline Species",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8504,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.495
+   },
+   {
+    "id": 2614,
+    "name": "Feline Species",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8504,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.495
+   }
+  ],
+  "review_label": "exact"
+ },
+ "dog": {
+  "coco_id": 18,
+  "supercategory": "animal",
+  "phrases": [
+   "dog"
+  ],
+  "n_captions": 80,
+  "primary": 28636,
+  "primary_name": "Dog laws and regulations",
+  "confidence": "high",
+  "margin": 0.193,
+  "top_by_spec": 28636,
+  "top_by_clip": 20207,
+  "candidates": [
+   {
+    "id": 28636,
+    "name": "Dog laws and regulations",
+    "spec": 2.478,
+    "frac": 0.588,
+    "clip": 0.8092,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.954
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "spec": 1.325,
+    "frac": 0.975,
+    "clip": 0.8268,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.761
+   },
+   {
+    "id": 24252,
+    "name": "Dog Training and Exercise",
+    "spec": 1.304,
+    "frac": 0.325,
+    "clip": 0.817,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.635
+   },
+   {
+    "id": 17565,
+    "name": "Dog Meme Cryptocurrency Culture",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8141,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.465
+   },
+   {
+    "id": 9217,
+    "name": "Pet Companionship and Affection",
+    "spec": 0.111,
+    "frac": 0.025,
+    "clip": 0.8023,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.361
+   },
+   {
+    "id": 25600,
+    "name": "Dog Training and Behavior",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8086,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.353
+   }
+  ],
+  "review_label": "exact"
+ },
+ "horse": {
+  "coco_id": 19,
+  "supercategory": "animal",
+  "phrases": [
+   "horse"
+  ],
+  "n_captions": 80,
+  "primary": 19778,
+  "primary_name": "Horses and Equestrianism",
+  "confidence": "high",
+  "margin": 0.192,
+  "top_by_spec": 19778,
+  "top_by_clip": 29371,
+  "candidates": [
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "spec": 2.405,
+    "frac": 0.838,
+    "clip": 0.8505,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.981
+   },
+   {
+    "id": 3719,
+    "name": "Equine Lameness and Anatomy",
+    "spec": 2.202,
+    "frac": 0.4,
+    "clip": 0.761,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.789
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.234,
+    "frac": 0.7,
+    "clip": 0.7939,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.443
+   },
+   {
+    "id": 1469,
+    "name": "Medieval Horse and Carriage",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8213,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.432
+   },
+   {
+    "id": 29371,
+    "name": "Horse Racing",
+    "spec": 0.078,
+    "frac": 0.013,
+    "clip": 0.8617,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.416
+   },
+   {
+    "id": 17246,
+    "name": "Horse-Drawn Transport",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8058,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.406
+   }
+  ],
+  "review_label": "exact"
+ },
+ "sheep": {
+  "coco_id": 20,
+  "supercategory": "animal",
+  "phrases": [
+   "sheep"
+  ],
+  "n_captions": 80,
+  "primary": 5935,
+  "primary_name": "Sheep, Wool, and Shearing",
+  "confidence": "high",
+  "margin": 0.232,
+  "top_by_spec": 33604,
+  "top_by_clip": 16614,
+  "candidates": [
+   {
+    "id": 5935,
+    "name": "Sheep, Wool, and Shearing",
+    "spec": 2.211,
+    "frac": 0.575,
+    "clip": 0.8011,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.928
+   },
+   {
+    "id": 33604,
+    "name": "Livestock and poultry husbandry",
+    "spec": 2.406,
+    "frac": 0.613,
+    "clip": 0.707,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.696
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "spec": 2.332,
+    "frac": 0.812,
+    "clip": 0.7035,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.574
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.586,
+    "frac": 0.9,
+    "clip": 0.7761,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.553
+   },
+   {
+    "id": 16614,
+    "name": "Sheep Breeding and Wool",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.818,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 4359,
+    "name": "Pre-industrial Pastoral Material Life",
+    "spec": 1.44,
+    "frac": 0.7,
+    "clip": 0.7526,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.479
+   }
+  ],
+  "review_label": "exact"
+ },
+ "cow": {
+  "coco_id": 21,
+  "supercategory": "animal",
+  "phrases": [
+   "cow"
+  ],
+  "n_captions": 80,
+  "primary": 32876,
+  "primary_name": "Cattle and Dairy Husbandry",
+  "confidence": "review",
+  "margin": 0.057,
+  "top_by_spec": 33604,
+  "top_by_clip": 363,
+  "candidates": [
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "spec": 2.009,
+    "frac": 0.7,
+    "clip": 0.7995,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.831
+   },
+   {
+    "id": 2602,
+    "name": "Western Cattle Ranching Culture",
+    "spec": 2.009,
+    "frac": 0.463,
+    "clip": 0.7672,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.774
+   },
+   {
+    "id": 33604,
+    "name": "Livestock and poultry husbandry",
+    "spec": 2.112,
+    "frac": 0.537,
+    "clip": 0.7427,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.655
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.41,
+    "frac": 0.8,
+    "clip": 0.8131,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.613
+   },
+   {
+    "id": 4359,
+    "name": "Pre-industrial Pastoral Material Life",
+    "spec": 1.286,
+    "frac": 0.625,
+    "clip": 0.7806,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.526
+   },
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "spec": 1.579,
+    "frac": 0.55,
+    "clip": 0.7368,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.518
+   }
+  ],
+  "review_label": "exact"
+ },
+ "elephant": {
+  "coco_id": 22,
+  "supercategory": "animal",
+  "phrases": [
+   "elephant"
+  ],
+  "n_captions": 80,
+  "primary": 18777,
+  "primary_name": "Elephants, Ivory, and Megafauna Conservation",
+  "confidence": "high",
+  "margin": 0.227,
+  "top_by_spec": 18777,
+  "top_by_clip": 7172,
+  "candidates": [
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "spec": 2.248,
+    "frac": 0.75,
+    "clip": 0.7927,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.923
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.542,
+    "frac": 0.875,
+    "clip": 0.8078,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.696
+   },
+   {
+    "id": 26481,
+    "name": "African Wildlife and Safari",
+    "spec": 1.43,
+    "frac": 0.425,
+    "clip": 0.7755,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.507
+   },
+   {
+    "id": 7172,
+    "name": "Elephants and Their Traits",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8313,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "spec": 1.938,
+    "frac": 0.675,
+    "clip": 0.7068,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.482
+   },
+   {
+    "id": 363,
+    "name": "Animals and Creatures",
+    "spec": 0.933,
+    "frac": 0.237,
+    "clip": 0.8038,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.453
+   }
+  ],
+  "review_label": "exact"
+ },
+ "bear": {
+  "coco_id": 23,
+  "supercategory": "animal",
+  "phrases": [
+   "bear"
+  ],
+  "n_captions": 80,
+  "primary": 29751,
+  "primary_name": "North American Wildlife and Hunting",
+  "confidence": "high",
+  "margin": 0.16,
+  "top_by_spec": 29751,
+  "top_by_clip": 24265,
+  "candidates": [
+   {
+    "id": 29751,
+    "name": "North American Wildlife and Hunting",
+    "spec": 2.884,
+    "frac": 0.938,
+    "clip": 0.7093,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.758
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.719,
+    "frac": 0.975,
+    "clip": 0.7999,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.598
+   },
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "spec": 2.36,
+    "frac": 0.787,
+    "clip": 0.6698,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.505
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "spec": 0.0,
+    "frac": 1.0,
+    "clip": 0.7964,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.395
+   },
+   {
+    "id": 363,
+    "name": "Animals and Creatures",
+    "spec": 0.491,
+    "frac": 0.125,
+    "clip": 0.7896,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.369
+   },
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "spec": 1.095,
+    "frac": 0.775,
+    "clip": 0.7167,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.36
+   }
+  ],
+  "review_label": "related"
+ },
+ "zebra": {
+  "coco_id": 24,
+  "supercategory": "animal",
+  "phrases": [
+   "zebra"
+  ],
+  "n_captions": 80,
+  "primary": 26481,
+  "primary_name": "African Wildlife and Safari",
+  "confidence": "review",
+  "margin": 0.019,
+  "top_by_spec": 943,
+  "top_by_clip": 24265,
+  "candidates": [
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.763,
+    "frac": 1.0,
+    "clip": 0.7614,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.643
+   },
+   {
+    "id": 26481,
+    "name": "African Wildlife and Safari",
+    "spec": 1.977,
+    "frac": 0.588,
+    "clip": 0.7283,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.624
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "spec": 2.569,
+    "frac": 0.762,
+    "clip": 0.6476,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.59
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "spec": 2.039,
+    "frac": 0.887,
+    "clip": 0.6985,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.581
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "spec": 2.296,
+    "frac": 0.8,
+    "clip": 0.656,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.553
+   },
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "spec": 1.795,
+    "frac": 0.625,
+    "clip": 0.6714,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.483
+   }
+  ],
+  "primary_auto": 24265,
+  "override_reason": "higher spec; same concept as giraffe",
+  "review_label": "related"
+ },
+ "giraffe": {
+  "coco_id": 25,
+  "supercategory": "animal",
+  "phrases": [
+   "giraffe"
+  ],
+  "n_captions": 80,
+  "primary": 26481,
+  "primary_name": "African Wildlife and Safari",
+  "confidence": "review",
+  "margin": 0.024,
+  "top_by_spec": 943,
+  "top_by_clip": 24265,
+  "candidates": [
+   {
+    "id": 26481,
+    "name": "African Wildlife and Safari",
+    "spec": 1.935,
+    "frac": 0.575,
+    "clip": 0.7634,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.74
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 1.719,
+    "frac": 0.975,
+    "clip": 0.7804,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.716
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "spec": 2.039,
+    "frac": 0.887,
+    "clip": 0.7334,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.715
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "spec": 2.064,
+    "frac": 0.613,
+    "clip": 0.6584,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.595
+   },
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "spec": 1.948,
+    "frac": 0.65,
+    "clip": 0.6647,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.578
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "spec": 1.435,
+    "frac": 0.5,
+    "clip": 0.6739,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.469
+   }
+  ],
+  "review_label": "related"
+ },
+ "backpack": {
+  "coco_id": 27,
+  "supercategory": "accessory",
+  "phrases": [
+   "backpack"
+  ],
+  "n_captions": 19,
+  "primary": 28829,
+  "primary_name": "Bags and Storage Containers",
+  "confidence": "high",
+  "margin": 0.274,
+  "top_by_spec": 28829,
+  "top_by_clip": 33005,
+  "candidates": [
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "spec": 2.218,
+    "frac": 0.789,
+    "clip": 0.7208,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.822
+   },
+   {
+    "id": 33690,
+    "name": "Disability and Accessibility",
+    "spec": 1.801,
+    "frac": 0.421,
+    "clip": 0.6788,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.548
+   },
+   {
+    "id": 31482,
+    "name": "Clothing and Apparel",
+    "spec": 0.814,
+    "frac": 0.737,
+    "clip": 0.7438,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.45
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 1.252,
+    "frac": 0.474,
+    "clip": 0.6718,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.41
+   },
+   {
+    "id": 33005,
+    "name": "Travel Gear and Convenience",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7611,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.4
+   },
+   {
+    "id": 26054,
+    "name": "Lightweight Portability",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7488,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.376
+   }
+  ],
+  "review_label": "related"
+ },
+ "umbrella": {
+  "coco_id": 28,
+  "supercategory": "accessory",
+  "phrases": [
+   "umbrella"
+  ],
+  "n_captions": 80,
+  "primary": 28218,
+  "primary_name": "Rain and Precipitation",
+  "confidence": "high",
+  "margin": 0.193,
+  "top_by_spec": 29510,
+  "top_by_clip": 28218,
+  "candidates": [
+   {
+    "id": 28218,
+    "name": "Rain and Precipitation",
+    "spec": 0.862,
+    "frac": 0.25,
+    "clip": 0.7584,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.739
+   },
+   {
+    "id": 8600,
+    "name": "Equipment and Tangible Goods",
+    "spec": 1.252,
+    "frac": 0.787,
+    "clip": 0.6327,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.546
+   },
+   {
+    "id": 27030,
+    "name": "Weather and Climate Conditions",
+    "spec": 0.874,
+    "frac": 0.35,
+    "clip": 0.6866,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.503
+   },
+   {
+    "id": 29510,
+    "name": "Safety Instructions and Warnings",
+    "spec": 1.271,
+    "frac": 0.388,
+    "clip": 0.6052,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.5
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 1.123,
+    "frac": 0.425,
+    "clip": 0.6349,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.5
+   },
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "spec": 1.265,
+    "frac": 0.45,
+    "clip": 0.6056,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.498
+   }
+  ],
+  "review_label": "related"
+ },
+ "handbag": {
+  "coco_id": 31,
+  "supercategory": "accessory",
+  "phrases": [
+   "purse",
+   "handbag"
+  ],
+  "n_captions": 12,
+  "primary": 28829,
+  "primary_name": "Bags and Storage Containers",
+  "confidence": "high",
+  "margin": 0.313,
+  "top_by_spec": 28829,
+  "top_by_clip": 29945,
+  "candidates": [
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "spec": 2.108,
+    "frac": 0.75,
+    "clip": 0.7327,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.804
+   },
+   {
+    "id": 2039,
+    "name": "Theft and Lock Security",
+    "spec": 1.352,
+    "frac": 0.417,
+    "clip": 0.719,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.491
+   },
+   {
+    "id": 31482,
+    "name": "Clothing and Apparel",
+    "spec": 0.921,
+    "frac": 0.833,
+    "clip": 0.7417,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.444
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 1.101,
+    "frac": 0.417,
+    "clip": 0.7092,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.408
+   },
+   {
+    "id": 27589,
+    "name": "Head/Header in all senses",
+    "spec": 0.958,
+    "frac": 0.333,
+    "clip": 0.7049,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.363
+   },
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "spec": 0.942,
+    "frac": 0.667,
+    "clip": 0.6936,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.332
+   }
+  ],
+  "review_label": "related"
+ },
+ "tie": {
+  "coco_id": 32,
+  "supercategory": "accessory",
+  "phrases": [
+   "tie"
+  ],
+  "n_captions": 80,
+  "primary": 27557,
+  "primary_name": "Dress codes and etiquette",
+  "confidence": "review",
+  "margin": 0.053,
+  "top_by_spec": 27557,
+  "top_by_clip": 250,
+  "candidates": [
+   {
+    "id": 27557,
+    "name": "Dress codes and etiquette",
+    "spec": 2.439,
+    "frac": 0.7,
+    "clip": 0.682,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.698
+   },
+   {
+    "id": 25001,
+    "name": "Historical Fashion and Attire",
+    "spec": 1.711,
+    "frac": 0.925,
+    "clip": 0.6795,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.645
+   },
+   {
+    "id": 2102,
+    "name": "Clothing and Garment Fits",
+    "spec": 1.832,
+    "frac": 0.688,
+    "clip": 0.673,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.56
+   },
+   {
+    "id": 29850,
+    "name": "Garments and Heraldic Regalia",
+    "spec": 2.176,
+    "frac": 0.925,
+    "clip": 0.6157,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.544
+   },
+   {
+    "id": 31482,
+    "name": "Clothing and Apparel",
+    "spec": 1.091,
+    "frac": 0.988,
+    "clip": 0.7154,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.471
+   },
+   {
+    "id": 20616,
+    "name": "Swimwear and Activewear",
+    "spec": 1.738,
+    "frac": 0.613,
+    "clip": 0.6247,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.468
+   }
+  ],
+  "review_label": "related"
+ },
+ "suitcase": {
+  "coco_id": 33,
+  "supercategory": "accessory",
+  "phrases": [
+   "suitcase"
+  ],
+  "n_captions": 80,
+  "primary": 28829,
+  "primary_name": "Bags and Storage Containers",
+  "confidence": "high",
+  "margin": 0.307,
+  "top_by_spec": 28829,
+  "top_by_clip": 33005,
+  "candidates": [
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "spec": 1.721,
+    "frac": 0.613,
+    "clip": 0.7266,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.849
+   },
+   {
+    "id": 26440,
+    "name": "Boxes, Packages, Containers",
+    "spec": 1.017,
+    "frac": 0.625,
+    "clip": 0.7246,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.542
+   },
+   {
+    "id": 8478,
+    "name": "Cases, Scenarios, and Instances",
+    "spec": 1.077,
+    "frac": 0.312,
+    "clip": 0.669,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.484
+   },
+   {
+    "id": 27095,
+    "name": "Mail and Parcel Shipping",
+    "spec": 0.931,
+    "frac": 0.225,
+    "clip": 0.6993,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.482
+   },
+   {
+    "id": 20353,
+    "name": "Books and publishing",
+    "spec": 1.101,
+    "frac": 0.4,
+    "clip": 0.6622,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.481
+   },
+   {
+    "id": 221,
+    "name": "Home Decluttering and Storage",
+    "spec": 0.863,
+    "frac": 0.312,
+    "clip": 0.7096,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.477
+   }
+  ],
+  "review_label": "related"
+ },
+ "frisbee": {
+  "coco_id": 34,
+  "supercategory": "sports",
+  "phrases": [
+   "frisbee"
+  ],
+  "n_captions": 80,
+  "primary": 32002,
+  "primary_name": "Throwing and ball sports",
+  "confidence": "review",
+  "margin": 0.019,
+  "top_by_spec": 11212,
+  "top_by_clip": 26511,
+  "candidates": [
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "spec": 1.956,
+    "frac": 0.787,
+    "clip": 0.7146,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.726
+   },
+   {
+    "id": 11212,
+    "name": "Sports drills and games",
+    "spec": 2.098,
+    "frac": 0.562,
+    "clip": 0.6693,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.707
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "spec": 1.896,
+    "frac": 0.8,
+    "clip": 0.6773,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.669
+   },
+   {
+    "id": 19021,
+    "name": "Sports and Athletics",
+    "spec": 1.597,
+    "frac": 0.7,
+    "clip": 0.712,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.637
+   },
+   {
+    "id": 7944,
+    "name": "#NAME?",
+    "spec": 1.685,
+    "frac": 0.525,
+    "clip": 0.6864,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.629
+   },
+   {
+    "id": 12743,
+    "name": "Racket sports and tennis",
+    "spec": 1.255,
+    "frac": 0.362,
+    "clip": 0.6694,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.506
+   }
+  ],
+  "review_label": "related"
+ },
+ "skis": {
+  "coco_id": 35,
+  "supercategory": "sports",
+  "phrases": [
+   "skis"
+  ],
+  "n_captions": 80,
+  "primary": 29412,
+  "primary_name": "Skating and Sk- Sports",
+  "confidence": "review",
+  "margin": 0.037,
+  "top_by_spec": 29412,
+  "top_by_clip": 15037,
+  "candidates": [
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "spec": 2.291,
+    "frac": 0.887,
+    "clip": 0.7054,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.678
+   },
+   {
+    "id": 3762,
+    "name": "Snow and Snowfall",
+    "spec": 1.931,
+    "frac": 0.662,
+    "clip": 0.743,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.641
+   },
+   {
+    "id": 32623,
+    "name": "Mountaineering and Wilderness Adventure",
+    "spec": 2.142,
+    "frac": 0.775,
+    "clip": 0.6889,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.627
+   },
+   {
+    "id": 12827,
+    "name": "Winter and Cold Season",
+    "spec": 1.687,
+    "frac": 0.45,
+    "clip": 0.6986,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.539
+   },
+   {
+    "id": 8816,
+    "name": "Endurance Racing and Distances",
+    "spec": 1.771,
+    "frac": 0.575,
+    "clip": 0.6667,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.522
+   },
+   {
+    "id": 7944,
+    "name": "#NAME?",
+    "spec": 1.404,
+    "frac": 0.438,
+    "clip": 0.7086,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.488
+   }
+  ],
+  "review_label": "related"
+ },
+ "snowboard": {
+  "coco_id": 36,
+  "supercategory": "sports",
+  "phrases": [
+   "snowboard"
+  ],
+  "n_captions": 66,
+  "primary": 29412,
+  "primary_name": "Skating and Sk- Sports",
+  "confidence": "review",
+  "margin": 0.041,
+  "top_by_spec": 29412,
+  "top_by_clip": 15037,
+  "candidates": [
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "spec": 2.19,
+    "frac": 0.848,
+    "clip": 0.6993,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.695
+   },
+   {
+    "id": 3762,
+    "name": "Snow and Snowfall",
+    "spec": 2.032,
+    "frac": 0.697,
+    "clip": 0.6955,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.654
+   },
+   {
+    "id": 32623,
+    "name": "Mountaineering and Wilderness Adventure",
+    "spec": 1.759,
+    "frac": 0.636,
+    "clip": 0.6748,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.562
+   },
+   {
+    "id": 12827,
+    "name": "Winter and Cold Season",
+    "spec": 1.818,
+    "frac": 0.485,
+    "clip": 0.6615,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.557
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "spec": 1.965,
+    "frac": 0.712,
+    "clip": 0.6269,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.542
+   },
+   {
+    "id": 29998,
+    "name": "Electric Personal Mobility Vehicles",
+    "spec": 1.453,
+    "frac": 0.439,
+    "clip": 0.6222,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.419
+   }
+  ],
+  "review_label": "related"
+ },
+ "sports ball": {
+  "coco_id": 37,
+  "supercategory": "sports",
+  "phrases": [
+   "soccer ball",
+   "tennis ball",
+   "baseball",
+   "football",
+   "basketball",
+   "ball"
+  ],
+  "n_captions": 80,
+  "primary": 32002,
+  "primary_name": "Throwing and ball sports",
+  "confidence": "review",
+  "margin": 0.144,
+  "top_by_spec": 32002,
+  "top_by_clip": 20515,
+  "candidates": [
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "spec": 2.204,
+    "frac": 0.887,
+    "clip": 0.8003,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.937
+   },
+   {
+    "id": 19021,
+    "name": "Sports and Athletics",
+    "spec": 1.967,
+    "frac": 0.863,
+    "clip": 0.805,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.793
+   },
+   {
+    "id": 33045,
+    "name": "Baseball Gameplay and MLB",
+    "spec": 1.539,
+    "frac": 0.4,
+    "clip": 0.73,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.641
+   },
+   {
+    "id": 31306,
+    "name": "Sports and Athletics",
+    "spec": 1.118,
+    "frac": 0.287,
+    "clip": 0.805,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.6
+   },
+   {
+    "id": 12743,
+    "name": "Racket sports and tennis",
+    "spec": 1.341,
+    "frac": 0.388,
+    "clip": 0.7183,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.572
+   },
+   {
+    "id": 20515,
+    "name": "Ball Sports and Games",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8309,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.5
+   }
+  ],
+  "review_label": "exact"
+ },
+ "kite": {
+  "coco_id": 38,
+  "supercategory": "sports",
+  "phrases": [
+   "kite"
+  ],
+  "n_captions": 80,
+  "primary": 21555,
+  "primary_name": "Kite Flying",
+  "confidence": "review",
+  "margin": 0.092,
+  "top_by_spec": 6719,
+  "top_by_clip": 21555,
+  "candidates": [
+   {
+    "id": 6719,
+    "name": "Drones and UAVs",
+    "spec": 2.649,
+    "frac": 0.5,
+    "clip": 0.6956,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.592
+   },
+   {
+    "id": 21555,
+    "name": "Kite Flying",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.908,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 10605,
+    "name": "Aircraft and Aerospace Engineering",
+    "spec": 2.404,
+    "frac": 0.6,
+    "clip": 0.6457,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.497
+   },
+   {
+    "id": 990,
+    "name": "Sailing and Board Sports",
+    "spec": 1.745,
+    "frac": 0.562,
+    "clip": 0.661,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.487
+   },
+   {
+    "id": 17014,
+    "name": "Early Aviation Pioneers",
+    "spec": 2.367,
+    "frac": 0.5,
+    "clip": 0.6071,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.452
+   },
+   {
+    "id": 11377,
+    "name": "Flight and Aviation",
+    "spec": 1.837,
+    "frac": 0.762,
+    "clip": 0.6989,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.442
+   }
+  ],
+  "primary_auto": 6719,
+  "override_reason": "exact 'Kite Flying' (clip 0.91) though inactive in masked read-out; current pick is 'Drones'",
+  "review_label": "exact"
+ },
+ "baseball bat": {
+  "coco_id": 39,
+  "supercategory": "sports",
+  "phrases": [
+   "baseball bat"
+  ],
+  "n_captions": 80,
+  "primary": 33045,
+  "primary_name": "Baseball Gameplay and MLB",
+  "confidence": "high",
+  "margin": 0.161,
+  "top_by_spec": 33045,
+  "top_by_clip": 21764,
+  "candidates": [
+   {
+    "id": 33045,
+    "name": "Baseball Gameplay and MLB",
+    "spec": 2.308,
+    "frac": 0.6,
+    "clip": 0.717,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.855
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 2.229,
+    "frac": 0.7,
+    "clip": 0.6895,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.694
+   },
+   {
+    "id": 19021,
+    "name": "Sports and Athletics",
+    "spec": 1.483,
+    "frac": 0.65,
+    "clip": 0.7143,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.572
+   },
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "spec": 1.645,
+    "frac": 0.662,
+    "clip": 0.6729,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.541
+   },
+   {
+    "id": 33142,
+    "name": "Clubs and Social Groups",
+    "spec": 1.774,
+    "frac": 0.425,
+    "clip": 0.6253,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.493
+   },
+   {
+    "id": 6868,
+    "name": "Cricket commentary and terminology",
+    "spec": 1.279,
+    "frac": 0.263,
+    "clip": 0.6762,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.467
+   }
+  ],
+  "review_label": "related"
+ },
+ "baseball glove": {
+  "coco_id": 40,
+  "supercategory": "sports",
+  "phrases": [
+   "baseball glove",
+   "mitt",
+   "glove"
+  ],
+  "n_captions": 30,
+  "primary": 33045,
+  "primary_name": "Baseball Gameplay and MLB",
+  "confidence": "high",
+  "margin": 0.246,
+  "top_by_spec": 33045,
+  "top_by_clip": 12496,
+  "candidates": [
+   {
+    "id": 33045,
+    "name": "Baseball Gameplay and MLB",
+    "spec": 2.437,
+    "frac": 0.633,
+    "clip": 0.7212,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.866
+   },
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "spec": 1.904,
+    "frac": 0.767,
+    "clip": 0.699,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.62
+   },
+   {
+    "id": 5862,
+    "name": "Protection and Protective Gear",
+    "spec": 1.539,
+    "frac": 0.5,
+    "clip": 0.7024,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.551
+   },
+   {
+    "id": 24619,
+    "name": "Uniformity and Universality",
+    "spec": 1.466,
+    "frac": 0.367,
+    "clip": 0.6442,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.441
+   },
+   {
+    "id": 15388,
+    "name": "Face Masks and Respirators",
+    "spec": 1.763,
+    "frac": 0.4,
+    "clip": 0.5848,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.405
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 1.38,
+    "frac": 0.433,
+    "clip": 0.6317,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.403
+   }
+  ],
+  "review_label": "related"
+ },
+ "skateboard": {
+  "coco_id": 41,
+  "supercategory": "sports",
+  "phrases": [
+   "skateboard"
+  ],
+  "n_captions": 80,
+  "primary": 29412,
+  "primary_name": "Skating and Sk- Sports",
+  "confidence": "review",
+  "margin": 0.009,
+  "top_by_spec": 5125,
+  "top_by_clip": 15255,
+  "candidates": [
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "spec": 2.005,
+    "frac": 0.9,
+    "clip": 0.6552,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.596
+   },
+   {
+    "id": 29998,
+    "name": "Electric Personal Mobility Vehicles",
+    "spec": 1.819,
+    "frac": 0.55,
+    "clip": 0.6782,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.587
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "spec": 1.863,
+    "frac": 0.675,
+    "clip": 0.6683,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.582
+   },
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "spec": 1.194,
+    "frac": 0.463,
+    "clip": 0.7399,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.531
+   },
+   {
+    "id": 31967,
+    "name": "Tricks, Deception, and Cunning",
+    "spec": 1.548,
+    "frac": 0.425,
+    "clip": 0.6825,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.526
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "spec": 1.274,
+    "frac": 0.537,
+    "clip": 0.7141,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.509
+   }
+  ],
+  "primary_auto": 5125,
+  "override_reason": "current pick is 'Bicycles and Motorcycles'; highest clip in pool",
+  "review_label": "related"
+ },
+ "surfboard": {
+  "coco_id": 42,
+  "supercategory": "sports",
+  "phrases": [
+   "surfboard"
+  ],
+  "n_captions": 80,
+  "primary": 990,
+  "primary_name": "Sailing and Board Sports",
+  "confidence": "review",
+  "margin": 0.024,
+  "top_by_spec": 990,
+  "top_by_clip": 19034,
+  "candidates": [
+   {
+    "id": 990,
+    "name": "Sailing and Board Sports",
+    "spec": 2.366,
+    "frac": 0.762,
+    "clip": 0.7355,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.693
+   },
+   {
+    "id": 31757,
+    "name": "Coastal Beaches and Shores",
+    "spec": 2.198,
+    "frac": 0.825,
+    "clip": 0.7447,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.669
+   },
+   {
+    "id": 20616,
+    "name": "Swimwear and Activewear",
+    "spec": 1.95,
+    "frac": 0.688,
+    "clip": 0.7085,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.57
+   },
+   {
+    "id": 2667,
+    "name": "Swimming pools and aquatics",
+    "spec": 2.112,
+    "frac": 0.8,
+    "clip": 0.677,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.563
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "spec": 2.207,
+    "frac": 0.8,
+    "clip": 0.6604,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.561
+   },
+   {
+    "id": 3556,
+    "name": "Watercraft Types and Descriptors",
+    "spec": 2.052,
+    "frac": 0.675,
+    "clip": 0.6502,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.515
+   }
+  ],
+  "review_label": "related"
+ },
+ "tennis racket": {
+  "coco_id": 43,
+  "supercategory": "sports",
+  "phrases": [
+   "tennis racket"
+  ],
+  "n_captions": 80,
+  "primary": 12743,
+  "primary_name": "Racket sports and tennis",
+  "confidence": "high",
+  "margin": 0.273,
+  "top_by_spec": 12445,
+  "top_by_clip": 785,
+  "candidates": [
+   {
+    "id": 12743,
+    "name": "Racket sports and tennis",
+    "spec": 2.206,
+    "frac": 0.637,
+    "clip": 0.8386,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.837
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 2.428,
+    "frac": 0.762,
+    "clip": 0.6786,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.564
+   },
+   {
+    "id": 12445,
+    "name": "Celebrity Net Worth",
+    "spec": 2.508,
+    "frac": 0.613,
+    "clip": 0.6648,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.561
+   },
+   {
+    "id": 12085,
+    "name": "Golf play and equipment",
+    "spec": 1.539,
+    "frac": 0.412,
+    "clip": 0.7621,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.5
+   },
+   {
+    "id": 29646,
+    "name": "Legendary Sports Icons",
+    "spec": 1.627,
+    "frac": 0.463,
+    "clip": 0.6702,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.493
+   },
+   {
+    "id": 19021,
+    "name": "Sports and Athletics",
+    "spec": 1.568,
+    "frac": 0.688,
+    "clip": 0.7464,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.485
+   }
+  ],
+  "review_label": "exact"
+ },
+ "bottle": {
+  "coco_id": 44,
+  "supercategory": "kitchen",
+  "phrases": [
+   "bottle"
+  ],
+  "n_captions": 80,
+  "primary": 13021,
+  "primary_name": "Beverages and Alcoholic Drinks",
+  "confidence": "high",
+  "margin": 0.286,
+  "top_by_spec": 13021,
+  "top_by_clip": 30269,
+  "candidates": [
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "spec": 2.379,
+    "frac": 0.75,
+    "clip": 0.7701,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.873
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.999,
+    "frac": 0.787,
+    "clip": 0.6788,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.587
+   },
+   {
+    "id": 20797,
+    "name": "Brewing and Liquid Preparation",
+    "spec": 1.564,
+    "frac": 0.325,
+    "clip": 0.6558,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.468
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "spec": 1.892,
+    "frac": 0.662,
+    "clip": 0.5905,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.461
+   },
+   {
+    "id": 26440,
+    "name": "Boxes, Packages, Containers",
+    "spec": 1.139,
+    "frac": 0.7,
+    "clip": 0.712,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.444
+   },
+   {
+    "id": 14987,
+    "name": "Recipe Ingredients and Measurements",
+    "spec": 1.248,
+    "frac": 0.263,
+    "clip": 0.6844,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.435
+   }
+  ],
+  "review_label": "related"
+ },
+ "wine glass": {
+  "coco_id": 46,
+  "supercategory": "kitchen",
+  "phrases": [
+   "wine glass",
+   "wine glasses"
+  ],
+  "n_captions": 37,
+  "primary": 13021,
+  "primary_name": "Beverages and Alcoholic Drinks",
+  "confidence": "high",
+  "margin": 0.167,
+  "top_by_spec": 13021,
+  "top_by_clip": 30269,
+  "candidates": [
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "spec": 1.972,
+    "frac": 0.622,
+    "clip": 0.7521,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.773
+   },
+   {
+    "id": 30162,
+    "name": "Wine and Winemaking",
+    "spec": 0.848,
+    "frac": 0.189,
+    "clip": 0.7624,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.606
+   },
+   {
+    "id": 17368,
+    "name": "Windows and glass panes",
+    "spec": 0.989,
+    "frac": 0.486,
+    "clip": 0.7117,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.553
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.621,
+    "frac": 0.946,
+    "clip": 0.674,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.548
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 1.351,
+    "frac": 0.568,
+    "clip": 0.7092,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.541
+   },
+   {
+    "id": 30490,
+    "name": "Aspects of People's Lives",
+    "spec": 1.206,
+    "frac": 0.27,
+    "clip": 0.6793,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.452
+   }
+  ],
+  "review_label": "related"
+ },
+ "cup": {
+  "coco_id": 47,
+  "supercategory": "kitchen",
+  "phrases": [
+   "cup"
+  ],
+  "n_captions": 80,
+  "primary": 17856,
+  "primary_name": "Plates and tableware",
+  "confidence": "review",
+  "margin": 0.079,
+  "top_by_spec": 14987,
+  "top_by_clip": 33635,
+  "candidates": [
+   {
+    "id": 14987,
+    "name": "Recipe Ingredients and Measurements",
+    "spec": 2.259,
+    "frac": 0.475,
+    "clip": 0.6667,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.652
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 1.696,
+    "frac": 0.713,
+    "clip": 0.7442,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.573
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "spec": 2.034,
+    "frac": 0.713,
+    "clip": 0.6453,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.563
+   },
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "spec": 1.308,
+    "frac": 0.412,
+    "clip": 0.7603,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.517
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.777,
+    "frac": 0.7,
+    "clip": 0.6812,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.473
+   },
+   {
+    "id": 8153,
+    "name": "Drinking and beverage consumption",
+    "spec": 0.717,
+    "frac": 0.175,
+    "clip": 0.7897,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.441
+   }
+  ],
+  "primary_auto": 14987,
+  "override_reason": "current pick is the measuring-cup sense",
+  "review_label": "related"
+ },
+ "fork": {
+  "coco_id": 48,
+  "supercategory": "kitchen",
+  "phrases": [
+   "fork"
+  ],
+  "n_captions": 80,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "confidence": "high",
+  "margin": 0.309,
+  "top_by_spec": 19825,
+  "top_by_clip": 31198,
+  "candidates": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "spec": 3.191,
+    "frac": 0.863,
+    "clip": 0.7587,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.859
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "spec": 2.614,
+    "frac": 0.575,
+    "clip": 0.6964,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.55
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 1.815,
+    "frac": 0.762,
+    "clip": 0.6956,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.524
+   },
+   {
+    "id": 31198,
+    "name": "Replication and Forking",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7803,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.699,
+    "frac": 0.775,
+    "clip": 0.712,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.437
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.67,
+    "frac": 0.975,
+    "clip": 0.6686,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.35
+   }
+  ],
+  "review_label": "related"
+ },
+ "knife": {
+  "coco_id": 49,
+  "supercategory": "kitchen",
+  "phrases": [
+   "knife"
+  ],
+  "n_captions": 66,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "confidence": "high",
+  "margin": 0.309,
+  "top_by_spec": 19825,
+  "top_by_clip": 19825,
+  "candidates": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "spec": 3.083,
+    "frac": 0.833,
+    "clip": 0.8687,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.9
+   },
+   {
+    "id": 17184,
+    "name": "Sharp Blades and Edges",
+    "spec": 2.07,
+    "frac": 0.424,
+    "clip": 0.8324,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.591
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 1.64,
+    "frac": 0.515,
+    "clip": 0.786,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.464
+   },
+   {
+    "id": 11994,
+    "name": "Japanese Blades and Knives",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7954,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.41
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "spec": 2.048,
+    "frac": 0.606,
+    "clip": 0.6554,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.37
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "spec": 1.86,
+    "frac": 0.409,
+    "clip": 0.6674,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.354
+   }
+  ],
+  "review_label": "exact"
+ },
+ "spoon": {
+  "coco_id": 50,
+  "supercategory": "kitchen",
+  "phrases": [
+   "spoon"
+  ],
+  "n_captions": 52,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "confidence": "high",
+  "margin": 0.278,
+  "top_by_spec": 19825,
+  "top_by_clip": 33093,
+  "candidates": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "spec": 2.063,
+    "frac": 0.558,
+    "clip": 0.7498,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.89
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 1.739,
+    "frac": 0.731,
+    "clip": 0.6846,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.612
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.367,
+    "frac": 0.538,
+    "clip": 0.6611,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.586
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.516,
+    "frac": 0.885,
+    "clip": 0.6789,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.549
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "spec": 1.574,
+    "frac": 0.346,
+    "clip": 0.6464,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.514
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.307,
+    "frac": 0.596,
+    "clip": 0.6712,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.487
+   }
+  ],
+  "review_label": "related"
+ },
+ "bowl": {
+  "coco_id": 51,
+  "supercategory": "kitchen",
+  "phrases": [
+   "bowl"
+  ],
+  "n_captions": 80,
+  "primary": 17856,
+  "primary_name": "Plates and tableware",
+  "confidence": "high",
+  "margin": 0.228,
+  "top_by_spec": 17856,
+  "top_by_clip": 281,
+  "candidates": [
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 2.023,
+    "frac": 0.85,
+    "clip": 0.731,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.856
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.586,
+    "frac": 0.625,
+    "clip": 0.6796,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.628
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "spec": 1.785,
+    "frac": 0.625,
+    "clip": 0.6615,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.535
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.435,
+    "frac": 0.838,
+    "clip": 0.6836,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.5
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.261,
+    "frac": 0.575,
+    "clip": 0.6821,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.453
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "spec": 1.433,
+    "frac": 0.55,
+    "clip": 0.6614,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.448
+   }
+  ],
+  "review_label": "exact"
+ },
+ "banana": {
+  "coco_id": 52,
+  "supercategory": "food",
+  "phrases": [
+   "banana"
+  ],
+  "n_captions": 80,
+  "primary": 23049,
+  "primary_name": "Fruits and ripening",
+  "confidence": "high",
+  "margin": 0.166,
+  "top_by_spec": 23049,
+  "top_by_clip": 25768,
+  "candidates": [
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "spec": 2.08,
+    "frac": 0.775,
+    "clip": 0.7329,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.848
+   },
+   {
+    "id": 28190,
+    "name": "Fruits and Their Nutrition",
+    "spec": 1.367,
+    "frac": 0.362,
+    "clip": 0.7373,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.682
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.435,
+    "frac": 0.838,
+    "clip": 0.6665,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.51
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "spec": 1.002,
+    "frac": 0.362,
+    "clip": 0.7295,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.485
+   },
+   {
+    "id": 17034,
+    "name": "Fresh Produce and Market Goods",
+    "spec": 0.964,
+    "frac": 0.3,
+    "clip": 0.7112,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.453
+   },
+   {
+    "id": 33635,
+    "name": "Generic things and stuff",
+    "spec": 0.61,
+    "frac": 0.263,
+    "clip": 0.7586,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.427
+   }
+  ],
+  "review_label": "related"
+ },
+ "apple": {
+  "coco_id": 53,
+  "supercategory": "food",
+  "phrases": [
+   "apple"
+  ],
+  "n_captions": 80,
+  "primary": 18455,
+  "primary_name": "Apple (fruit and Inc.)",
+  "confidence": "high",
+  "margin": 0.296,
+  "top_by_spec": 18455,
+  "top_by_clip": 18455,
+  "candidates": [
+   {
+    "id": 18455,
+    "name": "Apple (fruit and Inc.)",
+    "spec": 2.137,
+    "frac": 0.5,
+    "clip": 0.8035,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 1.0
+   },
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "spec": 2.013,
+    "frac": 0.75,
+    "clip": 0.7587,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.704
+   },
+   {
+    "id": 28190,
+    "name": "Fruits and Their Nutrition",
+    "spec": 1.933,
+    "frac": 0.512,
+    "clip": 0.7487,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.67
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "spec": 1.315,
+    "frac": 0.45,
+    "clip": 0.7209,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.484
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "spec": 1.69,
+    "frac": 0.5,
+    "clip": 0.6344,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.441
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.371,
+    "frac": 0.8,
+    "clip": 0.6804,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.436
+   }
+  ],
+  "review_label": "exact"
+ },
+ "sandwich": {
+  "coco_id": 54,
+  "supercategory": "food",
+  "phrases": [
+   "sandwich"
+  ],
+  "n_captions": 80,
+  "primary": 29115,
+  "primary_name": "Sandwiches and Condiments",
+  "confidence": "high",
+  "margin": 0.237,
+  "top_by_spec": 7322,
+  "top_by_clip": 29115,
+  "candidates": [
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "spec": 2.21,
+    "frac": 0.738,
+    "clip": 0.8437,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.888
+   },
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "spec": 2.264,
+    "frac": 0.738,
+    "clip": 0.7483,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.651
+   },
+   {
+    "id": 22045,
+    "name": "Holiday Feast Foods",
+    "spec": 2.201,
+    "frac": 0.537,
+    "clip": 0.7479,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.637
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.864,
+    "frac": 0.85,
+    "clip": 0.7491,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.564
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "spec": 1.922,
+    "frac": 0.738,
+    "clip": 0.6864,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.479
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.628,
+    "frac": 0.95,
+    "clip": 0.7207,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.468
+   }
+  ],
+  "review_label": "exact"
+ },
+ "orange": {
+  "coco_id": 55,
+  "supercategory": "food",
+  "phrases": [
+   "orange"
+  ],
+  "n_captions": 80,
+  "primary": 23049,
+  "primary_name": "Fruits and ripening",
+  "confidence": "review",
+  "margin": 0.129,
+  "top_by_spec": 23049,
+  "top_by_clip": 9891,
+  "candidates": [
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "spec": 1.208,
+    "frac": 0.45,
+    "clip": 0.6942,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.794
+   },
+   {
+    "id": 30347,
+    "name": "Colors and Hues",
+    "spec": 0.695,
+    "frac": 0.287,
+    "clip": 0.752,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.665
+   },
+   {
+    "id": 28190,
+    "name": "Fruits and Their Nutrition",
+    "spec": 1.085,
+    "frac": 0.287,
+    "clip": 0.6856,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.631
+   },
+   {
+    "id": 32839,
+    "name": "Recipe Herbs and Citrus",
+    "spec": 0.887,
+    "frac": 0.25,
+    "clip": 0.6566,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.508
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "spec": 0.767,
+    "frac": 0.263,
+    "clip": 0.6823,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.495
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "spec": 0.929,
+    "frac": 0.275,
+    "clip": 0.6174,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.469
+   }
+  ],
+  "review_label": "related"
+ },
+ "broccoli": {
+  "coco_id": 56,
+  "supercategory": "food",
+  "phrases": [
+   "broccoli"
+  ],
+  "n_captions": 80,
+  "primary": 17182,
+  "primary_name": "Vegetables and produce preparation",
+  "confidence": "review",
+  "margin": 0.013,
+  "top_by_spec": 26234,
+  "top_by_clip": 10817,
+  "candidates": [
+   {
+    "id": 26510,
+    "name": "Edible Garden Plants and Herbs",
+    "spec": 2.246,
+    "frac": 0.525,
+    "clip": 0.6474,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.62
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "spec": 2.3,
+    "frac": 0.787,
+    "clip": 0.6953,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.607
+   },
+   {
+    "id": 31301,
+    "name": "Diet and Nutrition",
+    "spec": 2.305,
+    "frac": 0.725,
+    "clip": 0.6938,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.605
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "spec": 2.536,
+    "frac": 0.775,
+    "clip": 0.5772,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.558
+   },
+   {
+    "id": 26234,
+    "name": "Chicken and Meat Cooking",
+    "spec": 2.765,
+    "frac": 0.762,
+    "clip": 0.603,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.542
+   },
+   {
+    "id": 30265,
+    "name": "Soups, stews, and simmering",
+    "spec": 1.95,
+    "frac": 0.45,
+    "clip": 0.6674,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.498
+   }
+  ],
+  "primary_auto": 26510,
+  "override_reason": "vegetable-specific; consistent with carrot",
+  "review_label": "related"
+ },
+ "carrot": {
+  "coco_id": 57,
+  "supercategory": "food",
+  "phrases": [
+   "carrot"
+  ],
+  "n_captions": 80,
+  "primary": 17182,
+  "primary_name": "Vegetables and produce preparation",
+  "confidence": "review",
+  "margin": 0.034,
+  "top_by_spec": 17182,
+  "top_by_clip": 10817,
+  "candidates": [
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "spec": 2.577,
+    "frac": 0.787,
+    "clip": 0.5771,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.614
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "spec": 2.008,
+    "frac": 0.688,
+    "clip": 0.6749,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.58
+   },
+   {
+    "id": 26510,
+    "name": "Edible Garden Plants and Herbs",
+    "spec": 2.46,
+    "frac": 0.575,
+    "clip": 0.6191,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.567
+   },
+   {
+    "id": 31301,
+    "name": "Diet and Nutrition",
+    "spec": 1.789,
+    "frac": 0.562,
+    "clip": 0.6742,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.536
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "spec": 2.45,
+    "frac": 0.725,
+    "clip": 0.5935,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.519
+   },
+   {
+    "id": 22453,
+    "name": "Commodities and Manufactured Goods",
+    "spec": 1.75,
+    "frac": 0.863,
+    "clip": 0.6248,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.44
+   }
+  ],
+  "review_label": "related"
+ },
+ "hot dog": {
+  "coco_id": 58,
+  "supercategory": "food",
+  "phrases": [
+   "hot dog"
+  ],
+  "n_captions": 80,
+  "primary": 7322,
+  "primary_name": "Fast Food Chains and Burgers",
+  "confidence": "review",
+  "margin": 0.056,
+  "top_by_spec": 7322,
+  "top_by_clip": 21031,
+  "candidates": [
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "spec": 2.61,
+    "frac": 0.85,
+    "clip": 0.7368,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.72
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "spec": 2.023,
+    "frac": 0.675,
+    "clip": 0.7713,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.664
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "spec": 1.972,
+    "frac": 0.675,
+    "clip": 0.7186,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.568
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.864,
+    "frac": 0.85,
+    "clip": 0.7179,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.546
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "spec": 1.693,
+    "frac": 0.613,
+    "clip": 0.7158,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.51
+   },
+   {
+    "id": 26234,
+    "name": "Chicken and Meat Cooking",
+    "spec": 1.904,
+    "frac": 0.525,
+    "clip": 0.6891,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.507
+   }
+  ],
+  "review_label": "related"
+ },
+ "pizza": {
+  "coco_id": 59,
+  "supercategory": "food",
+  "phrases": [
+   "pizza"
+  ],
+  "n_captions": 80,
+  "primary": 13097,
+  "primary_name": "Pizza and Countertop Ovens",
+  "confidence": "high",
+  "margin": 0.303,
+  "top_by_spec": 13097,
+  "top_by_clip": 21006,
+  "candidates": [
+   {
+    "id": 13097,
+    "name": "Pizza and Countertop Ovens",
+    "spec": 2.465,
+    "frac": 0.675,
+    "clip": 0.7478,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.816
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.919,
+    "frac": 0.875,
+    "clip": 0.7537,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.513
+   },
+   {
+    "id": 21006,
+    "name": "Pizza and Italian Cuisine",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8864,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 19298,
+    "name": "Pizza and Italian Cuisine",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8864,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "spec": 1.986,
+    "frac": 0.662,
+    "clip": 0.7223,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.485
+   },
+   {
+    "id": 28448,
+    "name": "Slicing food into pieces",
+    "spec": 1.597,
+    "frac": 0.438,
+    "clip": 0.7441,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.435
+   }
+  ],
+  "review_label": "exact"
+ },
+ "donut": {
+  "coco_id": 60,
+  "supercategory": "food",
+  "phrases": [
+   "donut",
+   "doughnut"
+  ],
+  "n_captions": 80,
+  "primary": 17504,
+  "primary_name": "Sweets and Desserts",
+  "confidence": "review",
+  "margin": 0.056,
+  "top_by_spec": 7322,
+  "top_by_clip": 11711,
+  "candidates": [
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "spec": 1.866,
+    "frac": 0.675,
+    "clip": 0.739,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.723
+   },
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "spec": 1.957,
+    "frac": 0.637,
+    "clip": 0.6917,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.667
+   },
+   {
+    "id": 22857,
+    "name": "Healthy Snacks and Quick Meals",
+    "spec": 1.7,
+    "frac": 0.425,
+    "clip": 0.6704,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.565
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "spec": 1.499,
+    "frac": 0.5,
+    "clip": 0.6798,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.529
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.563,
+    "frac": 0.912,
+    "clip": 0.6337,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.468
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.096,
+    "frac": 0.5,
+    "clip": 0.6812,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.429
+   }
+  ],
+  "review_label": "related"
+ },
+ "cake": {
+  "coco_id": 61,
+  "supercategory": "food",
+  "phrases": [
+   "cake"
+  ],
+  "n_captions": 80,
+  "primary": 17504,
+  "primary_name": "Sweets and Desserts",
+  "confidence": "high",
+  "margin": 0.193,
+  "top_by_spec": 22045,
+  "top_by_clip": 27823,
+  "candidates": [
+   {
+    "id": 22045,
+    "name": "Holiday Feast Foods",
+    "spec": 2.15,
+    "frac": 0.525,
+    "clip": 0.7313,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.76
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "spec": 1.244,
+    "frac": 0.45,
+    "clip": 0.8213,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.567
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "spec": 1.285,
+    "frac": 0.75,
+    "clip": 0.7361,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.465
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.179,
+    "frac": 0.537,
+    "clip": 0.739,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.444
+   },
+   {
+    "id": 5411,
+    "name": "'ake' orthographic cluster",
+    "spec": 1.692,
+    "frac": 0.512,
+    "clip": 0.6085,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.394
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "spec": 0.974,
+    "frac": 0.537,
+    "clip": 0.7209,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.373
+   }
+  ],
+  "primary_auto": 22045,
+  "override_reason": "clip 0.82 vs 0.73; 'Holiday Feast Foods' is too broad",
+  "review_label": "related"
+ },
+ "chair": {
+  "coco_id": 62,
+  "supercategory": "furniture",
+  "phrases": [
+   "chair"
+  ],
+  "n_captions": 80,
+  "primary": 8147,
+  "primary_name": "Ergonomic seating and workspace comfort",
+  "confidence": "high",
+  "margin": 0.164,
+  "top_by_spec": 8147,
+  "top_by_clip": 3208,
+  "candidates": [
+   {
+    "id": 8147,
+    "name": "Ergonomic seating and workspace comfort",
+    "spec": 1.639,
+    "frac": 0.562,
+    "clip": 0.7283,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.795
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "spec": 1.29,
+    "frac": 0.85,
+    "clip": 0.7725,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.631
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 0.841,
+    "frac": 0.475,
+    "clip": 0.7027,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.427
+   },
+   {
+    "id": 2625,
+    "name": "Seats and seated positioning",
+    "spec": 0.618,
+    "frac": 0.312,
+    "clip": 0.7672,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.421
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "spec": 0.961,
+    "frac": 0.65,
+    "clip": 0.6538,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.417
+   },
+   {
+    "id": 16092,
+    "name": "Beds and Bedding",
+    "spec": 0.859,
+    "frac": 0.325,
+    "clip": 0.6636,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.395
+   }
+  ],
+  "review_label": "exact"
+ },
+ "couch": {
+  "coco_id": 63,
+  "supercategory": "furniture",
+  "phrases": [
+   "couch",
+   "sofa"
+  ],
+  "n_captions": 80,
+  "primary": 7136,
+  "primary_name": "Moving and rearranging furniture",
+  "confidence": "review",
+  "margin": 0.025,
+  "top_by_spec": 31227,
+  "top_by_clip": 3208,
+  "candidates": [
+   {
+    "id": 7136,
+    "name": "Moving and rearranging furniture",
+    "spec": 1.808,
+    "frac": 0.45,
+    "clip": 0.7162,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.712
+   },
+   {
+    "id": 16092,
+    "name": "Beds and Bedding",
+    "spec": 2.015,
+    "frac": 0.762,
+    "clip": 0.7392,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.687
+   },
+   {
+    "id": 31227,
+    "name": "Floor and Upholstery Cleaning",
+    "spec": 2.179,
+    "frac": 0.637,
+    "clip": 0.6078,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.564
+   },
+   {
+    "id": 8147,
+    "name": "Ergonomic seating and workspace comfort",
+    "spec": 1.675,
+    "frac": 0.575,
+    "clip": 0.6877,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.546
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "spec": 1.48,
+    "frac": 0.975,
+    "clip": 0.7025,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.52
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.351,
+    "frac": 0.762,
+    "clip": 0.6988,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.485
+   }
+  ],
+  "review_label": "related"
+ },
+ "potted plant": {
+  "coco_id": 64,
+  "supercategory": "furniture",
+  "phrases": [
+   "potted plant",
+   "plant",
+   "house plant"
+  ],
+  "n_captions": 80,
+  "primary": 21313,
+  "primary_name": "Botany and Plant Science",
+  "confidence": "high",
+  "margin": 0.235,
+  "top_by_spec": 21313,
+  "top_by_clip": 3252,
+  "candidates": [
+   {
+    "id": 21313,
+    "name": "Botany and Plant Science",
+    "spec": 1.776,
+    "frac": 0.438,
+    "clip": 0.75,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.95
+   },
+   {
+    "id": 33250,
+    "name": "Plant cultivation and gardening",
+    "spec": 1.271,
+    "frac": 0.375,
+    "clip": 0.7551,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.715
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "spec": 1.291,
+    "frac": 0.713,
+    "clip": 0.7831,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.664
+   },
+   {
+    "id": 27961,
+    "name": "Gardening and Horticulture",
+    "spec": 1.204,
+    "frac": 0.6,
+    "clip": 0.7672,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.615
+   },
+   {
+    "id": 25746,
+    "name": "Ornamental Plants and Cultivars",
+    "spec": 0.866,
+    "frac": 0.188,
+    "clip": 0.748,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.591
+   },
+   {
+    "id": 28739,
+    "name": "Plant Pruning and Propagation",
+    "spec": 1.012,
+    "frac": 0.2,
+    "clip": 0.6816,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.531
+   }
+  ],
+  "review_label": "related"
+ },
+ "bed": {
+  "coco_id": 65,
+  "supercategory": "furniture",
+  "phrases": [
+   "bed"
+  ],
+  "n_captions": 80,
+  "primary": 16092,
+  "primary_name": "Beds and Bedding",
+  "confidence": "high",
+  "margin": 0.581,
+  "top_by_spec": 16092,
+  "top_by_clip": 16092,
+  "candidates": [
+   {
+    "id": 16092,
+    "name": "Beds and Bedding",
+    "spec": 2.345,
+    "frac": 0.887,
+    "clip": 0.8837,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 1.0
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.196,
+    "frac": 0.675,
+    "clip": 0.7452,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.419
+   },
+   {
+    "id": 17726,
+    "name": "Bed Bugs and Sleep",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7907,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.409
+   },
+   {
+    "id": 29472,
+    "name": "Hospital Bed Allocation",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7896,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.408
+   },
+   {
+    "id": 19943,
+    "name": "Hospital Units and Beds",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7694,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.388
+   },
+   {
+    "id": 221,
+    "name": "Home Decluttering and Storage",
+    "spec": 0.967,
+    "frac": 0.35,
+    "clip": 0.7563,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.381
+   }
+  ],
+  "review_label": "exact"
+ },
+ "dining table": {
+  "coco_id": 67,
+  "supercategory": "furniture",
+  "phrases": [
+   "dining table",
+   "table"
+  ],
+  "n_captions": 80,
+  "primary": 29785,
+  "primary_name": "Tables and Furniture",
+  "confidence": "high",
+  "margin": 0.268,
+  "top_by_spec": 2152,
+  "top_by_clip": 11998,
+  "candidates": [
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "spec": 1.498,
+    "frac": 0.988,
+    "clip": 0.8502,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.852
+   },
+   {
+    "id": 2152,
+    "name": "SQL and database programming",
+    "spec": 2.064,
+    "frac": 0.55,
+    "clip": 0.6413,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.584
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "spec": 1.179,
+    "frac": 0.537,
+    "clip": 0.7552,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.581
+   },
+   {
+    "id": 11998,
+    "name": "Furniture and Table Objects",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8615,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 12920,
+    "name": "Tables and Furniture",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8502,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.489
+   },
+   {
+    "id": 7409,
+    "name": "Tables and Related Furnishings",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8398,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.479
+   }
+  ],
+  "review_label": "exact"
+ },
+ "toilet": {
+  "coco_id": 70,
+  "supercategory": "furniture",
+  "phrases": [
+   "toilet"
+  ],
+  "n_captions": 80,
+  "primary": 32093,
+  "primary_name": "Bathrooms and Bathing Fixtures",
+  "confidence": "review",
+  "margin": 0.08,
+  "top_by_spec": 32093,
+  "top_by_clip": 7872,
+  "candidates": [
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "spec": 2.374,
+    "frac": 0.775,
+    "clip": 0.822,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.845
+   },
+   {
+    "id": 26929,
+    "name": "Urination, Bowel, and Incontinence",
+    "spec": 2.348,
+    "frac": 0.562,
+    "clip": 0.7461,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.765
+   },
+   {
+    "id": 496,
+    "name": "Residential Plumbing Services",
+    "spec": 2.101,
+    "frac": 0.525,
+    "clip": 0.7102,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.678
+   },
+   {
+    "id": 7872,
+    "name": "Toilet Functionality and Plumbing",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8782,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 10305,
+    "name": "Toilets and Sanitation",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8701,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.492
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.373,
+    "frac": 0.775,
+    "clip": 0.7533,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.466
+   }
+  ],
+  "review_label": "related"
+ },
+ "tv": {
+  "coco_id": 72,
+  "supercategory": "electronic",
+  "phrases": [
+   "tv",
+   "television"
+  ],
+  "n_captions": 80,
+  "primary": 9704,
+  "primary_name": "Television and Broadcasting",
+  "confidence": "high",
+  "margin": 0.171,
+  "top_by_spec": 9704,
+  "top_by_clip": 23122,
+  "candidates": [
+   {
+    "id": 9704,
+    "name": "Television and Broadcasting",
+    "spec": 2.159,
+    "frac": 0.55,
+    "clip": 0.8626,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.994
+   },
+   {
+    "id": 23122,
+    "name": "Television and TV viewing",
+    "spec": 1.396,
+    "frac": 0.237,
+    "clip": 0.8691,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.823
+   },
+   {
+    "id": 25737,
+    "name": "Display screens and monitors",
+    "spec": 1.663,
+    "frac": 0.512,
+    "clip": 0.7744,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.599
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 1.553,
+    "frac": 0.588,
+    "clip": 0.7194,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.524
+   },
+   {
+    "id": 25071,
+    "name": "Television Technology and Broadcast",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8529,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.485
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.262,
+    "frac": 0.713,
+    "clip": 0.7419,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.477
+   }
+  ],
+  "review_label": "exact"
+ },
+ "laptop": {
+  "coco_id": 73,
+  "supercategory": "electronic",
+  "phrases": [
+   "laptop",
+   "computer"
+  ],
+  "n_captions": 80,
+  "primary": 27802,
+  "primary_name": "Personal Computer Hardware and OS",
+  "confidence": "high",
+  "margin": 0.155,
+  "top_by_spec": 27802,
+  "top_by_clip": 13120,
+  "candidates": [
+   {
+    "id": 27802,
+    "name": "Personal Computer Hardware and OS",
+    "spec": 2.557,
+    "frac": 0.738,
+    "clip": 0.7983,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.975
+   },
+   {
+    "id": 5242,
+    "name": "Computers and Computer Science",
+    "spec": 2.185,
+    "frac": 0.675,
+    "clip": 0.7558,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.82
+   },
+   {
+    "id": 25637,
+    "name": "PC Hardware Components",
+    "spec": 1.204,
+    "frac": 0.275,
+    "clip": 0.7359,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.49
+   },
+   {
+    "id": 1703,
+    "name": "Computing Devices and Technology",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7933,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.466
+   },
+   {
+    "id": 2665,
+    "name": "Digital Technology and Computing",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7835,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.447
+   },
+   {
+    "id": 24577,
+    "name": "Computer Systems and Hardware",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7755,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.431
+   }
+  ],
+  "review_label": "exact"
+ },
+ "mouse": {
+  "coco_id": 74,
+  "supercategory": "electronic",
+  "phrases": [
+   "mouse"
+  ],
+  "n_captions": 80,
+  "primary": 26261,
+  "primary_name": "Computer mouse and pointers",
+  "confidence": "review",
+  "margin": 0.083,
+  "top_by_spec": 26261,
+  "top_by_clip": 16522,
+  "candidates": [
+   {
+    "id": 26261,
+    "name": "Computer mouse and pointers",
+    "spec": 4.046,
+    "frac": 0.912,
+    "clip": 0.6439,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.728
+   },
+   {
+    "id": 16522,
+    "name": "Rodents and Small Mammal Pests",
+    "spec": 1.979,
+    "frac": 0.487,
+    "clip": 0.7781,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.645
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "spec": 3.577,
+    "frac": 0.9,
+    "clip": 0.7099,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.604
+   },
+   {
+    "id": 32211,
+    "name": "Keyboard Input Handling",
+    "spec": 2.673,
+    "frac": 0.613,
+    "clip": 0.7198,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.512
+   },
+   {
+    "id": 24824,
+    "name": "Letter J and Mouse",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7773,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.499
+   },
+   {
+    "id": 6095,
+    "name": "Autoimmune Disease and Mouse Models",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.7585,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.46
+   }
+  ],
+  "review_label": "exact"
+ },
+ "remote": {
+  "coco_id": 75,
+  "supercategory": "electronic",
+  "phrases": [
+   "remote",
+   "remote control",
+   "controller"
+  ],
+  "n_captions": 80,
+  "primary": 24949,
+  "primary_name": "Gaming Hardware and Controllers",
+  "confidence": "review",
+  "margin": 0.022,
+  "top_by_spec": 25204,
+  "top_by_clip": 18560,
+  "candidates": [
+   {
+    "id": 24949,
+    "name": "Gaming Hardware and Controllers",
+    "spec": 3.155,
+    "frac": 0.65,
+    "clip": 0.7453,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.861
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "spec": 2.831,
+    "frac": 0.713,
+    "clip": 0.7659,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.839
+   },
+   {
+    "id": 25204,
+    "name": "Controllers (software and control systems)",
+    "spec": 3.22,
+    "frac": 0.512,
+    "clip": 0.7213,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.839
+   },
+   {
+    "id": 27525,
+    "name": "Remote Work and Virtual Communication",
+    "spec": 2.139,
+    "frac": 0.438,
+    "clip": 0.774,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.742
+   },
+   {
+    "id": 29062,
+    "name": "Control (broad sense)",
+    "spec": 2.203,
+    "frac": 0.512,
+    "clip": 0.7681,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.644
+   },
+   {
+    "id": 26832,
+    "name": "Video Game Consoles",
+    "spec": 3.044,
+    "frac": 0.625,
+    "clip": 0.7108,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.598
+   }
+  ],
+  "review_label": "related"
+ },
+ "keyboard": {
+  "coco_id": 76,
+  "supercategory": "electronic",
+  "phrases": [
+   "keyboard"
+  ],
+  "n_captions": 80,
+  "primary": 32211,
+  "primary_name": "Keyboard Input Handling",
+  "confidence": "high",
+  "margin": 0.303,
+  "top_by_spec": 32211,
+  "top_by_clip": 11799,
+  "candidates": [
+   {
+    "id": 32211,
+    "name": "Keyboard Input Handling",
+    "spec": 3.164,
+    "frac": 0.725,
+    "clip": 0.8362,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.94
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "spec": 2.881,
+    "frac": 0.725,
+    "clip": 0.7774,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.637
+   },
+   {
+    "id": 27802,
+    "name": "Personal Computer Hardware and OS",
+    "spec": 2.687,
+    "frac": 0.775,
+    "clip": 0.7494,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.578
+   },
+   {
+    "id": 25637,
+    "name": "PC Hardware Components",
+    "spec": 2.628,
+    "frac": 0.6,
+    "clip": 0.7292,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.549
+   },
+   {
+    "id": 17092,
+    "name": "Typing and Keyboards",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8816,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.485
+   },
+   {
+    "id": 178,
+    "name": "Keyboard Input Mechanisms",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8604,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.464
+   }
+  ],
+  "review_label": "exact"
+ },
+ "cell phone": {
+  "coco_id": 77,
+  "supercategory": "electronic",
+  "phrases": [
+   "cell phone",
+   "phone"
+  ],
+  "n_captions": 80,
+  "primary": 27933,
+  "primary_name": "Phones and Personal Devices",
+  "confidence": "high",
+  "margin": 0.206,
+  "top_by_spec": 27933,
+  "top_by_clip": 20624,
+  "candidates": [
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 2.313,
+    "frac": 0.875,
+    "clip": 0.84,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.967
+   },
+   {
+    "id": 18144,
+    "name": "Telephony and phone calls",
+    "spec": 1.647,
+    "frac": 0.388,
+    "clip": 0.7812,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.761
+   },
+   {
+    "id": 21743,
+    "name": "Smartphones and Mobile Devices",
+    "spec": 1.689,
+    "frac": 0.463,
+    "clip": 0.8176,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.709
+   },
+   {
+    "id": 20624,
+    "name": "Mobile Telecommunications",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8712,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 8015,
+    "name": "Telephones and Mobile Devices",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8471,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.475
+   },
+   {
+    "id": 17446,
+    "name": "Telephones and Mobile Devices",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8471,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.475
+   }
+  ],
+  "review_label": "exact"
+ },
+ "microwave": {
+  "coco_id": 78,
+  "supercategory": "appliance",
+  "phrases": [
+   "microwave"
+  ],
+  "n_captions": 69,
+  "primary": 15005,
+  "primary_name": "Microwave ovens and heating",
+  "confidence": "high",
+  "margin": 0.365,
+  "top_by_spec": 15005,
+  "top_by_clip": 14693,
+  "candidates": [
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "spec": 2.744,
+    "frac": 0.594,
+    "clip": 0.8771,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.996
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "spec": 2.393,
+    "frac": 0.667,
+    "clip": 0.6971,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.631
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "spec": 2.16,
+    "frac": 0.507,
+    "clip": 0.72,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.514
+   },
+   {
+    "id": 14693,
+    "name": "Microwave Technology and Appliances",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.881,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 24184,
+    "name": "Microwave/RF antenna engineering",
+    "spec": 0.667,
+    "frac": 0.087,
+    "clip": 0.7424,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.467
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "spec": 1.825,
+    "frac": 0.71,
+    "clip": 0.7163,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.449
+   }
+  ],
+  "review_label": "exact"
+ },
+ "oven": {
+  "coco_id": 79,
+  "supercategory": "appliance",
+  "phrases": [
+   "oven"
+  ],
+  "n_captions": 80,
+  "primary": 15005,
+  "primary_name": "Microwave ovens and heating",
+  "confidence": "high",
+  "margin": 0.007,
+  "top_by_spec": 15005,
+  "top_by_clip": 15005,
+  "candidates": [
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "spec": 2.944,
+    "frac": 0.637,
+    "clip": 0.8237,
+    "name_hit": true,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.9
+   },
+   {
+    "id": 31636,
+    "name": "Oven Baking Instructions",
+    "spec": 2.582,
+    "frac": 0.588,
+    "clip": 0.7831,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.893
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "spec": 2.827,
+    "frac": 0.787,
+    "clip": 0.7036,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.744
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "spec": 2.249,
+    "frac": 0.875,
+    "clip": 0.759,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.609
+   },
+   {
+    "id": 28015,
+    "name": "Grilling and Cookware",
+    "spec": 2.68,
+    "frac": 0.688,
+    "clip": 0.6944,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.609
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "spec": 2.343,
+    "frac": 0.55,
+    "clip": 0.7401,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.603
+   }
+  ],
+  "review_label": "related"
+ },
+ "toaster": {
+  "coco_id": 80,
+  "supercategory": "appliance",
+  "phrases": [
+   "toaster"
+  ],
+  "n_captions": 17,
+  "primary": 15005,
+  "primary_name": "Microwave ovens and heating",
+  "confidence": "high",
+  "margin": 0.169,
+  "top_by_spec": 15005,
+  "top_by_clip": 15005,
+  "candidates": [
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "spec": 2.989,
+    "frac": 0.647,
+    "clip": 0.7553,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.8
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "spec": 2.534,
+    "frac": 0.706,
+    "clip": 0.6634,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.631
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "spec": 2.57,
+    "frac": 1.0,
+    "clip": 0.6551,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.52
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "spec": 1.754,
+    "frac": 0.412,
+    "clip": 0.6694,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.413
+   },
+   {
+    "id": 28015,
+    "name": "Grilling and Cookware",
+    "spec": 1.605,
+    "frac": 0.412,
+    "clip": 0.6696,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.389
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.459,
+    "frac": 0.824,
+    "clip": 0.6602,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.344
+   }
+  ],
+  "review_label": "related"
+ },
+ "sink": {
+  "coco_id": 81,
+  "supercategory": "appliance",
+  "phrases": [
+   "sink"
+  ],
+  "n_captions": 80,
+  "primary": 32093,
+  "primary_name": "Bathrooms and Bathing Fixtures",
+  "confidence": "high",
+  "margin": 0.116,
+  "top_by_spec": 32093,
+  "top_by_clip": 32093,
+  "candidates": [
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "spec": 2.68,
+    "frac": 0.875,
+    "clip": 0.7745,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.8
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.999,
+    "frac": 0.787,
+    "clip": 0.6909,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.684
+   },
+   {
+    "id": 496,
+    "name": "Residential Plumbing Services",
+    "spec": 2.402,
+    "frac": 0.6,
+    "clip": 0.6694,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.637
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.705,
+    "frac": 0.963,
+    "clip": 0.6654,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.603
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "spec": 2.019,
+    "frac": 0.562,
+    "clip": 0.604,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.496
+   },
+   {
+    "id": 14581,
+    "name": "Hotel Amenities and Conveniences",
+    "spec": 1.699,
+    "frac": 0.45,
+    "clip": 0.6136,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.447
+   }
+  ],
+  "review_label": "related"
+ },
+ "refrigerator": {
+  "coco_id": 82,
+  "supercategory": "appliance",
+  "phrases": [
+   "refrigerator"
+  ],
+  "n_captions": 80,
+  "primary": 33499,
+  "primary_name": "Home Appliance Repair",
+  "confidence": "review",
+  "margin": 0.001,
+  "top_by_spec": 33346,
+  "top_by_clip": 14693,
+  "candidates": [
+   {
+    "id": 33346,
+    "name": "Cooling and 'Cool' Slang",
+    "spec": 2.039,
+    "frac": 0.487,
+    "clip": 0.7057,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.786
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "spec": 2.019,
+    "frac": 0.562,
+    "clip": 0.7074,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.785
+   },
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "spec": 1.386,
+    "frac": 0.3,
+    "clip": 0.7593,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.63
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "spec": 1.767,
+    "frac": 0.688,
+    "clip": 0.7084,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.625
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "spec": 1.278,
+    "frac": 0.3,
+    "clip": 0.7074,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.503
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.328,
+    "frac": 0.75,
+    "clip": 0.6963,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.494
+   }
+  ],
+  "primary_auto": 33346,
+  "override_reason": "current pick is 'Cool' slang; tie on score",
+  "review_label": "related"
+ },
+ "book": {
+  "coco_id": 84,
+  "supercategory": "indoor",
+  "phrases": [
+   "book"
+  ],
+  "n_captions": 80,
+  "primary": 20353,
+  "primary_name": "Books and publishing",
+  "confidence": "high",
+  "margin": 0.295,
+  "top_by_spec": 20353,
+  "top_by_clip": 18268,
+  "candidates": [
+   {
+    "id": 20353,
+    "name": "Books and publishing",
+    "spec": 2.305,
+    "frac": 0.838,
+    "clip": 0.8365,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.875
+   },
+   {
+    "id": 14533,
+    "name": "Books and Reference Handbooks",
+    "spec": 1.233,
+    "frac": 0.3,
+    "clip": 0.8021,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.58
+   },
+   {
+    "id": 18268,
+    "name": "Book Physical Condition",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.9051,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.5
+   },
+   {
+    "id": 24213,
+    "name": "Books and Related Concepts",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8923,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.477
+   },
+   {
+    "id": 13283,
+    "name": "Books and Related Concepts",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8923,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": false,
+    "score": 0.477
+   },
+   {
+    "id": 19211,
+    "name": "Books and Enjoyable Reading",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8901,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.473
+   }
+  ],
+  "review_label": "exact"
+ },
+ "clock": {
+  "coco_id": 85,
+  "supercategory": "indoor",
+  "phrases": [
+   "clock"
+  ],
+  "n_captions": 80,
+  "primary": 29888,
+  "primary_name": "Watches and Timekeeping",
+  "confidence": "high",
+  "margin": 0.344,
+  "top_by_spec": 29888,
+  "top_by_clip": 9926,
+  "candidates": [
+   {
+    "id": 29888,
+    "name": "Watches and Timekeeping",
+    "spec": 2.136,
+    "frac": 0.637,
+    "clip": 0.8147,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.816
+   },
+   {
+    "id": 33123,
+    "name": "Circadian Clocks and Synchronization",
+    "spec": 0.503,
+    "frac": 0.087,
+    "clip": 0.7691,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.472
+   },
+   {
+    "id": 2496,
+    "name": "Clock Times and Timezones",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8378,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.447
+   },
+   {
+    "id": 10343,
+    "name": "Landmarks and Monumental Architecture",
+    "spec": 1.678,
+    "frac": 0.65,
+    "clip": 0.6941,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.446
+   },
+   {
+    "id": 15811,
+    "name": "Time and Clock Functions",
+    "spec": 0.0,
+    "frac": 0.0,
+    "clip": 0.8355,
+    "name_hit": true,
+    "token_hit": true,
+    "steerable": false,
+    "in_vvis": false,
+    "score": 0.444
+   },
+   {
+    "id": 32300,
+    "name": "Historic Monumental Architecture",
+    "spec": 1.391,
+    "frac": 0.688,
+    "clip": 0.726,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.422
+   }
+  ],
+  "review_label": "exact"
+ },
+ "vase": {
+  "coco_id": 86,
+  "supercategory": "indoor",
+  "phrases": [
+   "vase"
+  ],
+  "n_captions": 80,
+  "primary": 15958,
+  "primary_name": "Ancient Greek Pottery Vessels",
+  "confidence": "review",
+  "margin": 0.035,
+  "top_by_spec": 15958,
+  "top_by_clip": 3252,
+  "candidates": [
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "spec": 2.677,
+    "frac": 0.938,
+    "clip": 0.7088,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.74
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "spec": 1.631,
+    "frac": 0.9,
+    "clip": 0.8008,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.705
+   },
+   {
+    "id": 8348,
+    "name": "Flowers and Blooms",
+    "spec": 2.095,
+    "frac": 0.588,
+    "clip": 0.7867,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.667
+   },
+   {
+    "id": 21730,
+    "name": "Pottery and 'ot' tokens",
+    "spec": 2.214,
+    "frac": 0.725,
+    "clip": 0.652,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.454
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "spec": 1.458,
+    "frac": 0.613,
+    "clip": 0.6998,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.396
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "spec": 1.65,
+    "frac": 0.65,
+    "clip": 0.6732,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.386
+   }
+  ],
+  "review_label": "related"
+ },
+ "scissors": {
+  "coco_id": 87,
+  "supercategory": "indoor",
+  "phrases": [
+   "scissors"
+  ],
+  "n_captions": 62,
+  "primary": 17184,
+  "primary_name": "Sharp Blades and Edges",
+  "confidence": "review",
+  "margin": 0.039,
+  "top_by_spec": 11225,
+  "top_by_clip": 17184,
+  "candidates": [
+   {
+    "id": 17184,
+    "name": "Sharp Blades and Edges",
+    "spec": 1.574,
+    "frac": 0.323,
+    "clip": 0.7572,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.569
+   },
+   {
+    "id": 11225,
+    "name": "Needles and Sterile Instruments",
+    "spec": 2.925,
+    "frac": 0.613,
+    "clip": 0.6075,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.53
+   },
+   {
+    "id": 16452,
+    "name": "Art and craft supplies",
+    "spec": 1.247,
+    "frac": 0.871,
+    "clip": 0.7104,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.529
+   },
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "spec": 0.835,
+    "frac": 0.226,
+    "clip": 0.7534,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.436
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 1.335,
+    "frac": 0.419,
+    "clip": 0.6827,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.394
+   },
+   {
+    "id": 28149,
+    "name": "Eyes and Vision/Ophthalmology",
+    "spec": 1.495,
+    "frac": 0.5,
+    "clip": 0.6603,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.38
+   }
+  ],
+  "review_label": "related"
+ },
+ "teddy bear": {
+  "coco_id": 88,
+  "supercategory": "indoor",
+  "phrases": [
+   "teddy bear",
+   "stuffed animal"
+  ],
+  "n_captions": 80,
+  "primary": 6832,
+  "primary_name": "Children's toys and play",
+  "confidence": "review",
+  "margin": 0.043,
+  "top_by_spec": 33610,
+  "top_by_clip": 13657,
+  "candidates": [
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "spec": 1.025,
+    "frac": 0.725,
+    "clip": 0.7386,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.75
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "spec": 0.83,
+    "frac": 0.35,
+    "clip": 0.7101,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.707
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "spec": 0.903,
+    "frac": 0.512,
+    "clip": 0.7306,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.678
+   },
+   {
+    "id": 29152,
+    "name": "A Little Bit / Little Ones",
+    "spec": 0.794,
+    "frac": 0.362,
+    "clip": 0.7621,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.677
+   },
+   {
+    "id": 18362,
+    "name": "Cats and Cat Care",
+    "spec": 0.967,
+    "frac": 0.275,
+    "clip": 0.7089,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.672
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "spec": 0.917,
+    "frac": 0.675,
+    "clip": 0.7222,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.67
+   }
+  ],
+  "primary_auto": 33610,
+  "override_reason": "toy concept instead of 'Cute Affectionate Child Scenes'",
+  "review_label": "related"
+ },
+ "hair drier": {
+  "coco_id": 89,
+  "supercategory": "indoor",
+  "phrases": [
+   "hair dryer",
+   "blow dryer",
+   "hair drier"
+  ],
+  "n_captions": 14,
+  "primary": 20299,
+  "primary_name": "Hair and Hairstyling",
+  "confidence": "review",
+  "margin": 0.07,
+  "top_by_spec": 27933,
+  "top_by_clip": 16997,
+  "candidates": [
+   {
+    "id": 20299,
+    "name": "Hair and Hairstyling",
+    "spec": 1.173,
+    "frac": 0.357,
+    "clip": 0.7381,
+    "name_hit": false,
+    "token_hit": true,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.682
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "spec": 1.888,
+    "frac": 0.714,
+    "clip": 0.6357,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.612
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "spec": 1.139,
+    "frac": 0.643,
+    "clip": 0.6862,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.492
+   },
+   {
+    "id": 27289,
+    "name": "Soaps and Laundry Detergents",
+    "spec": 1.205,
+    "frac": 0.286,
+    "clip": 0.6596,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": true,
+    "in_vvis": true,
+    "score": 0.469
+   },
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "spec": 1.094,
+    "frac": 0.357,
+    "clip": 0.6676,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.452
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "spec": 1.137,
+    "frac": 0.357,
+    "clip": 0.6404,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.421
+   }
+  ],
+  "review_label": "related"
+ },
+ "toothbrush": {
+  "coco_id": 90,
+  "supercategory": "indoor",
+  "phrases": [
+   "toothbrush"
+  ],
+  "n_captions": 50,
+  "primary": 14795,
+  "primary_name": "Dental hygiene products",
+  "confidence": "review",
+  "margin": 0.116,
+  "top_by_spec": 29148,
+  "top_by_clip": 14795,
+  "candidates": [
+   {
+    "id": 14795,
+    "name": "Dental hygiene products",
+    "spec": 2.233,
+    "frac": 0.32,
+    "clip": 0.8368,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.736
+   },
+   {
+    "id": 18254,
+    "name": "Dentistry and Oral Health",
+    "spec": 2.277,
+    "frac": 0.5,
+    "clip": 0.7371,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.62
+   },
+   {
+    "id": 1698,
+    "name": "Toothbrushing and Flossing Technique",
+    "spec": 2.5,
+    "frac": 0.7,
+    "clip": 0.697,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.613
+   },
+   {
+    "id": 29148,
+    "name": "Tooth eruption and development",
+    "spec": 2.559,
+    "frac": 0.4,
+    "clip": 0.5982,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.5
+   },
+   {
+    "id": 5575,
+    "name": "Pediatric dental care",
+    "spec": 1.779,
+    "frac": 0.26,
+    "clip": 0.7093,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.487
+   },
+   {
+    "id": 13303,
+    "name": "Dental Restorative Materials",
+    "spec": 1.589,
+    "frac": 0.24,
+    "clip": 0.716,
+    "name_hit": false,
+    "token_hit": false,
+    "steerable": false,
+    "in_vvis": true,
+    "score": 0.459
+   }
+  ],
+  "review_label": "exact"
+ }
+}

@@ -362,3 +362,29 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 - [ ] 人工核对 COCO→概念映射，确定 V_vis v1。
 - [ ] 是否把"图像前缀块内全双向注意力"作为 M2 的消融。
 - [ ] 第 2 周开始前 Pod 是否先停机（停机后 GPU 不计费，持久盘仍计费）。
+
+---
+
+## 2026-09-26 · 第 15 次讨论（COCO→概念映射合并版 v1）
+
+### 用户要求
+- COCO 映射由 Claude 先合并一版，再交给用户审阅。
+
+### 完成情况
+- `scripts/e7c_merge_coco_map.py`：对每类的候选池，用三种信号打分：
+  - Steerling 在 mask 位置的读出特异性（补充了同义词，如 purse、hair dryer、sofa）；
+  - CLIP 文本相似度；
+  - 词面匹配（名称命中、LM head token 命中）。
+
+  自动结果中 high confidence 为 47/80。
+- `scripts/e7d_review_coco_map.py`：Claude 逐类判定，并修改 10 类的主概念（person、airplane、zebra、skateboard、cup、broccoli、cake、refrigerator、teddy bear、kite）。
+- 结果写在 `docs/coco_concept_map_v1.md` 和 `results/week1/e7/coco2concept_v1_reviewed.json`：**✅ 精确 37 / 🟡 相关或上位 42 / ❌ 无 1（bench）**。
+
+### 发现
+- 80 类只对应到 62 个不同的概念，有 4 组类别共用一个概念（包、Sk- 运动、刀叉勺、微波炉/烤箱/烤面包机）。概念–物体 AUROC 应按概念合并类别来评测。
+- 名称最贴切的概念常常在 mask 位置上从不激活（如 Kite Flying、Toilets and Sanitation、Typing and Keyboards），模型实际用的是另一个近义概念。M2 的蒸馏目标应优先选"模型真正会用的"概念。
+- 餐具器皿、运动器材、路边设施在 33K 概念中没有物体级条目，属于概念覆盖的局限。
+
+### 待决定
+- [ ] 用户审阅 v1，重点看 42 个 🟡 类别和 10 处修改；kite 用 "Kite Flying"（名称精确，但从不激活）还是 "Drones and UAVs"（会激活，但语义偏）。
+- [ ] 共用概念的类别在评测时是否合并。
