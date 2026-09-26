@@ -71,7 +71,8 @@
 - ✅ 验收：训练 loss 明显下降并接近饱和；对训练图片生成的描述能复现训练文本的主要内容。不通过就回查 E3–E5。
 
 **E7 V_vis 与 COCO 映射**
-- 输入：`known_concepts.csv`（latin-1 编码，**本会话尚未上传，需要用户提供**）。
+- 输入：`datasets/known_concepts(1).zip` 解压后的 CSV（33,732 行，**latin-1 编码**，不是 UTF-8）。字段为 `concept_id`（0–33731）、`concept_name`、`concept_description`、`head`（全部为 known）、`public_group_id`、`group_name`、`is_steerable` / `is_tone` / `is_alignment` / `is_demographic`（取值为 TRUE/FALSE 字符串）。
+- 需要在 E2 中核对：`concept_id` 是否就是已知概念头输出维度（4096 → 33,732）的下标。
 - 先用规则剔除 LaTeX、代码、单字母、纯语法类概念，再用 CLIP 文本编码器计算概念名/描述与视觉相关的程度，得到 V_vis 候选集。
 - COCO 80 个类别 → 概念 ID：用名称匹配加 CLIP 文本相似度取 top-k，并人工抽查。
 - ✅ 验收：输出 `v_vis.json`（概念 ID 列表与筛选理由）和 `coco2concept.json`；报告 V_vis 的规模，以及 80 个 COCO 类别中有多少能映射到概念。

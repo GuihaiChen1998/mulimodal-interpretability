@@ -305,5 +305,22 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 - 注意：持久盘绑定在这台机器上。Pod 停止后再启动，如果这台机器的 GPU 被别人占用，就可能无法启动。权重、数据、检查点要定期同步到别处（如 HF Hub 私有仓库）。
 
 ### 待决定
-- [ ] `known_concepts.csv` 需要重新上传（E7 要用）。
+- [x] `known_concepts.csv` 已由用户上传到仓库 `datasets/known_concepts(1).zip`（见下一节）。
 - [ ] 视觉编码器与骨干版本的确认（沿用第 10 次讨论的待决事项）。
+
+---
+
+## 2026-09-26 · 第 13 次讨论（known_concepts.csv 入库核对）
+
+### 用户提供
+- 已把 `known_concepts.csv` 的压缩包手动提交到仓库：`datasets/known_concepts(1).zip`（压缩后 5.3MB，解压后 15.3MB，内含一个文件 `known_concepts(1).csv`）。
+
+### 核对结果（Claude 解压后逐项统计）
+- 33,732 行，`concept_id` 为 0–33731，没有重复；`head` 全部为 known。
+- 编码：不是 UTF-8（第 2255 字节起出错），用 latin-1 能正常读取，与第 2 次讨论的记录一致。
+- 实际字段：`concept_id`、`concept_name`、`concept_description`、`head`、`public_group_id`、`group_name`、`is_steerable`、`is_tone`、`is_alignment`、`is_demographic`。第 2 次讨论里记的字段名（description / group）是简写，以这里为准。
+- 统计与第 2 次讨论完全一致：可 steer 16,327，tone 441，alignment 1,020，demographic 1,347；组数 19,366（记录中写的"约 19K"）；99.7% 的描述以 "Tokens" 开头。
+- 结论：确认是同一份官方概念表，可直接用于 E7（构建 V_vis 与 COCO 映射）。
+
+### 待确认
+- [ ] E2 中核对 `concept_id` 是否对应已知概念头输出的下标。
