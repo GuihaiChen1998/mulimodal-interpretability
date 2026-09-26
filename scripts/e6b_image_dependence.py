@@ -16,13 +16,14 @@ from PIL import Image
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from smm.mdm import build_mdm_batch, mdm_loss  # noqa: E402
 from smm.steerling_io import answer_ids, chat_prompt_ids, load_steerling  # noqa: E402
-from smm.vlm import N_IMG_TOKENS, MLPProjector, VisionEncoder  # noqa: E402
+from smm.vlm import VisionEncoder, build_connector  # noqa: E402
 
 train_json, held_json, proj_pt, out_json = sys.argv[1:5]
+connector = sys.argv[5] if len(sys.argv) > 5 else "mlp"
 lm, tok = load_steerling()
 mask_id = tok.convert_tokens_to_ids("<|mask|>")
 vision = VisionEncoder().cuda()
-proj = MLPProjector(vision.dim).cuda()
+proj = build_connector(connector, vision.dim).cuda()
 proj.load_state_dict(torch.load(proj_pt))
 proj.eval()
 
@@ -43,7 +44,7 @@ def eval_loss(rows, feats, perm, bs=8):
     ls = []
     for i in range(0, len(rows), bs):
         idx = list(range(i, min(i + bs, len(rows))))
-        txt, lab, w = build_mdm_batch([P[j] for j in idx], [A[j] for j in idx], n_prefix=N_IMG_TOKENS,
+        txt, lab, w = build_mdm_batch([P[j] for j in idx], [A[j] for j in idx], n_prefix=proj.n_tokens,
                                       mask_id=mask_id, t_fixed=1.0, block_idx="first")
         img = proj(feats[[perm[j] for j in idx]].float()).to(torch.bfloat16)
         x = torch.cat([img, lm.transformer.tok_emb(txt.cuda())], 1)

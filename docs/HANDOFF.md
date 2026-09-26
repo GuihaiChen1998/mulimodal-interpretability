@@ -1,7 +1,7 @@
 # 续接文档（HANDOFF）：基于 Steerling 的内生可解释多模态模型
 
 > 新会话请先完整阅读本文档。详细历史见 `record.md`，19 篇文献的精读笔记见 `lit_review.md`。
-> 截至：2026-09-26，第 10 次讨论之后。**更新：第 1 周工程（E1–E7）已完成，结果见 `week1_results.md` 和 `record.md` 第 12–14 次讨论；算力已改为 Runpod 1 × A100-SXM 80GB。**
+> 截至：2026-09-26，第 10 次讨论之后。**更新：第 1 周工程（E1–E7）已完成，结果见 `week1_results.md` 和 `record.md` 第 12–14 次讨论；算力已改为 Runpod 1 × A100-SXM 80GB。核心科学问题的完整讲解见 `core_question.md`，M0 诊断工具与试跑见 `m0_pilot.md`；讨论记录已到第 17 次。**
 
 ---
 

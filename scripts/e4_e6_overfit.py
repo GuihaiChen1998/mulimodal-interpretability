@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from smm.generate import generate_from_embeds  # noqa: E402
 from smm.mdm import build_mdm_batch, mdm_loss  # noqa: E402
 from smm.steerling_io import answer_ids, chat_prompt_ids, load_steerling  # noqa: E402
-from smm.vlm import N_IMG_TOKENS, MLPProjector, SteerlingVLM, VisionEncoder  # noqa: E402
+from smm.vlm import SteerlingVLM, VisionEncoder, build_connector  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument("data")
@@ -32,6 +32,7 @@ ap.add_argument("--n_eval_gen", type=int, default=16)
 ap.add_argument("--n_samples", type=int, default=None, help="use only the first N samples")
 ap.add_argument("--const_lr", action="store_true", help="constant LR after warmup (no cosine decay)")
 ap.add_argument("--eval_every", type=int, default=5)
+ap.add_argument("--connector", default="mlp", help="mlp | resampler | resampler<N>")
 args = ap.parse_args()
 os.makedirs(args.out, exist_ok=True)
 torch.manual_seed(0)
@@ -41,7 +42,8 @@ mask_id = tok.convert_tokens_to_ids("<|mask|>")
 stops = [tok.convert_tokens_to_ids(t) for t in ("<|endofchunk|>", "<|eot_id|>", "<|endoftext|>")]
 banned = [mask_id, tok.convert_tokens_to_ids("<|pad|>")]
 vision = VisionEncoder().cuda()
-proj = MLPProjector(vision.dim).cuda()  # fp32 master weights
+proj = build_connector(args.connector, vision.dim).cuda()  # fp32 master weights
+N_PREFIX = proj.n_tokens
 vlm = SteerlingVLM(lm, vision, proj)
 
 rows = json.load(open(args.data))[: args.n_samples]
@@ -59,7 +61,7 @@ feats = torch.cat(feats)  # [N, 576, 1024] bf16
 clip_s = time.time() - t0
 
 # ---- E4 checks -----------------------------------------------------------------------------
-report = {"n_samples": len(rows), "clip_feature_shape": list(feats.shape), "clip_precompute_s": round(clip_s, 1)}
+report = {"connector": args.connector, "n_prefix": N_PREFIX, "n_samples": len(rows), "clip_feature_shape": list(feats.shape), "clip_precompute_s": round(clip_s, 1)}
 trainable = [n for n, p in vlm.named_parameters() if p.requires_grad]
 report["e4_trainable_params"] = sum(p.numel() for p in proj.parameters())
 report["e4_only_projector_trainable"] = all(n.startswith("projector.") for n in trainable)
@@ -68,7 +70,7 @@ report["e4_steerling_requires_grad_any"] = any(p.requires_grad for p in lm.param
 
 def forward_batch(idx, **kw):
     txt, labels, w = build_mdm_batch([prompts[i] for i in idx], [answers[i] for i in idx],
-                                     n_prefix=N_IMG_TOKENS, mask_id=mask_id, **kw)
+                                     n_prefix=N_PREFIX, mask_id=mask_id, **kw)
     img = proj(feats[idx].float()).to(torch.bfloat16)
     x = torch.cat([img, lm.transformer.tok_emb(txt.cuda())], 1)
     logits, _ = lm(None, input_embeds=x, minimal_output=True)
@@ -165,6 +167,6 @@ report["history"] = history
 report["sec_per_step"] = round((time.time() - t0) / step, 3)
 report["peak_mem_train_gb"] = round(torch.cuda.max_memory_allocated() / 1e9, 1)
 json.dump(g0, open(os.path.join(args.out, "gens_ep0.json"), "w"), indent=1, ensure_ascii=False)
-torch.save(proj.state_dict(), os.path.join(args.out, "projector_m0.pt"))
+torch.save(proj.state_dict(), os.path.join(args.out, f"projector_m0_{args.connector}.pt"))
 json.dump(report, open(os.path.join(args.out, "e4_e6_report.json"), "w"), indent=2)
 print("DONE")

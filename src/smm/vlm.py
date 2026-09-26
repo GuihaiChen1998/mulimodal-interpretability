@@ -35,14 +35,62 @@ class VisionEncoder(nn.Module):
 
 
 class MLPProjector(nn.Module):
-    """M0: 2-layer GELU MLP (LLaVA-1.5 'mlp2x_gelu')."""
+    """M0 connector A: 2-layer GELU MLP (LLaVA-1.5 'mlp2x_gelu'); one output token per CLIP patch."""
 
     def __init__(self, d_in: int, d_out: int = 4096):
         super().__init__()
         self.net = nn.Sequential(nn.Linear(d_in, d_out), nn.GELU(), nn.Linear(d_out, d_out))
+        self.n_tokens = N_IMG_TOKENS
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.net(x)
+
+
+class QueryResampler(nn.Module):
+    """M0 connector B: Perceiver/Q-Former-style resampler (Flamingo, BLIP-2 family).
+
+    n_queries learnable queries cross-attend to the CLIP patch features through `depth` blocks of
+    (cross-attention -> FFN), then a linear map to the LM width. The default 64 queries fill exactly
+    one 64-token diffusion block of Steerling.
+    """
+
+    def __init__(self, d_in: int, d_out: int = 4096, n_queries: int = 64, width: int = 1024,
+                 depth: int = 2, heads: int = 16):
+        super().__init__()
+        self.n_tokens = n_queries
+        self.queries = nn.Parameter(torch.randn(n_queries, width) * 0.02)
+        self.in_proj = nn.Linear(d_in, width)
+        self.pos = nn.Parameter(torch.zeros(N_IMG_TOKENS, width))
+        self.blocks = nn.ModuleList()
+        for _ in range(depth):
+            self.blocks.append(nn.ModuleDict({
+                "ln_q": nn.LayerNorm(width), "ln_kv": nn.LayerNorm(width),
+                "attn": nn.MultiheadAttention(width, heads, batch_first=True),
+                "ln_ff": nn.LayerNorm(width),
+                "ff": nn.Sequential(nn.Linear(width, 4 * width), nn.GELU(), nn.Linear(4 * width, width)),
+            }))
+        self.ln_out = nn.LayerNorm(width)
+        self.out = nn.Linear(width, d_out)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        kv = self.in_proj(x) + self.pos[: x.shape[1]]
+        q = self.queries.unsqueeze(0).expand(x.shape[0], -1, -1)
+        for b in self.blocks:
+            k = b["ln_kv"](kv)
+            q = q + b["attn"](b["ln_q"](q), k, k, need_weights=False)[0]
+            q = q + b["ff"](b["ln_ff"](q))
+        return self.out(self.ln_out(q))
+
+
+def build_connector(name: str, d_in: int, d_out: int = 4096) -> nn.Module:
+    """name: 'mlp' (576 tokens) or 'resampler' / 'resampler<N>' (N query tokens, default 64)."""
+    if name == "mlp":
+        return MLPProjector(d_in, d_out)
+    if name.startswith("resampler"):
+        n = int(name[len("resampler"):] or 64)
+        assert n % 64 == 0, "keep the image prefix block-aligned (multiple of 64 tokens)"
+        return QueryResampler(d_in, d_out, n_queries=n)
+    raise ValueError(f"unknown connector {name!r}")
 
 
 class SteerlingVLM(nn.Module):

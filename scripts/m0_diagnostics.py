@@ -25,7 +25,7 @@ from PIL import Image
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from smm.diagnostics import logit_contributions, sim_violation  # noqa: E402
 from smm.steerling_io import answer_ids, load_steerling  # noqa: E402
-from smm.vlm import MLPProjector, VisionEncoder  # noqa: E402
+from smm.vlm import VisionEncoder, build_connector  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument("projector")
@@ -35,6 +35,7 @@ ap.add_argument("out")
 ap.add_argument("--n", type=int, default=200)
 ap.add_argument("--n_sim", type=int, default=24)
 ap.add_argument("--seed", type=int, default=0)
+ap.add_argument("--connector", default="mlp", help="mlp | resampler | resampler<N>")
 args = ap.parse_args()
 os.makedirs(args.out, exist_ok=True)
 random.seed(args.seed)
@@ -44,7 +45,7 @@ lm, tok = load_steerling(attn="sdpa")
 mask_id = tok.convert_tokens_to_ids("<|mask|>")
 emb = lm.transformer.tok_emb
 vision = VisionEncoder().cuda()
-proj = MLPProjector(vision.dim).cuda()
+proj = build_connector(args.connector, vision.dim).cuda()
 proj.load_state_dict(torch.load(args.projector))
 proj.eval()
 cmap = json.load(open(args.coco_map))
