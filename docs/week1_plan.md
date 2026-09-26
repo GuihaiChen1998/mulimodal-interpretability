@@ -91,7 +91,7 @@
 | COCO 2017（val 标注 + 图像） | 约 1–20 GB |
 | 检查点（投影器很小，LoRA 阶段增多） | 10–30 GB |
 
-本周 100GB 的 container disk 足够。需要持久保存的内容（权重、数据、检查点）放在 network volume 上，**volume 建议 200GB**，给第 2 周的全量数据留出余量。
+本周 100GB 的 container disk 足够。实际方案：US-WA-1 不支持 network volume，所以改用 **200GB Pod 持久盘（`/workspace`）**，权重、数据、检查点都放在这里。
 
 ### 2.4 风险与备选
 | 风险 | 备选方案 |

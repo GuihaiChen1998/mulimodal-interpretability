@@ -291,9 +291,19 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
   - US-CA-2：支持 volume（仅 HIGH_PERFORMANCE），但**当前没有 A100 SXM 库存**。
   - US-WA-1、US-WA-2：**不支持 network volume**。
   - 有 A100 SXM 的 US-KS-2、US-MD-1 也不支持 network volume。
-- 结论：在指定区域内，"A100 SXM + 挂载 network volume"**目前无法同时满足**，Pod 暂未创建，等待用户选择方案。
+- 结论：在指定区域内，"A100 SXM + 挂载 network volume"**目前无法同时满足**。
+
+### 决定与已创建的资源
+- 用户选择：**US-WA-1 的 A100 SXM，不挂 network volume**，改用 Pod 自带的持久盘。
+- 已创建 Pod `steerling-mm-week1`（id `de3m2w1c58cwx1`）：
+  - 1 × A100-SXM4-80GB，secure，US-WA-1，主机 CUDA 12.8，32 vCPU，250GB 内存。
+  - 镜像 `runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404`。
+  - Container disk 100GB（临时，重启后清空）；持久盘 200GB，挂载在 `/workspace`。
+  - 端口：8888/http（Jupyter），22/tcp（SSH）。
+  - 价格：GPU $1.59/h；持久盘另按容量计费，Pod 停止后仍收费。
+- 访问方式：Jupyter 地址 `https://de3m2w1c58cwx1-8888.proxy.runpod.net`（密码见 Runpod 控制台里该 Pod 的环境变量 `JUPYTER_PASSWORD`，不写进仓库）；SSH 用 `ssh de3m2w1c58cwx1-6441125f@ssh.runpod.io`。
+- 注意：持久盘绑定在这台机器上。Pod 停止后再启动，如果这台机器的 GPU 被别人占用，就可能无法启动。权重、数据、检查点要定期同步到别处（如 HF Hub 私有仓库）。
 
 ### 待决定
-- [ ] Pod 方案：(a) US-WA-1 A100 SXM，不挂 network volume，改用 Pod 自带的持久盘（volume disk）；(b) US-CA-2 建 volume，换 H100 SXM 等 GPU；(c) 等 US-CA-2 的 A100 SXM 补货。
 - [ ] `known_concepts.csv` 需要重新上传（E7 要用）。
 - [ ] 视觉编码器与骨干版本的确认（沿用第 10 次讨论的待决事项）。
