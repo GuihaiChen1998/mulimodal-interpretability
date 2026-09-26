@@ -1,0 +1,632 @@
+{
+  "n_captions": 15000,
+  "w_min": 0.1,
+  "min_docs": 5,
+  "n_concepts_ever_active": 6093,
+  "n_ubiquitous(>50% captions)": 14,
+  "ubiquitous_examples": [
+    "SEO spam web content",
+    "Hobbies, Sports, and Domains",
+    "Sculptural and Ornamental Artifacts",
+    "Qualitative Descriptive Adjectives",
+    "Outdoor Landscape and Terrain",
+    "Image Caption Scene Descriptions",
+    "Animal Species",
+    "Color names and shades",
+    "Technical Documentation Features",
+    "Fiction Dialogue and Reaction Beats",
+    "Hype Marketing for Entertainment",
+    "Enthusiastic Blog Comment Gushing",
+    "Personal Diary Narrative",
+    "Men and male athletes"
+  ],
+  "n_vvis_caption": 4374,
+  "n_vvis_caption_steerable": 2589,
+  "overlap_with_clip_vvis": 2727,
+  "most_frequent_vvis": [
+    [
+      "How-to Instructional Steps",
+      7423
+    ],
+    [
+      "Code and Math Syntax",
+      7363
+    ],
+    [
+      "Sentence-Initial Discourse Connectives",
+      7156
+    ],
+    [
+      "Repeated punctuation/delimiter runs",
+      7139
+    ],
+    [
+      "Effusive Praise and Admiration",
+      7115
+    ],
+    [
+      "#NAME?",
+      7002
+    ],
+    [
+      "Body Postures and Positions",
+      6801
+    ],
+    [
+      "Present-tense plot summary verbs",
+      6786
+    ],
+    [
+      "Blog/CMS Template Scaffolding",
+      6758
+    ],
+    [
+      "Punctuation and Delimiter Symbols",
+      6690
+    ],
+    [
+      "Past-tense -ed verb endings",
+      6685
+    ],
+    [
+      "Female Gender and Names",
+      6513
+    ],
+    [
+      "Punctuation and Markup Symbols",
+      6496
+    ],
+    [
+      "Quoted Code String Tokens",
+      6492
+    ],
+    [
+      "Preposition 'on' and onHandlers",
+      6396
+    ],
+    [
+      "Buildings, Rooms, and Venues",
+      6343
+    ],
+    [
+      "Letter-fragmented / subword-split text",
+      6264
+    ],
+    [
+      "Pejorative Negative Adjectives",
+      6204
+    ],
+    [
+      "Discrete Events and Phenomena",
+      5989
+    ],
+    [
+      "Letter 'A' Token Density",
+      5941
+    ],
+    [
+      "Pictures and Photographs",
+      5919
+    ],
+    [
+      "Generic Expository English Prose",
+      5885
+    ],
+    [
+      "Legal and Policy Governance",
+      5849
+    ],
+    [
+      "Sensory atmospheric prose imagery",
+      5774
+    ],
+    [
+      "Nearness and Approximation",
+      5771
+    ],
+    [
+      "Biographical Named Entities",
+      5763
+    ],
+    [
+      "News Punctuation and Boilerplate",
+      5755
+    ],
+    [
+      "Spatial Location and Placement",
+      5711
+    ],
+    [
+      "Closing punctuation clusters",
+      5669
+    ],
+    [
+      "Size magnitude (large/small)",
+      5573
+    ]
+  ],
+  "coco_mapped": 79,
+  "coco_primary_consistency_mean": 0.6999552920016349,
+  "coco_primary": {
+    "person": [
+      18458,
+      "Pairs, couples, and small groups",
+      0.82,
+      60
+    ],
+    "bicycle": [
+      2628,
+      "Bus (vehicle and software)",
+      0.62,
+      60
+    ],
+    "car": [
+      21762,
+      "Cars and vehicles",
+      0.83,
+      60
+    ],
+    "motorcycle": [
+      2628,
+      "Bus (vehicle and software)",
+      0.73,
+      60
+    ],
+    "airplane": [
+      10605,
+      "Aircraft and Aerospace Engineering",
+      0.87,
+      60
+    ],
+    "bus": [
+      2628,
+      "Bus (vehicle and software)",
+      0.87,
+      60
+    ],
+    "train": [
+      1780,
+      "Training (human and ML)",
+      0.65,
+      60
+    ],
+    "truck": [
+      29519,
+      "Trucks, Trailers, and RVs",
+      0.83,
+      60
+    ],
+    "boat": [
+      32110,
+      "Ships and Maritime Activity",
+      0.8,
+      60
+    ],
+    "traffic light": [
+      3643,
+      "Traffic Signals and Intersections",
+      0.57,
+      60
+    ],
+    "fire hydrant": [
+      16753,
+      "ATMs, Kiosks, and Service Terminals",
+      0.67,
+      60
+    ],
+    "stop sign": [
+      33316,
+      "Signs, signals, signatures",
+      0.77,
+      60
+    ],
+    "parking meter": [
+      4507,
+      "Parking and Driving Directions",
+      0.6,
+      60
+    ],
+    "bench": [
+      4492,
+      "Architectural Building Elements",
+      0.78,
+      60
+    ],
+    "bird": [
+      31730,
+      "Birds and Ornithology",
+      0.72,
+      60
+    ],
+    "cat": [
+      14969,
+      "Cats and feline references",
+      0.68,
+      60
+    ],
+    "dog": [
+      28636,
+      "Dog laws and regulations",
+      0.58,
+      60
+    ],
+    "horse": [
+      19778,
+      "Horses and Equestrianism",
+      0.77,
+      60
+    ],
+    "sheep": [
+      32876,
+      "Cattle and Dairy Husbandry",
+      0.78,
+      60
+    ],
+    "cow": [
+      2602,
+      "Western Cattle Ranching Culture",
+      0.5,
+      60
+    ],
+    "elephant": [
+      18777,
+      "Elephants, Ivory, and Megafauna Conservation",
+      0.68,
+      60
+    ],
+    "bear": [
+      29751,
+      "North American Wildlife and Hunting",
+      0.98,
+      60
+    ],
+    "zebra": [
+      943,
+      "Vertebrate animal taxonomy",
+      0.7,
+      60
+    ],
+    "giraffe": [
+      18777,
+      "Elephants, Ivory, and Megafauna Conservation",
+      0.73,
+      60
+    ],
+    "backpack": [
+      28829,
+      "Bags and Storage Containers",
+      0.79,
+      19
+    ],
+    "umbrella": [
+      28218,
+      "Rain and Precipitation",
+      0.32,
+      60
+    ],
+    "handbag": [
+      30923,
+      "Nose and Nasal Anatomy",
+      1.0,
+      1
+    ],
+    "tie": [
+      27557,
+      "Dress codes and etiquette",
+      0.68,
+      60
+    ],
+    "suitcase": [
+      28829,
+      "Bags and Storage Containers",
+      0.53,
+      60
+    ],
+    "frisbee": [
+      11212,
+      "Sports drills and games",
+      0.63,
+      60
+    ],
+    "skis": [
+      29412,
+      "Skating and Sk- Sports",
+      0.93,
+      60
+    ],
+    "snowboard": [
+      29412,
+      "Skating and Sk- Sports",
+      0.87,
+      60
+    ],
+    "sports ball": [
+      null,
+      null,
+      0.0,
+      0
+    ],
+    "kite": [
+      6719,
+      "Drones and UAVs",
+      0.47,
+      60
+    ],
+    "baseball bat": [
+      25341,
+      "Bladed weapons and melee arms",
+      0.7,
+      60
+    ],
+    "baseball glove": [
+      32002,
+      "Throwing and ball sports",
+      0.62,
+      8
+    ],
+    "skateboard": [
+      3537,
+      "Cycles and Loops",
+      0.45,
+      60
+    ],
+    "surfboard": [
+      5965,
+      "Kayaks and paddlecraft",
+      0.67,
+      60
+    ],
+    "tennis racket": [
+      25341,
+      "Bladed weapons and melee arms",
+      0.73,
+      60
+    ],
+    "bottle": [
+      13021,
+      "Beverages and Alcoholic Drinks",
+      0.7,
+      60
+    ],
+    "wine glass": [
+      13021,
+      "Beverages and Alcoholic Drinks",
+      0.62,
+      37
+    ],
+    "cup": [
+      14987,
+      "Recipe Ingredients and Measurements",
+      0.58,
+      60
+    ],
+    "fork": [
+      19825,
+      "Knives and Blades",
+      0.83,
+      60
+    ],
+    "knife": [
+      19825,
+      "Knives and Blades",
+      0.88,
+      60
+    ],
+    "spoon": [
+      19825,
+      "Knives and Blades",
+      0.56,
+      52
+    ],
+    "bowl": [
+      15958,
+      "Ancient Greek Pottery Vessels",
+      0.83,
+      60
+    ],
+    "banana": [
+      23049,
+      "Fruits and ripening",
+      0.7,
+      60
+    ],
+    "apple": [
+      18455,
+      "Apple (fruit and Inc.)",
+      0.48,
+      60
+    ],
+    "sandwich": [
+      7322,
+      "Fast Food Chains and Burgers",
+      0.78,
+      60
+    ],
+    "orange": [
+      23049,
+      "Fruits and ripening",
+      0.45,
+      60
+    ],
+    "broccoli": [
+      1029,
+      "Recipe Ingredients and Instructions",
+      0.82,
+      60
+    ],
+    "carrot": [
+      1029,
+      "Recipe Ingredients and Instructions",
+      0.73,
+      60
+    ],
+    "hot dog": [
+      7322,
+      "Fast Food Chains and Burgers",
+      0.83,
+      60
+    ],
+    "pizza": [
+      13097,
+      "Pizza and Countertop Ovens",
+      0.65,
+      60
+    ],
+    "donut": [
+      7322,
+      "Fast Food Chains and Burgers",
+      0.72,
+      60
+    ],
+    "cake": [
+      22045,
+      "Holiday Feast Foods",
+      0.47,
+      60
+    ],
+    "chair": [
+      8147,
+      "Ergonomic seating and workspace comfort",
+      0.7,
+      60
+    ],
+    "couch": [
+      31227,
+      "Floor and Upholstery Cleaning",
+      0.65,
+      60
+    ],
+    "potted plant": [
+      3252,
+      "Flowers and Floral Arrangements",
+      0.92,
+      13
+    ],
+    "bed": [
+      16092,
+      "Beds and Bedding",
+      0.88,
+      60
+    ],
+    "dining table": [
+      2152,
+      "SQL and database programming",
+      0.56,
+      32
+    ],
+    "toilet": [
+      26929,
+      "Urination, Bowel, and Incontinence",
+      0.68,
+      60
+    ],
+    "tv": [
+      9704,
+      "Television and Broadcasting",
+      0.73,
+      60
+    ],
+    "laptop": [
+      27802,
+      "Personal Computer Hardware and OS",
+      0.73,
+      60
+    ],
+    "mouse": [
+      26261,
+      "Computer mouse and pointers",
+      0.92,
+      60
+    ],
+    "remote": [
+      27525,
+      "Remote Work and Virtual Communication",
+      0.58,
+      60
+    ],
+    "keyboard": [
+      32211,
+      "Keyboard Input Handling",
+      0.75,
+      60
+    ],
+    "cell phone": [
+      27933,
+      "Phones and Personal Devices",
+      0.87,
+      60
+    ],
+    "microwave": [
+      15005,
+      "Microwave ovens and heating",
+      0.62,
+      60
+    ],
+    "oven": [
+      28015,
+      "Grilling and Cookware",
+      0.8,
+      60
+    ],
+    "toaster": [
+      15005,
+      "Microwave ovens and heating",
+      0.65,
+      17
+    ],
+    "sink": [
+      32093,
+      "Bathrooms and Bathing Fixtures",
+      0.83,
+      60
+    ],
+    "refrigerator": [
+      33346,
+      "Cooling and 'Cool' Slang",
+      0.42,
+      60
+    ],
+    "book": [
+      20353,
+      "Books and publishing",
+      0.88,
+      60
+    ],
+    "clock": [
+      29888,
+      "Watches and Timekeeping",
+      0.63,
+      60
+    ],
+    "vase": [
+      15958,
+      "Ancient Greek Pottery Vessels",
+      0.88,
+      60
+    ],
+    "scissors": [
+      11225,
+      "Needles and Sterile Instruments",
+      0.58,
+      60
+    ],
+    "teddy bear": [
+      11395,
+      "Children's Picture Books",
+      0.42,
+      60
+    ],
+    "hair drier": [
+      11225,
+      "Needles and Sterile Instruments",
+      1.0,
+      1
+    ],
+    "toothbrush": [
+      1698,
+      "Toothbrushing and Flossing Technique",
+      0.72,
+      50
+    ]
+  }
+}

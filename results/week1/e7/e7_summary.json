@@ -1,0 +1,502 @@
+{
+  "n_concepts": 33732,
+  "rule_pass": 28515,
+  "visualness_threshold(10th pct of visual controls)": 0.09692993760108948,
+  "visualness_auroc_controls": 0.8769999742507935,
+  "nonvisual_controls_above_threshold": 0.32499998807907104,
+  "control_visual_score_mean": 0.11120454967021942,
+  "control_nonvisual_score_mean": 0.09211622178554535,
+  "n_vvis": 19201,
+  "n_vvis_steerable": 10253,
+  "image_pool_size": 5000,
+  "coco_categories": 80,
+  "coco_primary_tiers": {
+    "A_name+token": 31,
+    "B_token_only": 32,
+    "C_name_only": 2,
+    "D_clip_only": 15
+  },
+  "coco_primary": {
+    "person": [
+      23415,
+      "People and Individuals",
+      "A_name+token"
+    ],
+    "bicycle": [
+      941,
+      "Bicycles and Cycling",
+      "A_name+token"
+    ],
+    "car": [
+      21762,
+      "Cars and vehicles",
+      "A_name+token"
+    ],
+    "motorcycle": [
+      5125,
+      "Bicycles and Motorcycles",
+      "A_name+token"
+    ],
+    "airplane": [
+      1086,
+      "Aviation and Aircraft",
+      "B_token_only"
+    ],
+    "bus": [
+      31689,
+      "Transportation and Data Buses",
+      "A_name+token"
+    ],
+    "train": [
+      32179,
+      "Trains and Railways",
+      "A_name+token"
+    ],
+    "truck": [
+      29519,
+      "Trucks, Trailers, and RVs",
+      "A_name+token"
+    ],
+    "boat": [
+      28217,
+      "Sailing and Yachting",
+      "C_name_only"
+    ],
+    "traffic light": [
+      4315,
+      "Traffic Light Systems",
+      "C_name_only"
+    ],
+    "fire hydrant": [
+      31326,
+      "Firefighting and Fire Safety",
+      "B_token_only"
+    ],
+    "stop sign": [
+      12030,
+      "Vehicle Stopping and Distance",
+      "B_token_only"
+    ],
+    "parking meter": [
+      9180,
+      "Utility Meter Monitoring",
+      "B_token_only"
+    ],
+    "bench": [
+      3208,
+      "Furniture and Seating",
+      "D_clip_only"
+    ],
+    "bird": [
+      31730,
+      "Birds and Ornithology",
+      "A_name+token"
+    ],
+    "cat": [
+      18362,
+      "Cats and Cat Care",
+      "A_name+token"
+    ],
+    "dog": [
+      33723,
+      "Dogs, Cats, and Pet Care",
+      "A_name+token"
+    ],
+    "horse": [
+      19778,
+      "Horses and Equestrianism",
+      "A_name+token"
+    ],
+    "sheep": [
+      16614,
+      "Sheep Breeding and Wool",
+      "A_name+token"
+    ],
+    "cow": [
+      304,
+      "Farming and Livestock",
+      "B_token_only"
+    ],
+    "elephant": [
+      7172,
+      "Elephants and Their Traits",
+      "A_name+token"
+    ],
+    "bear": [
+      28722,
+      "Animal Species",
+      "B_token_only"
+    ],
+    "zebra": [
+      24265,
+      "Wildlife and Wild Animals",
+      "D_clip_only"
+    ],
+    "giraffe": [
+      24265,
+      "Wildlife and Wild Animals",
+      "D_clip_only"
+    ],
+    "backpack": [
+      33005,
+      "Travel Gear and Convenience",
+      "B_token_only"
+    ],
+    "umbrella": [
+      28218,
+      "Rain and Precipitation",
+      "B_token_only"
+    ],
+    "handbag": [
+      29945,
+      "One's Own / Personal Belonging",
+      "D_clip_only"
+    ],
+    "tie": [
+      29746,
+      "Cultural and Economic Interdependence",
+      "A_name+token"
+    ],
+    "suitcase": [
+      33005,
+      "Travel Gear and Convenience",
+      "B_token_only"
+    ],
+    "frisbee": [
+      26511,
+      "Pie Chart Proportions",
+      "D_clip_only"
+    ],
+    "skis": [
+      15037,
+      "Skiing and Winter Resorts",
+      "D_clip_only"
+    ],
+    "snowboard": [
+      15037,
+      "Skiing and Winter Resorts",
+      "D_clip_only"
+    ],
+    "sports ball": [
+      32002,
+      "Throwing and ball sports",
+      "A_name+token"
+    ],
+    "kite": [
+      21555,
+      "Kite Flying",
+      "A_name+token"
+    ],
+    "baseball bat": [
+      4643,
+      "Baseball Player Development",
+      "B_token_only"
+    ],
+    "baseball glove": [
+      12741,
+      "Major League Baseball Teams",
+      "B_token_only"
+    ],
+    "skateboard": [
+      15255,
+      "Board Sports and Balance",
+      "B_token_only"
+    ],
+    "surfboard": [
+      19034,
+      "Ocean Waves and Surfing",
+      "D_clip_only"
+    ],
+    "tennis racket": [
+      12743,
+      "Racket sports and tennis",
+      "B_token_only"
+    ],
+    "bottle": [
+      22025,
+      "Beverages and Drinks",
+      "B_token_only"
+    ],
+    "wine glass": [
+      30162,
+      "Wine and Winemaking",
+      "B_token_only"
+    ],
+    "cup": [
+      19743,
+      "Drinking Vessels and Liquids",
+      "B_token_only"
+    ],
+    "fork": [
+      31198,
+      "Replication and Forking",
+      "A_name+token"
+    ],
+    "knife": [
+      19825,
+      "Knives and Blades",
+      "B_token_only"
+    ],
+    "spoon": [
+      19825,
+      "Knives and Blades",
+      "B_token_only"
+    ],
+    "bowl": [
+      17907,
+      "Historical Ceramics and Tableware",
+      "B_token_only"
+    ],
+    "banana": [
+      11818,
+      "Plant Life and Fruits",
+      "B_token_only"
+    ],
+    "apple": [
+      18455,
+      "Apple (fruit and Inc.)",
+      "A_name+token"
+    ],
+    "sandwich": [
+      29115,
+      "Sandwiches and Condiments",
+      "A_name+token"
+    ],
+    "orange": [
+      30347,
+      "Colors and Hues",
+      "B_token_only"
+    ],
+    "broccoli": [
+      30871,
+      "Logical Existence and Proof",
+      "D_clip_only"
+    ],
+    "carrot": [
+      28722,
+      "Animal Species",
+      "B_token_only"
+    ],
+    "hot dog": [
+      21031,
+      "Digital Textual Content",
+      "D_clip_only"
+    ],
+    "pizza": [
+      21006,
+      "Pizza and Italian Cuisine",
+      "A_name+token"
+    ],
+    "donut": [
+      11711,
+      "Baked Goods and Cookies",
+      "D_clip_only"
+    ],
+    "cake": [
+      24039,
+      "Edible Food Items",
+      "B_token_only"
+    ],
+    "chair": [
+      15039,
+      "Seating Comfort",
+      "B_token_only"
+    ],
+    "couch": [
+      3208,
+      "Furniture and Seating",
+      "D_clip_only"
+    ],
+    "potted plant": [
+      11818,
+      "Plant Life and Fruits",
+      "B_token_only"
+    ],
+    "bed": [
+      16092,
+      "Beds and Bedding",
+      "A_name+token"
+    ],
+    "dining table": [
+      11998,
+      "Furniture and Table Objects",
+      "B_token_only"
+    ],
+    "toilet": [
+      7872,
+      "Toilet Functionality and Plumbing",
+      "A_name+token"
+    ],
+    "tv": [
+      23122,
+      "Television and TV viewing",
+      "A_name+token"
+    ],
+    "laptop": [
+      27802,
+      "Personal Computer Hardware and OS",
+      "B_token_only"
+    ],
+    "mouse": [
+      24824,
+      "Letter J and Mouse",
+      "A_name+token"
+    ],
+    "remote": [
+      18560,
+      "Hybrid Remote Communication",
+      "A_name+token"
+    ],
+    "keyboard": [
+      17092,
+      "Typing and Keyboards",
+      "A_name+token"
+    ],
+    "cell phone": [
+      20624,
+      "Mobile Telecommunications",
+      "B_token_only"
+    ],
+    "microwave": [
+      14693,
+      "Microwave Technology and Appliances",
+      "A_name+token"
+    ],
+    "oven": [
+      14693,
+      "Microwave Technology and Appliances",
+      "A_name+token"
+    ],
+    "toaster": [
+      15005,
+      "Microwave ovens and heating",
+      "D_clip_only"
+    ],
+    "sink": [
+      5367,
+      "Carbon sequestration and sinks",
+      "A_name+token"
+    ],
+    "refrigerator": [
+      14693,
+      "Microwave Technology and Appliances",
+      "D_clip_only"
+    ],
+    "book": [
+      18268,
+      "Book Physical Condition",
+      "A_name+token"
+    ],
+    "clock": [
+      2496,
+      "Clock Times and Timezones",
+      "A_name+token"
+    ],
+    "vase": [
+      3252,
+      "Flowers and Floral Arrangements",
+      "B_token_only"
+    ],
+    "scissors": [
+      30220,
+      "Cutting and Digestion",
+      "B_token_only"
+    ],
+    "teddy bear": [
+      28722,
+      "Animal Species",
+      "B_token_only"
+    ],
+    "hair drier": [
+      15670,
+      "Hair and Grooming",
+      "B_token_only"
+    ],
+    "toothbrush": [
+      14795,
+      "Dental hygiene products",
+      "D_clip_only"
+    ]
+  },
+  "top_visual_examples": [
+    "Microcontroller GPIO Pin Control",
+    "Microcontroller GPIO Pin Control",
+    "Plant Habitat and Range Descriptions",
+    "Layered Food Dishes",
+    "Heat Exchanger Tube Geometry",
+    "Rotating Machinery Components",
+    "Automotive Ignition System",
+    "Vehicle Diagnostic Trouble Codes",
+    "Cooking Measurements and Containers",
+    "Vacuum Containers and Components",
+    "Laboratory Liquid Containers",
+    "Electrical Terminal Directions",
+    "IC Packaging and PCB Interconnect",
+    "Industrial valves and operation",
+    "LEGO Robotics Building",
+    "Microcontroller and Arduino Electronics",
+    "Orchids and Ornamental Flora",
+    "Rotational Machinery Components",
+    "Hybrid Flower Varieties",
+    "Wedding Invitations and Events",
+    "Arcade Gameplay Actions",
+    "Quarries and Geological Locations",
+    "Conveyor Belt Transportation",
+    "Circuit Lighting Arrangement",
+    "High-Voltage Power Transmission Infrastructure"
+  ],
+  "rejected_by_clip_examples": [
+    "Social Media Identity Matching",
+    "Symmetry and Technical Protocols",
+    "Task Scheduling Formalism",
+    "Embedding Loss Functions",
+    "Buying and Selling Transactions",
+    "Scaling and Resolution",
+    "Trusted Trading Intermediaries",
+    "Collective Responsibility and Unity",
+    "Financial Debt and Borrowing",
+    "Institutions and Procedures",
+    "Business Decision-Making",
+    "Sustainable Regenerative Materials",
+    "Enduring Physical Challenges",
+    "Quantum Physics and Electrons",
+    "Geometric Graph Theory",
+    "Business Failure and Profitability",
+    "Digital Linking and Social Media",
+    "Financial and Administrative Contexts",
+    "Mathematical Strength and Continuity",
+    "Web Browsing and Online Platforms",
+    "Statistical Variable Relationships",
+    "Wearable and Sensor Technology",
+    "Auditory Lateralization and Localization",
+    "Conflict and Competition",
+    "Affirmative Financial Dialogue"
+  ],
+  "rejected_by_rule_examples": [
+    "SQL Database Queries",
+    "Chronological Periods and Numerals",
+    "Mathematical Expressions",
+    "Utility: code utils and utilitarianism",
+    "Mathematical Notation and Structure",
+    "Mathematical Notation and Equations",
+    "LaTeX Math Notation",
+    "Medical Conditions and Evidence",
+    "Programming Control Flow",
+    "Probability and Statistics Concepts",
+    "Mathematical Notation and Typesetting",
+    "Technical Specifications and Engineering",
+    "Mathematical Notation",
+    "Mathematical Notation and Theorems",
+    "HTML/XML Markup Tags",
+    "Mathematical Statistical Modeling",
+    "Programming Error Handling",
+    "R code syntax",
+    "Mathematical Notation",
+    "Software Package Hierarchy",
+    "Mathematical Equation Formatting",
+    "Mathematical Directional Theory",
+    "Mathematical Equations",
+    "Excel VBA Programming",
+    "Names and Code Structures"
+  ]
+}

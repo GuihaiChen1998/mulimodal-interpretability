@@ -1,0 +1,48 @@
+{
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "torch": "2.8.0+cu128",
+  "cases": [
+    {
+      "B": 2,
+      "T": 640,
+      "fwd_maxabs_flex_vs_ref": 0.0078125,
+      "fwd_maxabs_sdpa_vs_ref": 0.001953125,
+      "bwd_maxrel_flex_vs_ref": 0.0031939430627971888,
+      "ms_flex_fwd": 0.14155181124806404,
+      "ms_sdpa_fwd": 1.868236344307661,
+      "pass": true
+    },
+    {
+      "B": 2,
+      "T": 704,
+      "fwd_maxabs_flex_vs_ref": 0.00390625,
+      "fwd_maxabs_sdpa_vs_ref": 0.001953125,
+      "bwd_maxrel_flex_vs_ref": 0.0032125513534992933,
+      "ms_flex_fwd": 0.1751963049173355,
+      "ms_sdpa_fwd": 2.4573995731770992,
+      "pass": true
+    },
+    {
+      "B": 1,
+      "T": 1024,
+      "fwd_maxabs_flex_vs_ref": 0.00390625,
+      "fwd_maxabs_sdpa_vs_ref": 0.001953125,
+      "bwd_maxrel_flex_vs_ref": 0.0032204249873757362,
+      "ms_flex_fwd": 0.19709747284650803,
+      "ms_sdpa_fwd": 2.4092494510114193,
+      "pass": true
+    },
+    {
+      "B": 1,
+      "T": 4096,
+      "fwd_maxabs_flex_vs_ref": 0.0078125,
+      "fwd_maxabs_sdpa_vs_ref": 0.001953125,
+      "bwd_maxrel_flex_vs_ref": 0.0031925111543387175,
+      "ms_flex_fwd": 1.032246369868517,
+      "ms_sdpa_fwd": 29.549347795546055,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "peak_mem_gb": 11.402496
+}

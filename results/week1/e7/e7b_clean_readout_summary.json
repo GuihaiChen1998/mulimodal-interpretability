@@ -1,0 +1,638 @@
+{
+  "n_captions": 15000,
+  "w_min": 0.1,
+  "min_docs": 5,
+  "n_concepts_ever_active": 5004,
+  "n_ubiquitous(>50% captions)": 66,
+  "ubiquitous_examples": [
+    "Sentence-Initial Discourse Connectives",
+    "Letter 'A' Token Density",
+    "'ss' grapheme cluster",
+    "Capitalized Encyclopedic Index Terms",
+    "Letter-A Token Saturation",
+    "Letter-fragmented / subword-split text",
+    "#NAME?",
+    "Hobbies, Sports, and Domains",
+    "Post-dot domain/extension tokens",
+    "Test-call parenthesized arguments",
+    "Async lifecycle and cancellation APIs",
+    "Letter D tokens",
+    "GitHub PR Markdown Boilerplate",
+    "Proof Assistant & Lisp Syntax",
+    "Epidemiological risk associations",
+    "Java API and Stack Traces",
+    "iOS Cocoa Touch API",
+    "Programming syntax and function calls",
+    "Draw / pull / CAD drawing",
+    "Type and Class Declarations"
+  ],
+  "n_vvis_caption": 3526,
+  "n_vvis_caption_steerable": 2069,
+  "overlap_with_clip_vvis": 2092,
+  "most_frequent_vvis": [
+    [
+      "Binding, bounds, and attachment",
+      7433
+    ],
+    [
+      "Plural Human Categories",
+      7231
+    ],
+    [
+      "Archery, Bows and Arrows",
+      7125
+    ],
+    [
+      "Plural noun suffix endings",
+      7035
+    ],
+    [
+      "German -er suffix morphology",
+      7023
+    ],
+    [
+      "Spatial Location and Placement",
+      7001
+    ],
+    [
+      "S-initial token prefix",
+      6995
+    ],
+    [
+      "Personal Diary Narrative",
+      6981
+    ],
+    [
+      "Past-tense -ed verb endings",
+      6926
+    ],
+    [
+      "Pre-industrial Pastoral Material Life",
+      6912
+    ],
+    [
+      "Lifting and Load Handling",
+      6720
+    ],
+    [
+      "Latinate Word Stems",
+      6678
+    ],
+    [
+      "Insert/Embed in Slides",
+      6670
+    ],
+    [
+      "Plural Facilities and Venues",
+      6542
+    ],
+    [
+      "Punctuation and Delimiter Symbols",
+      6348
+    ],
+    [
+      "Image Caption Scene Descriptions",
+      6333
+    ],
+    [
+      "Letter O tokens",
+      6315
+    ],
+    [
+      "Letter L tokens",
+      6228
+    ],
+    [
+      "Finnish suffixes and -is endings",
+      6196
+    ],
+    [
+      "Letter R tokens and identifiers",
+      6146
+    ],
+    [
+      "Outdoor Landscape and Terrain",
+      6084
+    ],
+    [
+      "R-containing subword fragments",
+      6015
+    ],
+    [
+      "N-initial tokens and abbreviations",
+      5952
+    ],
+    [
+      "'em' subword fragments",
+      5943
+    ],
+    [
+      "SQL and database programming",
+      5917
+    ],
+    [
+      "Body Postures and Positions",
+      5889
+    ],
+    [
+      "'Hal' subwords and halving",
+      5855
+    ],
+    [
+      "C/C++ Compiler and Build Toolchain",
+      5767
+    ],
+    [
+      "Uppercase Text Segments",
+      5746
+    ],
+    [
+      "Present-tense plot summary verbs",
+      5742
+    ]
+  ],
+  "coco_mapped": 79,
+  "coco_primary_consistency_mean": 0.9686538461538461,
+  "coco_primary": {
+    "person": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.93,
+      60
+    ],
+    "bicycle": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.98,
+      60
+    ],
+    "car": [
+      21762,
+      "Cars and vehicles",
+      0.97,
+      60
+    ],
+    "motorcycle": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "airplane": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.98,
+      60
+    ],
+    "bus": [
+      2628,
+      "Bus (vehicle and software)",
+      0.92,
+      60
+    ],
+    "train": [
+      1780,
+      "Training (human and ML)",
+      1.0,
+      60
+    ],
+    "truck": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "boat": [
+      13695,
+      "'at' subword pattern",
+      1.0,
+      60
+    ],
+    "traffic light": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "fire hydrant": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.98,
+      60
+    ],
+    "stop sign": [
+      33316,
+      "Signs, signals, signatures",
+      0.98,
+      60
+    ],
+    "parking meter": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "bench": [
+      29785,
+      "Tables and Furniture",
+      1.0,
+      60
+    ],
+    "bird": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "cat": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "dog": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "horse": [
+      28722,
+      "Animal Species",
+      0.98,
+      60
+    ],
+    "sheep": [
+      15479,
+      "Blog/CMS Template Scaffolding",
+      1.0,
+      60
+    ],
+    "cow": [
+      15479,
+      "Blog/CMS Template Scaffolding",
+      1.0,
+      60
+    ],
+    "elephant": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.93,
+      60
+    ],
+    "bear": [
+      29751,
+      "North American Wildlife and Hunting",
+      1.0,
+      60
+    ],
+    "zebra": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      60
+    ],
+    "giraffe": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "backpack": [
+      26440,
+      "Boxes, Packages, Containers",
+      1.0,
+      19
+    ],
+    "umbrella": [
+      33622,
+      "Technical Documentation Features",
+      0.98,
+      60
+    ],
+    "handbag": [
+      20091,
+      "Hands and Manual Actions",
+      1.0,
+      1
+    ],
+    "tie": [
+      30568,
+      "Attaching, Wrapping, Securing",
+      1.0,
+      60
+    ],
+    "suitcase": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "frisbee": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      60
+    ],
+    "skis": [
+      33644,
+      "Code and Math Syntax",
+      0.93,
+      60
+    ],
+    "snowboard": [
+      33644,
+      "Code and Math Syntax",
+      0.98,
+      60
+    ],
+    "sports ball": [
+      null,
+      null,
+      0.0,
+      0
+    ],
+    "kite": [
+      6479,
+      "'it' substring/morpheme detector",
+      0.98,
+      60
+    ],
+    "baseball bat": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "baseball glove": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      8
+    ],
+    "skateboard": [
+      28112,
+      "Boards (PCB and polysemy)",
+      0.98,
+      60
+    ],
+    "surfboard": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      60
+    ],
+    "tennis racket": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "bottle": [
+      33644,
+      "Code and Math Syntax",
+      0.97,
+      60
+    ],
+    "wine glass": [
+      33622,
+      "Technical Documentation Features",
+      1.0,
+      37
+    ],
+    "cup": [
+      14987,
+      "Recipe Ingredients and Measurements",
+      0.9,
+      60
+    ],
+    "fork": [
+      33590,
+      "Letter F as symbol/variable",
+      1.0,
+      60
+    ],
+    "knife": [
+      28722,
+      "Animal Species",
+      1.0,
+      60
+    ],
+    "spoon": [
+      28722,
+      "Animal Species",
+      0.94,
+      52
+    ],
+    "bowl": [
+      33644,
+      "Code and Math Syntax",
+      0.98,
+      60
+    ],
+    "banana": [
+      18400,
+      "'-ane/-ine' suffix fragments",
+      1.0,
+      60
+    ],
+    "apple": [
+      33644,
+      "Code and Math Syntax",
+      0.97,
+      60
+    ],
+    "sandwich": [
+      33622,
+      "Technical Documentation Features",
+      1.0,
+      60
+    ],
+    "orange": [
+      33622,
+      "Technical Documentation Features",
+      0.92,
+      60
+    ],
+    "broccoli": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.98,
+      60
+    ],
+    "carrot": [
+      21762,
+      "Cars and vehicles",
+      0.98,
+      60
+    ],
+    "hot dog": [
+      21730,
+      "Pottery and 'ot' tokens",
+      0.98,
+      60
+    ],
+    "pizza": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.9,
+      60
+    ],
+    "donut": [
+      12832,
+      "Cutting and Slicing",
+      1.0,
+      60
+    ],
+    "cake": [
+      5411,
+      "'ake' orthographic cluster",
+      0.98,
+      60
+    ],
+    "chair": [
+      29785,
+      "Tables and Furniture",
+      0.9,
+      60
+    ],
+    "couch": [
+      28722,
+      "Animal Species",
+      0.97,
+      60
+    ],
+    "potted plant": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      13
+    ],
+    "bed": [
+      16092,
+      "Beds and Bedding",
+      1.0,
+      60
+    ],
+    "dining table": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      32
+    ],
+    "toilet": [
+      28722,
+      "Animal Species",
+      0.95,
+      60
+    ],
+    "tv": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.97,
+      60
+    ],
+    "laptop": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.97,
+      60
+    ],
+    "mouse": [
+      28722,
+      "Animal Species",
+      0.98,
+      60
+    ],
+    "remote": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "keyboard": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.93,
+      60
+    ],
+    "cell phone": [
+      33644,
+      "Code and Math Syntax",
+      0.92,
+      60
+    ],
+    "microwave": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.98,
+      60
+    ],
+    "oven": [
+      24111,
+      "Buildings, Rooms, and Venues",
+      0.98,
+      60
+    ],
+    "toaster": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      17
+    ],
+    "sink": [
+      29412,
+      "Skating and Sk- Sports",
+      1.0,
+      60
+    ],
+    "refrigerator": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "book": [
+      20353,
+      "Books and publishing",
+      0.97,
+      60
+    ],
+    "clock": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      0.93,
+      60
+    ],
+    "vase": [
+      32647,
+      "'as'/'ase' subword fragment",
+      1.0,
+      60
+    ],
+    "scissors": [
+      33612,
+      "Code Syntax and Numerical Computation",
+      1.0,
+      60
+    ],
+    "teddy bear": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      60
+    ],
+    "hair drier": [
+      20299,
+      "Hair and Hairstyling",
+      1.0,
+      1
+    ],
+    "toothbrush": [
+      33644,
+      "Code and Math Syntax",
+      1.0,
+      50
+    ]
+  }
+}

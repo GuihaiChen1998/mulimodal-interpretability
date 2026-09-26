@@ -1,0 +1,120 @@
+{
+  "attention": "sdpa",
+  "load_s": 36.7,
+  "mem_after_load_gb": 16.79,
+  "chat_template_example": "<|start_header_id|>user<|end_header_id|>\n\nHi<|endofchunk|><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "seq_len": 42,
+  "peak_mem_fwd_gb": 17.24,
+  "decomp": {
+    "max_abs_composed_minus_hidden": 0.0625,
+    "max_abs_known+unkhat+eps_minus_hidden": 0.060546875,
+    "mean_rel_norm_known": 0.18183766305446625,
+    "mean_rel_norm_unk_hat": 0.9840049743652344,
+    "mean_rel_norm_epsilon": 0.32089173793792725,
+    "known_topk_shape": [
+      1,
+      42,
+      32
+    ]
+  },
+  "n_known_rows_model": 33732,
+  "n_csv_rows": 33732,
+  "concept_alignment": {
+    "mean_hit_rate_same_id": 0.7546645021645022,
+    "mean_hit_rate_shifted_id(+1)": 0.04816100566100566,
+    "examples": [
+      {
+        "id": 11348,
+        "name": "COVID-19 Vaccination Programs",
+        "top_tokens": [
+          " booster",
+          " Pfizer",
+          " vaccine",
+          " vaccines",
+          " vaccination",
+          " jab",
+          " vaccinated",
+          " rollout",
+          " vaccinations",
+          " Booster"
+        ]
+      },
+      {
+        "id": 21951,
+        "name": "Geometric Shapes and Sets",
+        "top_tokens": [
+          "let",
+          "s",
+          " sphere",
+          " set",
+          "lets",
+          " spherical",
+          "sphere",
+          " spheres",
+          " hemisphere",
+          "pheres"
+        ]
+      },
+      {
+        "id": 11549,
+        "name": "Non-Human Entities vs. Humans/Animals",
+        "top_tokens": [
+          " non",
+          " Non",
+          "-human",
+          "Non",
+          "oids",
+          "ombies",
+          " Human",
+          "Human",
+          " Humans",
+          "human"
+        ]
+      },
+      {
+        "id": 4956,
+        "name": "I.I.D. Random Variables",
+        "top_tokens": [
+          " iid",
+          " distributed",
+          " ident",
+          ".i",
+          " independent",
+          " IID",
+          " variables",
+          " centered",
+          ".d",
+          "ued"
+        ]
+      },
+      {
+        "id": 19159,
+        "name": "Software Testing and Documentation",
+        "top_tokens": [
+          "ctest",
+          " doc",
+          "def",
+          " tests",
+          " do",
+          " test",
+          " unittest",
+          "tests",
+          " examples",
+          " pytest"
+        ]
+      }
+    ]
+  },
+  "generations": [
+    {
+      "q": "What is the capital of France? Answer in one sentence.",
+      "a": "The capital of France is Paris",
+      "s": 0.4
+    },
+    {
+      "q": "List three colors of a rainbow.",
+      "a": "Certainly! Here are **three colors** that make up the **rainbow**:\n\n1. **Red**  \n   This is the first color in the visible light spectrum, and it's the longest wavelength of all the colors. When sunlight passes through a prism, red light bends the most, so it appears at the",
+      "s": 2.5
+    }
+  ]
+}

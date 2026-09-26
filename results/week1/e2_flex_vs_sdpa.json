@@ -1,0 +1,7 @@
+{
+  "seq_len": 42,
+  "max_abs_logit_diff": 0.75,
+  "max_abs_logit": 21.625,
+  "argmax_agree": 1.0,
+  "note": "flex generation via SteerlingGenerator failed: Triton shared-memory OOM (278528 > 166912 bytes) at seq len 106; e1b maps failing lengths"
+}

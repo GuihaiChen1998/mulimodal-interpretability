@@ -1,0 +1,5305 @@
+{
+ "person": {
+  "coco_id": 1,
+  "supercategory": "person",
+  "n_captions": 60,
+  "primary": 18458,
+  "primary_name": "Pairs, couples, and small groups",
+  "primary_consistency": 0.8166666666666667,
+  "top5": [
+   {
+    "id": 18458,
+    "name": "Pairs, couples, and small groups",
+    "specificity": 1.662,
+    "frac_captions": 0.817,
+    "doc_freq": 1959,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33270,
+    "name": "Romantic Relationships and Dating",
+    "specificity": 1.607,
+    "frac_captions": 0.767,
+    "doc_freq": 1842,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31442,
+    "name": "Humans and Living Beings",
+    "specificity": 1.504,
+    "frac_captions": 0.5,
+    "doc_freq": 740,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9050,
+    "name": "Child / Child Development",
+    "specificity": 1.482,
+    "frac_captions": 0.6,
+    "doc_freq": 1267,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33703,
+    "name": "'man' string: Unix manual vs. human",
+    "specificity": 1.463,
+    "frac_captions": 0.883,
+    "doc_freq": 2861,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 54.24
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 50.2
+   },
+   {
+    "id": 33701,
+    "name": "Men and male athletes",
+    "weight_sum": 46.44
+   }
+  ]
+ },
+ "bicycle": {
+  "coco_id": 2,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 2628,
+  "primary_name": "Bus (vehicle and software)",
+  "primary_consistency": 0.6166666666666667,
+  "top5": [
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.661,
+    "frac_captions": 0.617,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "specificity": 1.523,
+    "frac_captions": 0.683,
+    "doc_freq": 1615,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.419,
+    "frac_captions": 0.55,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "specificity": 1.205,
+    "frac_captions": 0.433,
+    "doc_freq": 929,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3537,
+    "name": "Cycles and Loops",
+    "specificity": 1.197,
+    "frac_captions": 0.25,
+    "doc_freq": 124,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 49.23
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 48.3
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 24.32
+   }
+  ]
+ },
+ "car": {
+  "coco_id": 3,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 21762,
+  "primary_name": "Cars and vehicles",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "specificity": 1.922,
+    "frac_captions": 0.833,
+    "doc_freq": 1494,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "specificity": 1.576,
+    "frac_captions": 0.567,
+    "doc_freq": 929,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25681,
+    "name": "Hired Vehicles and Freight",
+    "specificity": 1.51,
+    "frac_captions": 0.367,
+    "doc_freq": 243,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.436,
+    "frac_captions": 0.533,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.419,
+    "frac_captions": 0.55,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 36.64
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 32.37
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "weight_sum": 30.1
+   }
+  ]
+ },
+ "motorcycle": {
+  "coco_id": 4,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 2628,
+  "primary_name": "Bus (vehicle and software)",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.975,
+    "frac_captions": 0.733,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "specificity": 1.9,
+    "frac_captions": 0.683,
+    "doc_freq": 929,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.849,
+    "frac_captions": 0.717,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "specificity": 1.597,
+    "frac_captions": 0.717,
+    "doc_freq": 1615,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "specificity": 1.422,
+    "frac_captions": 0.617,
+    "doc_freq": 1494,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 46.49
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 46.32
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "weight_sum": 26.0
+   }
+  ]
+ },
+ "airplane": {
+  "coco_id": 5,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 10605,
+  "primary_name": "Aircraft and Aerospace Engineering",
+  "primary_consistency": 0.8666666666666667,
+  "top5": [
+   {
+    "id": 10605,
+    "name": "Aircraft and Aerospace Engineering",
+    "specificity": 3.472,
+    "frac_captions": 0.867,
+    "doc_freq": 272,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29600,
+    "name": "Planes (geometric and aviation)",
+    "specificity": 3.1,
+    "frac_captions": 0.733,
+    "doc_freq": 218,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5963,
+    "name": "Aviation and Piloting",
+    "specificity": 2.833,
+    "frac_captions": 0.667,
+    "doc_freq": 213,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13391,
+    "name": "Commercial aviation and airlines",
+    "specificity": 2.769,
+    "frac_captions": 0.767,
+    "doc_freq": 404,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11377,
+    "name": "Flight and Aviation",
+    "specificity": 2.168,
+    "frac_captions": 0.9,
+    "doc_freq": 1348,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 46.21
+   },
+   {
+    "id": 10605,
+    "name": "Aircraft and Aerospace Engineering",
+    "weight_sum": 37.97
+   },
+   {
+    "id": 13391,
+    "name": "Commercial aviation and airlines",
+    "weight_sum": 31.31
+   }
+  ]
+ },
+ "bus": {
+  "coco_id": 6,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 2628,
+  "primary_name": "Bus (vehicle and software)",
+  "primary_consistency": 0.8666666666666667,
+  "top5": [
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 2.334,
+    "frac_captions": 0.867,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.849,
+    "frac_captions": 0.717,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25681,
+    "name": "Hired Vehicles and Freight",
+    "specificity": 1.647,
+    "frac_captions": 0.4,
+    "doc_freq": 243,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "specificity": 1.576,
+    "frac_captions": 0.567,
+    "doc_freq": 929,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24015,
+    "name": "Transportation, Freight and Delivery",
+    "specificity": 1.534,
+    "frac_captions": 0.5,
+    "doc_freq": 697,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 43.97
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "weight_sum": 40.17
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 28.68
+   }
+  ]
+ },
+ "train": {
+  "coco_id": 7,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 1780,
+  "primary_name": "Training (human and ML)",
+  "primary_consistency": 0.65,
+  "top5": [
+   {
+    "id": 1780,
+    "name": "Training (human and ML)",
+    "specificity": 2.611,
+    "frac_captions": 0.65,
+    "doc_freq": 269,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32179,
+    "name": "Trains and Railways",
+    "specificity": 2.339,
+    "frac_captions": 0.95,
+    "doc_freq": 1278,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.93,
+    "frac_captions": 0.717,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.548,
+    "frac_captions": 0.6,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2005,
+    "name": "Railways and Rail Infrastructure",
+    "specificity": 1.526,
+    "frac_captions": 0.367,
+    "doc_freq": 233,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 32179,
+    "name": "Trains and Railways",
+    "weight_sum": 50.04
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 48.59
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 30.02
+   }
+  ]
+ },
+ "truck": {
+  "coco_id": 8,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 29519,
+  "primary_name": "Trucks, Trailers, and RVs",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 2.15,
+    "frac_captions": 0.833,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25681,
+    "name": "Hired Vehicles and Freight",
+    "specificity": 2.128,
+    "frac_captions": 0.517,
+    "doc_freq": 243,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24015,
+    "name": "Transportation, Freight and Delivery",
+    "specificity": 1.943,
+    "frac_captions": 0.633,
+    "doc_freq": 697,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21762,
+    "name": "Cars and vehicles",
+    "specificity": 1.691,
+    "frac_captions": 0.733,
+    "doc_freq": 1494,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29046,
+    "name": "Automobiles and Automakers",
+    "specificity": 1.483,
+    "frac_captions": 0.533,
+    "doc_freq": 929,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 53.64
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "weight_sum": 45.05
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 27.45
+   }
+  ]
+ },
+ "boat": {
+  "coco_id": 9,
+  "supercategory": "vehicle",
+  "n_captions": 60,
+  "primary": 32110,
+  "primary_name": "Ships and Maritime Activity",
+  "primary_consistency": 0.8,
+  "top5": [
+   {
+    "id": 32110,
+    "name": "Ships and Maritime Activity",
+    "specificity": 2.312,
+    "frac_captions": 0.8,
+    "doc_freq": 833,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5965,
+    "name": "Kayaks and paddlecraft",
+    "specificity": 2.094,
+    "frac_captions": 0.617,
+    "doc_freq": 502,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28155,
+    "name": "Starships and Spacecraft",
+    "specificity": 1.549,
+    "frac_captions": 0.333,
+    "doc_freq": 143,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2853,
+    "name": "Ship Class and Entity Categorization",
+    "specificity": 1.486,
+    "frac_captions": 0.267,
+    "doc_freq": 56,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22262,
+    "name": "Cabins, cottages, rural lodgings",
+    "specificity": 1.463,
+    "frac_captions": 0.433,
+    "doc_freq": 512,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 45.94
+   },
+   {
+    "id": 32110,
+    "name": "Ships and Maritime Activity",
+    "weight_sum": 36.99
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 36.2
+   }
+  ]
+ },
+ "traffic light": {
+  "coco_id": 10,
+  "supercategory": "outdoor",
+  "n_captions": 60,
+  "primary": 3643,
+  "primary_name": "Traffic Signals and Intersections",
+  "primary_consistency": 0.5666666666666667,
+  "top5": [
+   {
+    "id": 3643,
+    "name": "Traffic Signals and Intersections",
+    "specificity": 1.703,
+    "frac_captions": 0.567,
+    "doc_freq": 742,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33316,
+    "name": "Signs, signals, signatures",
+    "specificity": 1.528,
+    "frac_captions": 0.617,
+    "doc_freq": 1257,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "specificity": 1.334,
+    "frac_captions": 0.683,
+    "doc_freq": 2129,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "specificity": 1.205,
+    "frac_captions": 0.467,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33219,
+    "name": "Light and Illumination",
+    "specificity": 1.17,
+    "frac_captions": 0.617,
+    "doc_freq": 2249,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 88.28
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 83.71
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 69.36
+   }
+  ]
+ },
+ "fire hydrant": {
+  "coco_id": 11,
+  "supercategory": "outdoor",
+  "n_captions": 60,
+  "primary": 16753,
+  "primary_name": "ATMs, Kiosks, and Service Terminals",
+  "primary_consistency": 0.6666666666666666,
+  "top5": [
+   {
+    "id": 16753,
+    "name": "ATMs, Kiosks, and Service Terminals",
+    "specificity": 1.234,
+    "frac_captions": 0.667,
+    "doc_freq": 2355,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "specificity": 1.205,
+    "frac_captions": 0.467,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.167,
+    "frac_captions": 0.433,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29519,
+    "name": "Trucks, Trailers, and RVs",
+    "specificity": 1.161,
+    "frac_captions": 0.45,
+    "doc_freq": 1136,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11253,
+    "name": "Police and Law Enforcement",
+    "specificity": 1.154,
+    "frac_captions": 0.483,
+    "doc_freq": 1377,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 152.94
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 114.43
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 109.17
+   }
+  ]
+ },
+ "stop sign": {
+  "coco_id": 13,
+  "supercategory": "outdoor",
+  "n_captions": 60,
+  "primary": 33316,
+  "primary_name": "Signs, signals, signatures",
+  "primary_consistency": 0.7666666666666667,
+  "top5": [
+   {
+    "id": 33316,
+    "name": "Signs, signals, signatures",
+    "specificity": 1.9,
+    "frac_captions": 0.767,
+    "doc_freq": 1257,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3643,
+    "name": "Traffic Signals and Intersections",
+    "specificity": 1.703,
+    "frac_captions": 0.567,
+    "doc_freq": 742,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "specificity": 1.549,
+    "frac_captions": 0.6,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17351,
+    "name": "Stopping and Preventing",
+    "specificity": 1.497,
+    "frac_captions": 0.5,
+    "doc_freq": 750,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3803,
+    "name": "Posts, threads, and comments",
+    "specificity": 1.377,
+    "frac_captions": 0.417,
+    "doc_freq": 549,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 80.92
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 75.93
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 74.71
+   }
+  ]
+ },
+ "parking meter": {
+  "coco_id": 14,
+  "supercategory": "outdoor",
+  "n_captions": 60,
+  "primary": 4507,
+  "primary_name": "Parking and Driving Directions",
+  "primary_consistency": 0.6,
+  "top5": [
+   {
+    "id": 4507,
+    "name": "Parking and Driving Directions",
+    "specificity": 1.549,
+    "frac_captions": 0.6,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2628,
+    "name": "Bus (vehicle and software)",
+    "specificity": 1.347,
+    "frac_captions": 0.5,
+    "doc_freq": 1014,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33316,
+    "name": "Signs, signals, signatures",
+    "specificity": 1.322,
+    "frac_captions": 0.533,
+    "doc_freq": 1257,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 16753,
+    "name": "ATMs, Kiosks, and Service Terminals",
+    "specificity": 1.296,
+    "frac_captions": 0.7,
+    "doc_freq": 2355,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20019,
+    "name": "Road Traffic and Driving",
+    "specificity": 1.204,
+    "frac_captions": 0.617,
+    "doc_freq": 2129,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 94.09
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 87.29
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 69.55
+   }
+  ]
+ },
+ "bench": {
+  "coco_id": 15,
+  "supercategory": "outdoor",
+  "n_captions": 60,
+  "primary": 4492,
+  "primary_name": "Architectural Building Elements",
+  "primary_consistency": 0.7833333333333333,
+  "top5": [
+   {
+    "id": 4492,
+    "name": "Architectural Building Elements",
+    "specificity": 1.852,
+    "frac_captions": 0.783,
+    "doc_freq": 1409,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 30797,
+    "name": "Rocks and Geology",
+    "specificity": 1.753,
+    "frac_captions": 0.55,
+    "doc_freq": 618,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32640,
+    "name": "Parks and recreational amenities",
+    "specificity": 1.577,
+    "frac_captions": 0.533,
+    "doc_freq": 779,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21180,
+    "name": "Stairs, Ramps, and Accessibility",
+    "specificity": 1.551,
+    "frac_captions": 0.717,
+    "doc_freq": 1722,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31711,
+    "name": "Paving and Hardscape Surfaces",
+    "specificity": 1.456,
+    "frac_captions": 0.533,
+    "doc_freq": 978,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 52.53
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 52.46
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "weight_sum": 47.56
+   }
+  ]
+ },
+ "bird": {
+  "coco_id": 16,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 31730,
+  "primary_name": "Birds and Ornithology",
+  "primary_consistency": 0.7166666666666667,
+  "top5": [
+   {
+    "id": 31730,
+    "name": "Birds and Ornithology",
+    "specificity": 2.242,
+    "frac_captions": 0.717,
+    "doc_freq": 656,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "specificity": 1.909,
+    "frac_captions": 0.567,
+    "doc_freq": 515,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13646,
+    "name": "Birds and bird names",
+    "specificity": 1.864,
+    "frac_captions": 0.383,
+    "doc_freq": 115,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32966,
+    "name": "Insects and Arthropods",
+    "specificity": 1.704,
+    "frac_captions": 0.417,
+    "doc_freq": 250,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7616,
+    "name": "Fish, seafood, and animals",
+    "specificity": 1.602,
+    "frac_captions": 0.533,
+    "doc_freq": 743,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 53.2
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 37.16
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 33.93
+   }
+  ]
+ },
+ "cat": {
+  "coco_id": 17,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 14969,
+  "primary_name": "Cats and feline references",
+  "primary_consistency": 0.6833333333333333,
+  "top5": [
+   {
+    "id": 14969,
+    "name": "Cats and feline references",
+    "specificity": 2.501,
+    "frac_captions": 0.683,
+    "doc_freq": 385,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7616,
+    "name": "Fish, seafood, and animals",
+    "specificity": 1.602,
+    "frac_captions": 0.533,
+    "doc_freq": 743,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "specificity": 1.246,
+    "frac_captions": 0.917,
+    "doc_freq": 3853,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18362,
+    "name": "Cats and Cat Care",
+    "specificity": 1.173,
+    "frac_captions": 0.333,
+    "doc_freq": 444,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28636,
+    "name": "Dog laws and regulations",
+    "specificity": 0.984,
+    "frac_captions": 0.233,
+    "doc_freq": 220,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 55.19
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "weight_sum": 46.2
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 42.55
+   }
+  ]
+ },
+ "dog": {
+  "coco_id": 18,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 28636,
+  "primary_name": "Dog laws and regulations",
+  "primary_consistency": 0.5833333333333334,
+  "top5": [
+   {
+    "id": 28636,
+    "name": "Dog laws and regulations",
+    "specificity": 2.46,
+    "frac_captions": 0.583,
+    "doc_freq": 220,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 14969,
+    "name": "Cats and feline references",
+    "specificity": 1.769,
+    "frac_captions": 0.483,
+    "doc_freq": 385,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "specificity": 1.359,
+    "frac_captions": 1.0,
+    "doc_freq": 3853,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24252,
+    "name": "Dog Training and Exercise",
+    "specificity": 1.271,
+    "frac_captions": 0.317,
+    "doc_freq": 270,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "specificity": 1.248,
+    "frac_captions": 0.883,
+    "doc_freq": 3649,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 33723,
+    "name": "Dogs, Cats, and Pet Care",
+    "weight_sum": 55.38
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 53.15
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 40.75
+   }
+  ]
+ },
+ "horse": {
+  "coco_id": 19,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 19778,
+  "primary_name": "Horses and Equestrianism",
+  "primary_consistency": 0.7666666666666667,
+  "top5": [
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "specificity": 2.202,
+    "frac_captions": 0.767,
+    "doc_freq": 848,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3719,
+    "name": "Equine Lameness and Anatomy",
+    "specificity": 2.018,
+    "frac_captions": 0.367,
+    "doc_freq": 60,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4359,
+    "name": "Pre-industrial Pastoral Material Life",
+    "specificity": 1.406,
+    "frac_captions": 0.683,
+    "doc_freq": 1916,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "specificity": 1.387,
+    "frac_captions": 0.483,
+    "doc_freq": 849,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "specificity": 1.116,
+    "frac_captions": 0.633,
+    "doc_freq": 2573,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 48.82
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 43.11
+   },
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "weight_sum": 31.7
+   }
+  ]
+ },
+ "sheep": {
+  "coco_id": 20,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 32876,
+  "primary_name": "Cattle and Dairy Husbandry",
+  "primary_consistency": 0.7833333333333333,
+  "top5": [
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "specificity": 2.249,
+    "frac_captions": 0.783,
+    "doc_freq": 849,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33604,
+    "name": "Livestock and poultry husbandry",
+    "specificity": 2.161,
+    "frac_captions": 0.55,
+    "doc_freq": 294,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5935,
+    "name": "Sheep, Wool, and Shearing",
+    "specificity": 1.986,
+    "frac_captions": 0.517,
+    "doc_freq": 320,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "specificity": 1.675,
+    "frac_captions": 0.583,
+    "doc_freq": 848,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2602,
+    "name": "Western Cattle Ranching Culture",
+    "specificity": 1.665,
+    "frac_captions": 0.383,
+    "doc_freq": 194,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 50.39
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 39.35
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 32.64
+   }
+  ]
+ },
+ "cow": {
+  "coco_id": 21,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 2602,
+  "primary_name": "Western Cattle Ranching Culture",
+  "primary_consistency": 0.5,
+  "top5": [
+   {
+    "id": 2602,
+    "name": "Western Cattle Ranching Culture",
+    "specificity": 2.171,
+    "frac_captions": 0.5,
+    "doc_freq": 194,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33604,
+    "name": "Livestock and poultry husbandry",
+    "specificity": 2.161,
+    "frac_captions": 0.55,
+    "doc_freq": 294,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "specificity": 2.153,
+    "frac_captions": 0.75,
+    "doc_freq": 849,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5935,
+    "name": "Sheep, Wool, and Shearing",
+    "specificity": 2.05,
+    "frac_captions": 0.533,
+    "doc_freq": 320,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19778,
+    "name": "Horses and Equestrianism",
+    "specificity": 1.962,
+    "frac_captions": 0.683,
+    "doc_freq": 848,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 48.98
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 40.58
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "weight_sum": 37.47
+   }
+  ]
+ },
+ "elephant": {
+  "coco_id": 22,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 18777,
+  "primary_name": "Elephants, Ivory, and Megafauna Conservation",
+  "primary_consistency": 0.6833333333333333,
+  "top5": [
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "specificity": 2.048,
+    "frac_captions": 0.683,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "specificity": 1.741,
+    "frac_captions": 0.517,
+    "doc_freq": 515,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "specificity": 1.579,
+    "frac_captions": 0.55,
+    "doc_freq": 849,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "specificity": 1.557,
+    "frac_captions": 0.883,
+    "doc_freq": 2573,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "specificity": 1.149,
+    "frac_captions": 0.5,
+    "doc_freq": 1507,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 50.81
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 45.11
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 35.77
+   }
+  ]
+ },
+ "bear": {
+  "coco_id": 23,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 29751,
+  "primary_name": "North American Wildlife and Hunting",
+  "primary_consistency": 0.9833333333333333,
+  "top5": [
+   {
+    "id": 29751,
+    "name": "North American Wildlife and Hunting",
+    "specificity": 3.025,
+    "frac_captions": 0.983,
+    "doc_freq": 691,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "specificity": 2.647,
+    "frac_captions": 0.883,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "specificity": 1.763,
+    "frac_captions": 1.0,
+    "doc_freq": 2573,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11395,
+    "name": "Children's Picture Books",
+    "specificity": 1.724,
+    "frac_captions": 0.6,
+    "doc_freq": 846,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 30760,
+    "name": "Hearing and Hearing Aids",
+    "specificity": 1.711,
+    "frac_captions": 0.533,
+    "doc_freq": 605,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 54.27
+   },
+   {
+    "id": 29751,
+    "name": "North American Wildlife and Hunting",
+    "weight_sum": 46.71
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 45.17
+   }
+  ]
+ },
+ "zebra": {
+  "coco_id": 24,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 943,
+  "primary_name": "Vertebrate animal taxonomy",
+  "primary_consistency": 0.7,
+  "top5": [
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "specificity": 2.359,
+    "frac_captions": 0.7,
+    "doc_freq": 515,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "specificity": 2.298,
+    "frac_captions": 0.767,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "specificity": 2.106,
+    "frac_captions": 0.917,
+    "doc_freq": 1507,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32876,
+    "name": "Cattle and Dairy Husbandry",
+    "specificity": 2.057,
+    "frac_captions": 0.717,
+    "doc_freq": 849,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26481,
+    "name": "African Wildlife and Safari",
+    "specificity": 1.907,
+    "frac_captions": 0.567,
+    "doc_freq": 517,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 92.92
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 83.16
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 58.75
+   }
+  ]
+ },
+ "giraffe": {
+  "coco_id": 25,
+  "supercategory": "animal",
+  "n_captions": 60,
+  "primary": 18777,
+  "primary_name": "Elephants, Ivory, and Megafauna Conservation",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 18777,
+    "name": "Elephants, Ivory, and Megafauna Conservation",
+    "specificity": 2.198,
+    "frac_captions": 0.733,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "specificity": 1.853,
+    "frac_captions": 0.55,
+    "doc_freq": 515,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "specificity": 1.8,
+    "frac_captions": 0.783,
+    "doc_freq": 1507,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26481,
+    "name": "African Wildlife and Safari",
+    "specificity": 1.795,
+    "frac_captions": 0.533,
+    "doc_freq": 517,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "specificity": 1.674,
+    "frac_captions": 0.95,
+    "doc_freq": 2573,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 24265,
+    "name": "Wildlife and Wild Animals",
+    "weight_sum": 108.25
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 104.06
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "weight_sum": 68.76
+   }
+  ]
+ },
+ "backpack": {
+  "coco_id": 27,
+  "supercategory": "accessory",
+  "n_captions": 19,
+  "primary": 28829,
+  "primary_name": "Bags and Storage Containers",
+  "primary_consistency": 0.7894736842105263,
+  "top5": [
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "specificity": 2.218,
+    "frac_captions": 0.789,
+    "doc_freq": 902,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33690,
+    "name": "Disability and Accessibility",
+    "specificity": 1.801,
+    "frac_captions": 0.421,
+    "doc_freq": 207,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29510,
+    "name": "Safety Instructions and Warnings",
+    "specificity": 1.553,
+    "frac_captions": 0.474,
+    "doc_freq": 564,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 1.252,
+    "frac_captions": 0.474,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29850,
+    "name": "Garments and Heraldic Regalia",
+    "specificity": 1.114,
+    "frac_captions": 0.474,
+    "doc_freq": 1426,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 18.88
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 13.94
+   },
+   {
+    "id": 31482,
+    "name": "Clothing and Apparel",
+    "weight_sum": 12.55
+   }
+  ]
+ },
+ "umbrella": {
+  "coco_id": 28,
+  "supercategory": "accessory",
+  "n_captions": 60,
+  "primary": 28218,
+  "primary_name": "Rain and Precipitation",
+  "primary_consistency": 0.31666666666666665,
+  "top5": [
+   {
+    "id": 28218,
+    "name": "Rain and Precipitation",
+    "specificity": 1.092,
+    "frac_captions": 0.317,
+    "doc_freq": 476,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11836,
+    "name": "Scrapbooks and Archival Ephemera",
+    "specificity": 0.982,
+    "frac_captions": 0.3,
+    "doc_freq": 567,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8600,
+    "name": "Equipment and Tangible Goods",
+    "specificity": 0.98,
+    "frac_captions": 0.617,
+    "doc_freq": 3058,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "specificity": 0.89,
+    "frac_captions": 0.317,
+    "doc_freq": 902,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 0.881,
+    "frac_captions": 0.333,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 52.97
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 45.66
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 34.24
+   }
+  ]
+ },
+ "handbag": {
+  "coco_id": 31,
+  "supercategory": "accessory",
+  "n_captions": 1,
+  "primary": 30923,
+  "primary_name": "Nose and Nasal Anatomy",
+  "primary_consistency": 1.0,
+  "top5": [
+   {
+    "id": 30923,
+    "name": "Nose and Nasal Anatomy",
+    "specificity": 5.185,
+    "frac_captions": 1.0,
+    "doc_freq": 83,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 10731,
+    "name": "Expression (polysemous)",
+    "specificity": 5.041,
+    "frac_captions": 1.0,
+    "doc_freq": 96,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21900,
+    "name": "Mood, Attitude, and Vibe",
+    "specificity": 4.395,
+    "frac_captions": 1.0,
+    "doc_freq": 184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23431,
+    "name": "Makeup and Cosmetics",
+    "specificity": 4.385,
+    "frac_captions": 1.0,
+    "doc_freq": 186,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5537,
+    "name": "Tattoos and Body Modification",
+    "specificity": 4.078,
+    "frac_captions": 1.0,
+    "doc_freq": 253,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 25001,
+    "name": "Historical Fashion and Attire",
+    "weight_sum": 1.98
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 1.94
+   },
+   {
+    "id": 33651,
+    "name": "Fiction Dialogue and Reaction Beats",
+    "weight_sum": 1.65
+   }
+  ]
+ },
+ "tie": {
+  "coco_id": 32,
+  "supercategory": "accessory",
+  "n_captions": 60,
+  "primary": 27557,
+  "primary_name": "Dress codes and etiquette",
+  "primary_consistency": 0.6833333333333333,
+  "top5": [
+   {
+    "id": 27557,
+    "name": "Dress codes and etiquette",
+    "specificity": 2.381,
+    "frac_captions": 0.683,
+    "doc_freq": 459,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29850,
+    "name": "Garments and Heraldic Regalia",
+    "specificity": 2.117,
+    "frac_captions": 0.9,
+    "doc_freq": 1426,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 14577,
+    "name": "Lenses, Glare, and Tinted Optics",
+    "specificity": 1.963,
+    "frac_captions": 0.533,
+    "doc_freq": 377,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20616,
+    "name": "Swimwear and Activewear",
+    "specificity": 1.797,
+    "frac_captions": 0.633,
+    "doc_freq": 878,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2102,
+    "name": "Clothing and Garment Fits",
+    "specificity": 1.776,
+    "frac_captions": 0.667,
+    "doc_freq": 1044,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 50.22
+   },
+   {
+    "id": 31482,
+    "name": "Clothing and Apparel",
+    "weight_sum": 49.29
+   },
+   {
+    "id": 25001,
+    "name": "Historical Fashion and Attire",
+    "weight_sum": 48.67
+   }
+  ]
+ },
+ "suitcase": {
+  "coco_id": 33,
+  "supercategory": "accessory",
+  "n_captions": 60,
+  "primary": 28829,
+  "primary_name": "Bags and Storage Containers",
+  "primary_consistency": 0.5333333333333333,
+  "top5": [
+   {
+    "id": 28829,
+    "name": "Bags and Storage Containers",
+    "specificity": 1.499,
+    "frac_captions": 0.533,
+    "doc_freq": 902,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20353,
+    "name": "Books and publishing",
+    "specificity": 1.147,
+    "frac_captions": 0.417,
+    "doc_freq": 956,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11836,
+    "name": "Scrapbooks and Archival Ephemera",
+    "specificity": 1.037,
+    "frac_captions": 0.317,
+    "doc_freq": 567,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26440,
+    "name": "Boxes, Packages, Containers",
+    "specificity": 0.949,
+    "frac_captions": 0.583,
+    "doc_freq": 2946,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8478,
+    "name": "Cases, Scenarios, and Instances",
+    "specificity": 0.862,
+    "frac_captions": 0.25,
+    "doc_freq": 477,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 51.53
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 45.44
+   },
+   {
+    "id": 33669,
+    "name": "Personal Diary Narrative",
+    "weight_sum": 27.68
+   }
+  ]
+ },
+ "frisbee": {
+  "coco_id": 34,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 11212,
+  "primary_name": "Sports drills and games",
+  "primary_consistency": 0.6333333333333333,
+  "top5": [
+   {
+    "id": 11212,
+    "name": "Sports drills and games",
+    "specificity": 2.362,
+    "frac_captions": 0.633,
+    "doc_freq": 359,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7944,
+    "name": "#NAME?",
+    "specificity": 2.139,
+    "frac_captions": 0.667,
+    "doc_freq": 605,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "specificity": 2.094,
+    "frac_captions": 0.883,
+    "doc_freq": 1401,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "specificity": 1.945,
+    "frac_captions": 0.783,
+    "doc_freq": 1251,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 16182,
+    "name": "Finnish suffixes and -is endings",
+    "specificity": 1.611,
+    "frac_captions": 0.783,
+    "doc_freq": 1917,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 158.8
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 93.14
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "weight_sum": 92.66
+   }
+  ]
+ },
+ "skis": {
+  "coco_id": 35,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 29412,
+  "primary_name": "Skating and Sk- Sports",
+  "primary_consistency": 0.9333333333333333,
+  "top5": [
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "specificity": 2.409,
+    "frac_captions": 0.933,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32623,
+    "name": "Mountaineering and Wilderness Adventure",
+    "specificity": 2.119,
+    "frac_captions": 0.767,
+    "doc_freq": 945,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3762,
+    "name": "Snow and Snowfall",
+    "specificity": 1.992,
+    "frac_captions": 0.683,
+    "doc_freq": 812,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8816,
+    "name": "Endurance Racing and Distances",
+    "specificity": 1.9,
+    "frac_captions": 0.617,
+    "doc_freq": 688,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 12827,
+    "name": "Winter and Cold Season",
+    "specificity": 1.875,
+    "frac_captions": 0.5,
+    "doc_freq": 352,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 97.86
+   },
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "weight_sum": 74.83
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 52.72
+   }
+  ]
+ },
+ "snowboard": {
+  "coco_id": 36,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 29412,
+  "primary_name": "Skating and Sk- Sports",
+  "primary_consistency": 0.8666666666666667,
+  "top5": [
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "specificity": 2.237,
+    "frac_captions": 0.867,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3762,
+    "name": "Snow and Snowfall",
+    "specificity": 2.041,
+    "frac_captions": 0.7,
+    "doc_freq": 812,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "specificity": 1.932,
+    "frac_captions": 0.7,
+    "doc_freq": 949,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 12827,
+    "name": "Winter and Cold Season",
+    "specificity": 1.812,
+    "frac_captions": 0.483,
+    "doc_freq": 352,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32623,
+    "name": "Mountaineering and Wilderness Adventure",
+    "specificity": 1.796,
+    "frac_captions": 0.65,
+    "doc_freq": 945,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 103.06
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 67.99
+   },
+   {
+    "id": 29412,
+    "name": "Skating and Sk- Sports",
+    "weight_sum": 56.47
+   }
+  ]
+ },
+ "sports ball": {
+  "coco_id": 37,
+  "supercategory": "sports",
+  "n_captions": 0,
+  "primary": null,
+  "primary_name": null,
+  "primary_consistency": 0.0,
+  "top5": [],
+  "top3_by_raw_weight": []
+ },
+ "kite": {
+  "coco_id": 38,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 6719,
+  "primary_name": "Drones and UAVs",
+  "primary_consistency": 0.4666666666666667,
+  "top5": [
+   {
+    "id": 6719,
+    "name": "Drones and UAVs",
+    "specificity": 2.473,
+    "frac_captions": 0.467,
+    "doc_freq": 74,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 10605,
+    "name": "Aircraft and Aerospace Engineering",
+    "specificity": 2.137,
+    "frac_captions": 0.533,
+    "doc_freq": 272,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17014,
+    "name": "Early Aviation Pioneers",
+    "specificity": 2.13,
+    "frac_captions": 0.45,
+    "doc_freq": 131,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 30834,
+    "name": "Aircraft type classification",
+    "specificity": 2.04,
+    "frac_captions": 0.45,
+    "doc_freq": 160,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29600,
+    "name": "Planes (geometric and aviation)",
+    "specificity": 1.972,
+    "frac_captions": 0.467,
+    "doc_freq": 218,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 51.37
+   },
+   {
+    "id": 11377,
+    "name": "Flight and Aviation",
+    "weight_sum": 49.72
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 40.77
+   }
+  ]
+ },
+ "baseball bat": {
+  "coco_id": 39,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 25341,
+  "primary_name": "Bladed weapons and melee arms",
+  "primary_consistency": 0.7,
+  "top5": [
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "specificity": 2.229,
+    "frac_captions": 0.7,
+    "doc_freq": 620,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33045,
+    "name": "Baseball Gameplay and MLB",
+    "specificity": 2.052,
+    "frac_captions": 0.533,
+    "doc_freq": 319,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33142,
+    "name": "Clubs and Social Groups",
+    "specificity": 1.878,
+    "frac_captions": 0.45,
+    "doc_freq": 230,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "specificity": 1.531,
+    "frac_captions": 0.617,
+    "doc_freq": 1251,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19021,
+    "name": "Sports and Athletics",
+    "specificity": 1.33,
+    "frac_captions": 0.583,
+    "doc_freq": 1532,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 93.37
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 81.22
+   },
+   {
+    "id": 33651,
+    "name": "Fiction Dialogue and Reaction Beats",
+    "weight_sum": 56.9
+   }
+  ]
+ },
+ "baseball glove": {
+  "coco_id": 40,
+  "supercategory": "sports",
+  "n_captions": 8,
+  "primary": 32002,
+  "primary_name": "Throwing and ball sports",
+  "primary_consistency": 0.625,
+  "top5": [
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "specificity": 1.552,
+    "frac_captions": 0.625,
+    "doc_freq": 1251,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33045,
+    "name": "Baseball Gameplay and MLB",
+    "specificity": 1.443,
+    "frac_captions": 0.375,
+    "doc_freq": 319,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "specificity": 1.237,
+    "frac_captions": 0.875,
+    "doc_freq": 3649,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31784,
+    "name": "Death and Funerary Practices",
+    "specificity": 1.205,
+    "frac_captions": 0.25,
+    "doc_freq": 120,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "specificity": 1.194,
+    "frac_captions": 0.375,
+    "doc_freq": 620,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 15.03
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 11.12
+   },
+   {
+    "id": 7949,
+    "name": "Sculptural and Ornamental Artifacts",
+    "weight_sum": 7.85
+   }
+  ]
+ },
+ "skateboard": {
+  "coco_id": 41,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 3537,
+  "primary_name": "Cycles and Loops",
+  "primary_consistency": 0.45,
+  "top5": [
+   {
+    "id": 3537,
+    "name": "Cycles and Loops",
+    "specificity": 2.154,
+    "frac_captions": 0.45,
+    "doc_freq": 124,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "specificity": 1.894,
+    "frac_captions": 0.85,
+    "doc_freq": 1615,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "specificity": 1.794,
+    "frac_captions": 0.65,
+    "doc_freq": 949,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31967,
+    "name": "Tricks, Deception, and Cunning",
+    "specificity": 1.76,
+    "frac_captions": 0.483,
+    "doc_freq": 392,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29998,
+    "name": "Electric Personal Mobility Vehicles",
+    "specificity": 1.709,
+    "frac_captions": 0.517,
+    "doc_freq": 548,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 52.74
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 52.11
+   },
+   {
+    "id": 5125,
+    "name": "Bicycles and Motorcycles",
+    "weight_sum": 36.13
+   }
+  ]
+ },
+ "surfboard": {
+  "coco_id": 42,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 5965,
+  "primary_name": "Kayaks and paddlecraft",
+  "primary_consistency": 0.6666666666666666,
+  "top5": [
+   {
+    "id": 5965,
+    "name": "Kayaks and paddlecraft",
+    "specificity": 2.263,
+    "frac_captions": 0.667,
+    "doc_freq": 502,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 990,
+    "name": "Sailing and Board Sports",
+    "specificity": 2.12,
+    "frac_captions": 0.683,
+    "doc_freq": 673,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31757,
+    "name": "Coastal Beaches and Shores",
+    "specificity": 2.087,
+    "frac_captions": 0.783,
+    "doc_freq": 1044,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2667,
+    "name": "Swimming pools and aquatics",
+    "specificity": 1.98,
+    "frac_captions": 0.75,
+    "doc_freq": 1070,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28112,
+    "name": "Boards (PCB and polysemy)",
+    "specificity": 1.978,
+    "frac_captions": 0.717,
+    "doc_freq": 949,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 101.03
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 63.95
+   },
+   {
+    "id": 2667,
+    "name": "Swimming pools and aquatics",
+    "weight_sum": 62.18
+   }
+  ]
+ },
+ "tennis racket": {
+  "coco_id": 43,
+  "supercategory": "sports",
+  "n_captions": 60,
+  "primary": 25341,
+  "primary_name": "Bladed weapons and melee arms",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 25341,
+    "name": "Bladed weapons and melee arms",
+    "specificity": 2.335,
+    "frac_captions": 0.733,
+    "doc_freq": 620,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 12743,
+    "name": "Racket sports and tennis",
+    "specificity": 2.25,
+    "frac_captions": 0.65,
+    "doc_freq": 470,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33142,
+    "name": "Clubs and Social Groups",
+    "specificity": 2.156,
+    "frac_captions": 0.517,
+    "doc_freq": 230,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 12445,
+    "name": "Celebrity Net Worth",
+    "specificity": 2.115,
+    "frac_captions": 0.517,
+    "doc_freq": 249,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32002,
+    "name": "Throwing and ball sports",
+    "specificity": 1.697,
+    "frac_captions": 0.683,
+    "doc_freq": 1251,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 95.56
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 82.74
+   },
+   {
+    "id": 12743,
+    "name": "Racket sports and tennis",
+    "weight_sum": 71.77
+   }
+  ]
+ },
+ "bottle": {
+  "coco_id": 44,
+  "supercategory": "kitchen",
+  "n_captions": 60,
+  "primary": 13021,
+  "primary_name": "Beverages and Alcoholic Drinks",
+  "primary_consistency": 0.7,
+  "top5": [
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "specificity": 2.22,
+    "frac_captions": 0.7,
+    "doc_freq": 628,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20797,
+    "name": "Brewing and Liquid Preparation",
+    "specificity": 2.085,
+    "frac_captions": 0.433,
+    "doc_freq": 121,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "specificity": 1.988,
+    "frac_captions": 0.783,
+    "doc_freq": 1184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "specificity": 1.951,
+    "frac_captions": 0.683,
+    "doc_freq": 862,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15503,
+    "name": "Distilleries and Whisky Spirits",
+    "specificity": 1.586,
+    "frac_captions": 0.3,
+    "doc_freq": 75,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "weight_sum": 34.87
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 30.91
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "weight_sum": 26.17
+   }
+  ]
+ },
+ "wine glass": {
+  "coco_id": 46,
+  "supercategory": "kitchen",
+  "n_captions": 37,
+  "primary": 13021,
+  "primary_name": "Beverages and Alcoholic Drinks",
+  "primary_consistency": 0.6216216216216216,
+  "top5": [
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "specificity": 1.972,
+    "frac_captions": 0.622,
+    "doc_freq": 628,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "specificity": 1.698,
+    "frac_captions": 0.595,
+    "doc_freq": 862,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.574,
+    "frac_captions": 0.919,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "specificity": 1.351,
+    "frac_captions": 0.568,
+    "doc_freq": 1387,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 30490,
+    "name": "Aspects of People's Lives",
+    "specificity": 1.327,
+    "frac_captions": 0.297,
+    "doc_freq": 172,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 49.21
+   },
+   {
+    "id": 27240,
+    "name": "Gifts and Festive Decorations",
+    "weight_sum": 41.0
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 24.63
+   }
+  ]
+ },
+ "cup": {
+  "coco_id": 47,
+  "supercategory": "kitchen",
+  "n_captions": 60,
+  "primary": 14987,
+  "primary_name": "Recipe Ingredients and Measurements",
+  "primary_consistency": 0.5833333333333334,
+  "top5": [
+   {
+    "id": 14987,
+    "name": "Recipe Ingredients and Measurements",
+    "specificity": 2.774,
+    "frac_captions": 0.583,
+    "doc_freq": 128,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "specificity": 1.999,
+    "frac_captions": 0.7,
+    "doc_freq": 862,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "specificity": 1.819,
+    "frac_captions": 0.717,
+    "doc_freq": 1184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "specificity": 1.785,
+    "frac_captions": 0.75,
+    "doc_freq": 1387,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13021,
+    "name": "Beverages and Alcoholic Drinks",
+    "specificity": 1.692,
+    "frac_captions": 0.533,
+    "doc_freq": 628,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 30.36
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "weight_sum": 25.97
+   },
+   {
+    "id": 14987,
+    "name": "Recipe Ingredients and Measurements",
+    "weight_sum": 24.71
+   }
+  ]
+ },
+ "fork": {
+  "coco_id": 48,
+  "supercategory": "kitchen",
+  "n_captions": 60,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "specificity": 3.083,
+    "frac_captions": 0.833,
+    "doc_freq": 370,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "specificity": 2.728,
+    "frac_captions": 0.6,
+    "doc_freq": 158,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "specificity": 1.785,
+    "frac_captions": 0.75,
+    "doc_freq": 1387,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 1.69,
+    "frac_captions": 0.5,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.656,
+    "frac_captions": 0.967,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 45.51
+   },
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "weight_sum": 35.6
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 35.25
+   }
+  ]
+ },
+ "knife": {
+  "coco_id": 49,
+  "supercategory": "kitchen",
+  "n_captions": 60,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "primary_consistency": 0.8833333333333333,
+  "top5": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "specificity": 3.268,
+    "frac_captions": 0.883,
+    "doc_freq": 370,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17184,
+    "name": "Sharp Blades and Edges",
+    "specificity": 2.277,
+    "frac_captions": 0.467,
+    "doc_freq": 113,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 2.197,
+    "frac_captions": 0.65,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11225,
+    "name": "Needles and Sterile Instruments",
+    "specificity": 2.147,
+    "frac_captions": 0.45,
+    "doc_freq": 126,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "specificity": 1.895,
+    "frac_captions": 0.417,
+    "doc_freq": 158,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 51.35
+   },
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "weight_sum": 45.98
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 32.58
+   }
+  ]
+ },
+ "spoon": {
+  "coco_id": 50,
+  "supercategory": "kitchen",
+  "n_captions": 52,
+  "primary": 19825,
+  "primary_name": "Knives and Blades",
+  "primary_consistency": 0.5576923076923077,
+  "top5": [
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "specificity": 2.063,
+    "frac_captions": 0.558,
+    "doc_freq": 370,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "specificity": 1.739,
+    "frac_captions": 0.731,
+    "doc_freq": 1387,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23922,
+    "name": "Dining Etiquette and Manners",
+    "specificity": 1.574,
+    "frac_captions": 0.346,
+    "doc_freq": 158,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.516,
+    "frac_captions": 0.885,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "specificity": 1.464,
+    "frac_captions": 0.577,
+    "doc_freq": 1184,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 42.35
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 33.19
+   },
+   {
+    "id": 19825,
+    "name": "Knives and Blades",
+    "weight_sum": 23.74
+   }
+  ]
+ },
+ "bowl": {
+  "coco_id": 51,
+  "supercategory": "kitchen",
+  "n_captions": 60,
+  "primary": 15958,
+  "primary_name": "Ancient Greek Pottery Vessels",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "specificity": 2.379,
+    "frac_captions": 0.833,
+    "doc_freq": 862,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "specificity": 2.023,
+    "frac_captions": 0.85,
+    "doc_freq": 1387,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "specificity": 1.988,
+    "frac_captions": 0.783,
+    "doc_freq": 1184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26440,
+    "name": "Boxes, Packages, Containers",
+    "specificity": 1.546,
+    "frac_captions": 0.95,
+    "doc_freq": 2946,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.371,
+    "frac_captions": 0.8,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 17856,
+    "name": "Plates and tableware",
+    "weight_sum": 41.55
+   },
+   {
+    "id": 26440,
+    "name": "Boxes, Packages, Containers",
+    "weight_sum": 34.35
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 32.88
+   }
+  ]
+ },
+ "banana": {
+  "coco_id": 52,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 23049,
+  "primary_name": "Fruits and ripening",
+  "primary_consistency": 0.7,
+  "top5": [
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "specificity": 1.878,
+    "frac_captions": 0.7,
+    "doc_freq": 1024,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "specificity": 1.69,
+    "frac_captions": 0.517,
+    "doc_freq": 568,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.456,
+    "frac_captions": 0.85,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22453,
+    "name": "Commodities and Manufactured Goods",
+    "specificity": 1.421,
+    "frac_captions": 0.7,
+    "doc_freq": 1970,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 1.408,
+    "frac_captions": 0.417,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 39.85
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 34.99
+   },
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "weight_sum": 28.24
+   }
+  ]
+ },
+ "apple": {
+  "coco_id": 53,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 18455,
+  "primary_name": "Apple (fruit and Inc.)",
+  "primary_consistency": 0.48333333333333334,
+  "top5": [
+   {
+    "id": 18455,
+    "name": "Apple (fruit and Inc.)",
+    "specificity": 2.066,
+    "frac_captions": 0.483,
+    "doc_freq": 208,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "specificity": 2.057,
+    "frac_captions": 0.767,
+    "doc_freq": 1024,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28190,
+    "name": "Fruits and Their Nutrition",
+    "specificity": 1.886,
+    "frac_captions": 0.5,
+    "doc_freq": 344,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "specificity": 1.8,
+    "frac_captions": 0.55,
+    "doc_freq": 568,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 1.746,
+    "frac_captions": 0.517,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 34.95
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 31.57
+   },
+   {
+    "id": 16776,
+    "name": "Plural Facilities and Venues",
+    "weight_sum": 31.48
+   }
+  ]
+ },
+ "sandwich": {
+  "coco_id": 54,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 7322,
+  "primary_name": "Fast Food Chains and Burgers",
+  "primary_consistency": 0.7833333333333333,
+  "top5": [
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "specificity": 2.405,
+    "frac_captions": 0.783,
+    "doc_freq": 695,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "specificity": 2.348,
+    "frac_captions": 0.783,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22045,
+    "name": "Holiday Feast Foods",
+    "specificity": 2.047,
+    "frac_captions": 0.5,
+    "doc_freq": 249,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "specificity": 1.998,
+    "frac_captions": 0.767,
+    "doc_freq": 1107,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "specificity": 1.937,
+    "frac_captions": 0.883,
+    "doc_freq": 1673,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 44.65
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 43.1
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "weight_sum": 35.31
+   }
+  ]
+ },
+ "orange": {
+  "coco_id": 55,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 23049,
+  "primary_name": "Fruits and ripening",
+  "primary_consistency": 0.45,
+  "top5": [
+   {
+    "id": 23049,
+    "name": "Fruits and ripening",
+    "specificity": 1.208,
+    "frac_captions": 0.45,
+    "doc_freq": 1024,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 1.014,
+    "frac_captions": 0.3,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28190,
+    "name": "Fruits and Their Nutrition",
+    "specificity": 0.943,
+    "frac_captions": 0.25,
+    "doc_freq": 344,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "specificity": 0.818,
+    "frac_captions": 0.25,
+    "doc_freq": 568,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 0.8,
+    "frac_captions": 0.467,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 30.19
+   },
+   {
+    "id": 32606,
+    "name": "Color names and shades",
+    "weight_sum": 23.42
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 23.0
+   }
+  ]
+ },
+ "broccoli": {
+  "coco_id": 56,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 1029,
+  "primary_name": "Recipe Ingredients and Instructions",
+  "primary_consistency": 0.8166666666666667,
+  "top5": [
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 2.76,
+    "frac_captions": 0.817,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26234,
+    "name": "Chicken and Meat Cooking",
+    "specificity": 2.72,
+    "frac_captions": 0.75,
+    "doc_freq": 398,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4648,
+    "name": "Cheesy Recipe Assembly",
+    "specificity": 2.607,
+    "frac_captions": 0.75,
+    "doc_freq": 463,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "specificity": 2.58,
+    "frac_captions": 0.883,
+    "doc_freq": 807,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "specificity": 2.399,
+    "frac_captions": 0.733,
+    "doc_freq": 568,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 54.62
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "weight_sum": 36.89
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "weight_sum": 36.68
+   }
+  ]
+ },
+ "carrot": {
+  "coco_id": 57,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 1029,
+  "primary_name": "Recipe Ingredients and Instructions",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 1029,
+    "name": "Recipe Ingredients and Instructions",
+    "specificity": 2.478,
+    "frac_captions": 0.733,
+    "doc_freq": 510,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17182,
+    "name": "Vegetables and produce preparation",
+    "specificity": 2.454,
+    "frac_captions": 0.75,
+    "doc_freq": 568,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26510,
+    "name": "Edible Garden Plants and Herbs",
+    "specificity": 2.424,
+    "frac_captions": 0.567,
+    "doc_freq": 207,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4648,
+    "name": "Cheesy Recipe Assembly",
+    "specificity": 2.259,
+    "frac_captions": 0.65,
+    "doc_freq": 463,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26234,
+    "name": "Chicken and Meat Cooking",
+    "specificity": 1.934,
+    "frac_captions": 0.533,
+    "doc_freq": 398,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 48.37
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 36.85
+   },
+   {
+    "id": 22453,
+    "name": "Commodities and Manufactured Goods",
+    "weight_sum": 33.37
+   }
+  ]
+ },
+ "hot dog": {
+  "coco_id": 58,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 7322,
+  "primary_name": "Fast Food Chains and Burgers",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "specificity": 2.559,
+    "frac_captions": 0.833,
+    "doc_freq": 695,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "specificity": 2.041,
+    "frac_captions": 0.783,
+    "doc_freq": 1107,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 4648,
+    "name": "Cheesy Recipe Assembly",
+    "specificity": 2.028,
+    "frac_captions": 0.583,
+    "doc_freq": 463,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25216,
+    "name": "Culinary Ingredients and Flavors",
+    "specificity": 1.996,
+    "frac_captions": 0.683,
+    "doc_freq": 807,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "specificity": 1.827,
+    "frac_captions": 0.833,
+    "doc_freq": 1673,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 83.42
+   },
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "weight_sum": 80.86
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "weight_sum": 55.07
+   }
+  ]
+ },
+ "pizza": {
+  "coco_id": 59,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 13097,
+  "primary_name": "Pizza and Countertop Ovens",
+  "primary_consistency": 0.65,
+  "top5": [
+   {
+    "id": 13097,
+    "name": "Pizza and Countertop Ovens",
+    "specificity": 2.374,
+    "frac_captions": 0.65,
+    "doc_freq": 388,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22045,
+    "name": "Holiday Feast Foods",
+    "specificity": 2.115,
+    "frac_captions": 0.517,
+    "doc_freq": 249,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "specificity": 1.827,
+    "frac_captions": 0.833,
+    "doc_freq": 1673,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28236,
+    "name": "Menus: food and UI",
+    "specificity": 1.799,
+    "frac_captions": 0.733,
+    "doc_freq": 1289,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32373,
+    "name": "Restaurant Dining and Dishes",
+    "specificity": 1.78,
+    "frac_captions": 0.683,
+    "doc_freq": 1107,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 44.93
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 41.54
+   },
+   {
+    "id": 13098,
+    "name": "Cuisine and Dining Culture",
+    "weight_sum": 30.27
+   }
+  ]
+ },
+ "donut": {
+  "coco_id": 60,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 7322,
+  "primary_name": "Fast Food Chains and Burgers",
+  "primary_consistency": 0.7166666666666667,
+  "top5": [
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "specificity": 2.2,
+    "frac_captions": 0.717,
+    "doc_freq": 695,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "specificity": 2.073,
+    "frac_captions": 0.75,
+    "doc_freq": 944,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22857,
+    "name": "Healthy Snacks and Quick Meals",
+    "specificity": 2.0,
+    "frac_captions": 0.5,
+    "doc_freq": 274,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "specificity": 1.798,
+    "frac_captions": 0.6,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5399,
+    "name": "Bread and Baking",
+    "specificity": 1.649,
+    "frac_captions": 0.4,
+    "doc_freq": 242,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 81.94
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "weight_sum": 63.48
+   },
+   {
+    "id": 7322,
+    "name": "Fast Food Chains and Burgers",
+    "weight_sum": 50.93
+   }
+  ]
+ },
+ "cake": {
+  "coco_id": 61,
+  "supercategory": "food",
+  "n_captions": 60,
+  "primary": 22045,
+  "primary_name": "Holiday Feast Foods",
+  "primary_consistency": 0.4666666666666667,
+  "top5": [
+   {
+    "id": 22045,
+    "name": "Holiday Feast Foods",
+    "specificity": 1.911,
+    "frac_captions": 0.467,
+    "doc_freq": 249,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5411,
+    "name": "'ake' orthographic cluster",
+    "specificity": 1.816,
+    "frac_captions": 0.55,
+    "doc_freq": 551,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17504,
+    "name": "Sweets and Desserts",
+    "specificity": 1.521,
+    "frac_captions": 0.55,
+    "doc_freq": 944,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "specificity": 1.456,
+    "frac_captions": 0.85,
+    "doc_freq": 2703,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29115,
+    "name": "Sandwiches and Condiments",
+    "specificity": 1.399,
+    "frac_captions": 0.467,
+    "doc_freq": 748,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 47.33
+   },
+   {
+    "id": 18408,
+    "name": "Cooking and Recipe Ingredients",
+    "weight_sum": 34.61
+   },
+   {
+    "id": 27240,
+    "name": "Gifts and Festive Decorations",
+    "weight_sum": 27.56
+   }
+  ]
+ },
+ "chair": {
+  "coco_id": 62,
+  "supercategory": "furniture",
+  "n_captions": 60,
+  "primary": 8147,
+  "primary_name": "Ergonomic seating and workspace comfort",
+  "primary_consistency": 0.7,
+  "top5": [
+   {
+    "id": 8147,
+    "name": "Ergonomic seating and workspace comfort",
+    "specificity": 2.04,
+    "frac_captions": 0.7,
+    "doc_freq": 813,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7136,
+    "name": "Moving and rearranging furniture",
+    "specificity": 1.473,
+    "frac_captions": 0.367,
+    "doc_freq": 269,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "specificity": 1.442,
+    "frac_captions": 0.95,
+    "doc_freq": 3288,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21180,
+    "name": "Stairs, Ramps, and Accessibility",
+    "specificity": 1.371,
+    "frac_captions": 0.633,
+    "doc_freq": 1722,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "specificity": 1.084,
+    "frac_captions": 0.733,
+    "doc_freq": 3418,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 42.34
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "weight_sum": 38.89
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 34.44
+   }
+  ]
+ },
+ "couch": {
+  "coco_id": 63,
+  "supercategory": "furniture",
+  "n_captions": 60,
+  "primary": 31227,
+  "primary_name": "Floor and Upholstery Cleaning",
+  "primary_consistency": 0.65,
+  "top5": [
+   {
+    "id": 31227,
+    "name": "Floor and Upholstery Cleaning",
+    "specificity": 2.221,
+    "frac_captions": 0.65,
+    "doc_freq": 491,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 16092,
+    "name": "Beds and Bedding",
+    "specificity": 2.07,
+    "frac_captions": 0.783,
+    "doc_freq": 1067,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7136,
+    "name": "Moving and rearranging furniture",
+    "specificity": 1.54,
+    "frac_captions": 0.383,
+    "doc_freq": 269,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "specificity": 1.467,
+    "frac_captions": 0.967,
+    "doc_freq": 3288,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 1.446,
+    "frac_captions": 0.817,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 53.79
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 45.86
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "weight_sum": 44.33
+   }
+  ]
+ },
+ "potted plant": {
+  "coco_id": 64,
+  "supercategory": "furniture",
+  "n_captions": 13,
+  "primary": 3252,
+  "primary_name": "Flowers and Floral Arrangements",
+  "primary_consistency": 0.9230769230769231,
+  "top5": [
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "specificity": 1.673,
+    "frac_captions": 0.923,
+    "doc_freq": 2449,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22453,
+    "name": "Commodities and Manufactured Goods",
+    "specificity": 1.405,
+    "frac_captions": 0.692,
+    "doc_freq": 1970,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 1.226,
+    "frac_captions": 0.692,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8600,
+    "name": "Equipment and Tangible Goods",
+    "specificity": 1.223,
+    "frac_captions": 0.769,
+    "doc_freq": 3058,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27240,
+    "name": "Gifts and Festive Decorations",
+    "specificity": 1.071,
+    "frac_captions": 0.769,
+    "doc_freq": 3726,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 25.63
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "weight_sum": 14.2
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 13.56
+   }
+  ]
+ },
+ "bed": {
+  "coco_id": 65,
+  "supercategory": "furniture",
+  "n_captions": 60,
+  "primary": 16092,
+  "primary_name": "Beds and Bedding",
+  "primary_consistency": 0.8833333333333333,
+  "top5": [
+   {
+    "id": 16092,
+    "name": "Beds and Bedding",
+    "specificity": 2.334,
+    "frac_captions": 0.883,
+    "doc_freq": 1067,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "specificity": 1.163,
+    "frac_captions": 0.767,
+    "doc_freq": 3288,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 1.122,
+    "frac_captions": 0.633,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8147,
+    "name": "Ergonomic seating and workspace comfort",
+    "specificity": 1.02,
+    "frac_captions": 0.35,
+    "doc_freq": 813,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 7136,
+    "name": "Moving and rearranging furniture",
+    "specificity": 0.87,
+    "frac_captions": 0.217,
+    "doc_freq": 269,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 40.42
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 37.75
+   },
+   {
+    "id": 33669,
+    "name": "Personal Diary Narrative",
+    "weight_sum": 37.04
+   }
+  ]
+ },
+ "dining table": {
+  "coco_id": 67,
+  "supercategory": "furniture",
+  "n_captions": 32,
+  "primary": 2152,
+  "primary_name": "SQL and database programming",
+  "primary_consistency": 0.5625,
+  "top5": [
+   {
+    "id": 2152,
+    "name": "SQL and database programming",
+    "specificity": 2.111,
+    "frac_captions": 0.562,
+    "doc_freq": 351,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 16753,
+    "name": "ATMs, Kiosks, and Service Terminals",
+    "specificity": 1.62,
+    "frac_captions": 0.875,
+    "doc_freq": 2355,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "specificity": 1.517,
+    "frac_captions": 1.0,
+    "doc_freq": 3288,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "specificity": 1.479,
+    "frac_captions": 1.0,
+    "doc_freq": 3418,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11962,
+    "name": "Historic Vernacular Architecture",
+    "specificity": 1.469,
+    "frac_captions": 0.781,
+    "doc_freq": 2287,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "weight_sum": 45.74
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 44.9
+   },
+   {
+    "id": 18179,
+    "name": "Outdoor Patios and Leisure Spaces",
+    "weight_sum": 42.57
+   }
+  ]
+ },
+ "toilet": {
+  "coco_id": 70,
+  "supercategory": "furniture",
+  "n_captions": 60,
+  "primary": 26929,
+  "primary_name": "Urination, Bowel, and Incontinence",
+  "primary_consistency": 0.6833333333333333,
+  "top5": [
+   {
+    "id": 26929,
+    "name": "Urination, Bowel, and Incontinence",
+    "specificity": 2.852,
+    "frac_captions": 0.683,
+    "doc_freq": 230,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "specificity": 2.553,
+    "frac_captions": 0.833,
+    "doc_freq": 700,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 496,
+    "name": "Residential Plumbing Services",
+    "specificity": 2.535,
+    "frac_captions": 0.633,
+    "doc_freq": 273,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 1.615,
+    "frac_captions": 0.45,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 1.358,
+    "frac_captions": 0.767,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 51.53
+   },
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "weight_sum": 46.65
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 39.21
+   }
+  ]
+ },
+ "tv": {
+  "coco_id": 72,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 9704,
+  "primary_name": "Television and Broadcasting",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 9704,
+    "name": "Television and Broadcasting",
+    "specificity": 2.879,
+    "frac_captions": 0.733,
+    "doc_freq": 295,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 23122,
+    "name": "Television and TV viewing",
+    "specificity": 2.253,
+    "frac_captions": 0.383,
+    "doc_freq": 41,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25737,
+    "name": "Display screens and monitors",
+    "specificity": 1.568,
+    "frac_captions": 0.483,
+    "doc_freq": 584,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 1.189,
+    "frac_captions": 0.45,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 0.974,
+    "frac_captions": 0.55,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 43.91
+   },
+   {
+    "id": 33669,
+    "name": "Personal Diary Narrative",
+    "weight_sum": 33.54
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 30.22
+   }
+  ]
+ },
+ "laptop": {
+  "coco_id": 73,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 27802,
+  "primary_name": "Personal Computer Hardware and OS",
+  "primary_consistency": 0.7333333333333333,
+  "top5": [
+   {
+    "id": 27802,
+    "name": "Personal Computer Hardware and OS",
+    "specificity": 2.543,
+    "frac_captions": 0.733,
+    "doc_freq": 467,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 1.718,
+    "frac_captions": 0.65,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32130,
+    "name": "Mobile Devices and Responsive Design",
+    "specificity": 1.488,
+    "frac_captions": 0.383,
+    "doc_freq": 308,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25737,
+    "name": "Display screens and monitors",
+    "specificity": 1.46,
+    "frac_captions": 0.45,
+    "doc_freq": 584,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 5242,
+    "name": "Computers and Computer Science",
+    "specificity": 1.457,
+    "frac_captions": 0.45,
+    "doc_freq": 588,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 37.44
+   },
+   {
+    "id": 27802,
+    "name": "Personal Computer Hardware and OS",
+    "weight_sum": 29.82
+   },
+   {
+    "id": 33646,
+    "name": "How-to Instructional Steps",
+    "weight_sum": 25.95
+   }
+  ]
+ },
+ "mouse": {
+  "coco_id": 74,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 26261,
+  "primary_name": "Computer mouse and pointers",
+  "primary_consistency": 0.9166666666666666,
+  "top5": [
+   {
+    "id": 26261,
+    "name": "Computer mouse and pointers",
+    "specificity": 4.065,
+    "frac_captions": 0.917,
+    "doc_freq": 177,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "specificity": 3.643,
+    "frac_captions": 0.917,
+    "doc_freq": 281,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25737,
+    "name": "Display screens and monitors",
+    "specificity": 2.379,
+    "frac_captions": 0.733,
+    "doc_freq": 584,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25637,
+    "name": "PC Hardware Components",
+    "specificity": 2.336,
+    "frac_captions": 0.533,
+    "doc_freq": 187,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32211,
+    "name": "Keyboard Input Handling",
+    "specificity": 2.254,
+    "frac_captions": 0.517,
+    "doc_freq": 190,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 52.17
+   },
+   {
+    "id": 33646,
+    "name": "How-to Instructional Steps",
+    "weight_sum": 50.05
+   },
+   {
+    "id": 26261,
+    "name": "Computer mouse and pointers",
+    "weight_sum": 46.43
+   }
+  ]
+ },
+ "remote": {
+  "coco_id": 75,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 27525,
+  "primary_name": "Remote Work and Virtual Communication",
+  "primary_consistency": 0.5833333333333334,
+  "top5": [
+   {
+    "id": 27525,
+    "name": "Remote Work and Virtual Communication",
+    "specificity": 2.852,
+    "frac_captions": 0.583,
+    "doc_freq": 112,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "specificity": 2.649,
+    "frac_captions": 0.667,
+    "doc_freq": 281,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 24949,
+    "name": "Gaming Hardware and Controllers",
+    "specificity": 2.427,
+    "frac_captions": 0.5,
+    "doc_freq": 116,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15810,
+    "name": "Console Gaming Ecosystem",
+    "specificity": 2.096,
+    "frac_captions": 0.433,
+    "doc_freq": 118,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31181,
+    "name": "Button presses and device reset",
+    "specificity": 1.936,
+    "frac_captions": 0.467,
+    "doc_freq": 236,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "weight_sum": 39.29
+   },
+   {
+    "id": 27525,
+    "name": "Remote Work and Virtual Communication",
+    "weight_sum": 32.96
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 30.56
+   }
+  ]
+ },
+ "keyboard": {
+  "coco_id": 76,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 32211,
+  "primary_name": "Keyboard Input Handling",
+  "primary_consistency": 0.75,
+  "top5": [
+   {
+    "id": 32211,
+    "name": "Keyboard Input Handling",
+    "specificity": 3.273,
+    "frac_captions": 0.75,
+    "doc_freq": 190,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27802,
+    "name": "Personal Computer Hardware and OS",
+    "specificity": 2.716,
+    "frac_captions": 0.783,
+    "doc_freq": 467,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 720,
+    "name": "Gaming Input Peripherals",
+    "specificity": 2.715,
+    "frac_captions": 0.683,
+    "doc_freq": 281,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 25637,
+    "name": "PC Hardware Components",
+    "specificity": 2.555,
+    "frac_captions": 0.583,
+    "doc_freq": 187,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 26261,
+    "name": "Computer mouse and pointers",
+    "specificity": 2.069,
+    "frac_captions": 0.467,
+    "doc_freq": 177,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 45.86
+   },
+   {
+    "id": 33646,
+    "name": "How-to Instructional Steps",
+    "weight_sum": 45.56
+   },
+   {
+    "id": 32211,
+    "name": "Keyboard Input Handling",
+    "weight_sum": 28.15
+   }
+  ]
+ },
+ "cell phone": {
+  "coco_id": 77,
+  "supercategory": "electronic",
+  "n_captions": 60,
+  "primary": 27933,
+  "primary_name": "Phones and Personal Devices",
+  "primary_consistency": 0.8666666666666667,
+  "top5": [
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 2.291,
+    "frac_captions": 0.867,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31320,
+    "name": "Spreadsheet cells, rows, and columns",
+    "specificity": 2.041,
+    "frac_captions": 0.467,
+    "doc_freq": 188,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 32130,
+    "name": "Mobile Devices and Responsive Design",
+    "specificity": 2.006,
+    "frac_captions": 0.517,
+    "doc_freq": 308,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21743,
+    "name": "Smartphones and Mobile Devices",
+    "specificity": 1.948,
+    "frac_captions": 0.533,
+    "doc_freq": 388,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18144,
+    "name": "Telephony and phone calls",
+    "specificity": 1.629,
+    "frac_captions": 0.383,
+    "doc_freq": 213,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 66.16
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 64.14
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "weight_sum": 44.81
+   }
+  ]
+ },
+ "microwave": {
+  "coco_id": 78,
+  "supercategory": "appliance",
+  "n_captions": 60,
+  "primary": 15005,
+  "primary_name": "Microwave ovens and heating",
+  "primary_consistency": 0.6166666666666667,
+  "top5": [
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "specificity": 2.848,
+    "frac_captions": 0.617,
+    "doc_freq": 147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 2.573,
+    "frac_captions": 0.717,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "specificity": 2.272,
+    "frac_captions": 0.533,
+    "doc_freq": 211,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "specificity": 1.842,
+    "frac_captions": 0.717,
+    "doc_freq": 1147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 14345,
+    "name": "Household Appliance Energy Calculations",
+    "specificity": 1.601,
+    "frac_captions": 0.267,
+    "doc_freq": 36,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 49.95
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 44.53
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "weight_sum": 31.98
+   }
+  ]
+ },
+ "oven": {
+  "coco_id": 79,
+  "supercategory": "appliance",
+  "n_captions": 60,
+  "primary": 28015,
+  "primary_name": "Grilling and Cookware",
+  "primary_consistency": 0.8,
+  "top5": [
+   {
+    "id": 28015,
+    "name": "Grilling and Cookware",
+    "specificity": 3.119,
+    "frac_captions": 0.8,
+    "doc_freq": 303,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "specificity": 3.002,
+    "frac_captions": 0.65,
+    "doc_freq": 147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31636,
+    "name": "Oven Baking Instructions",
+    "specificity": 2.857,
+    "frac_captions": 0.65,
+    "doc_freq": 184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 2.752,
+    "frac_captions": 0.767,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "specificity": 2.556,
+    "frac_captions": 0.6,
+    "doc_freq": 211,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 42.54
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "weight_sum": 40.48
+   },
+   {
+    "id": 33646,
+    "name": "How-to Instructional Steps",
+    "weight_sum": 35.79
+   }
+  ]
+ },
+ "toaster": {
+  "coco_id": 80,
+  "supercategory": "appliance",
+  "n_captions": 17,
+  "primary": 15005,
+  "primary_name": "Microwave ovens and heating",
+  "primary_consistency": 0.6470588235294118,
+  "top5": [
+   {
+    "id": 15005,
+    "name": "Microwave ovens and heating",
+    "specificity": 2.989,
+    "frac_captions": 0.647,
+    "doc_freq": 147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "specificity": 2.57,
+    "frac_captions": 1.0,
+    "doc_freq": 1147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 2.534,
+    "frac_captions": 0.706,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29098,
+    "name": "Heating and HVAC Equipment",
+    "specificity": 1.754,
+    "frac_captions": 0.412,
+    "doc_freq": 211,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28015,
+    "name": "Grilling and Cookware",
+    "specificity": 1.605,
+    "frac_captions": 0.412,
+    "doc_freq": 303,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 15.55
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 11.65
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "weight_sum": 10.88
+   }
+  ]
+ },
+ "sink": {
+  "coco_id": 81,
+  "supercategory": "appliance",
+  "n_captions": 60,
+  "primary": 32093,
+  "primary_name": "Bathrooms and Bathing Fixtures",
+  "primary_consistency": 0.8333333333333334,
+  "top5": [
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "specificity": 2.553,
+    "frac_captions": 0.833,
+    "doc_freq": 700,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 496,
+    "name": "Residential Plumbing Services",
+    "specificity": 2.335,
+    "frac_captions": 0.583,
+    "doc_freq": 273,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 1.974,
+    "frac_captions": 0.55,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 19574,
+    "name": "Washing, Rinsing, and Cleaning",
+    "specificity": 1.861,
+    "frac_captions": 0.733,
+    "doc_freq": 1184,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 15944,
+    "name": "Multilingual Hotel Amenities Descriptions",
+    "specificity": 1.834,
+    "frac_captions": 0.4,
+    "doc_freq": 152,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 54.47
+   },
+   {
+    "id": 32093,
+    "name": "Bathrooms and Bathing Fixtures",
+    "weight_sum": 44.26
+   },
+   {
+    "id": 12032,
+    "name": "Interior Design and Home Decor",
+    "weight_sum": 39.36
+   }
+  ]
+ },
+ "refrigerator": {
+  "coco_id": 82,
+  "supercategory": "appliance",
+  "n_captions": 60,
+  "primary": 33346,
+  "primary_name": "Cooling and 'Cool' Slang",
+  "primary_consistency": 0.4166666666666667,
+  "top5": [
+   {
+    "id": 33346,
+    "name": "Cooling and 'Cool' Slang",
+    "specificity": 1.743,
+    "frac_captions": 0.417,
+    "doc_freq": 228,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33499,
+    "name": "Home Appliance Repair",
+    "specificity": 1.735,
+    "frac_captions": 0.483,
+    "doc_freq": 413,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9358,
+    "name": "Cooking and Kitchen Domain",
+    "specificity": 1.713,
+    "frac_captions": 0.667,
+    "doc_freq": 1147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 1.328,
+    "frac_captions": 0.75,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 1450,
+    "name": "Home Safety and Residential Spaces",
+    "specificity": 1.32,
+    "frac_captions": 0.367,
+    "doc_freq": 409,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 47.48
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "weight_sum": 36.47
+   },
+   {
+    "id": 29785,
+    "name": "Tables and Furniture",
+    "weight_sum": 26.75
+   }
+  ]
+ },
+ "book": {
+  "coco_id": 84,
+  "supercategory": "indoor",
+  "n_captions": 60,
+  "primary": 20353,
+  "primary_name": "Books and publishing",
+  "primary_consistency": 0.8833333333333333,
+  "top5": [
+   {
+    "id": 20353,
+    "name": "Books and publishing",
+    "specificity": 2.431,
+    "frac_captions": 0.883,
+    "doc_freq": 956,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11836,
+    "name": "Scrapbooks and Archival Ephemera",
+    "specificity": 1.255,
+    "frac_captions": 0.383,
+    "doc_freq": 567,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 14533,
+    "name": "Books and Reference Handbooks",
+    "specificity": 1.165,
+    "frac_captions": 0.283,
+    "doc_freq": 245,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27933,
+    "name": "Phones and Personal Devices",
+    "specificity": 1.101,
+    "frac_captions": 0.417,
+    "doc_freq": 1066,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 13309,
+    "name": "Home Decor and Fixtures",
+    "specificity": 0.974,
+    "frac_captions": 0.55,
+    "doc_freq": 2551,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 33669,
+    "name": "Personal Diary Narrative",
+    "weight_sum": 35.09
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 35.0
+   },
+   {
+    "id": 20353,
+    "name": "Books and publishing",
+    "weight_sum": 32.07
+   }
+  ]
+ },
+ "clock": {
+  "coco_id": 85,
+  "supercategory": "indoor",
+  "n_captions": 60,
+  "primary": 29888,
+  "primary_name": "Watches and Timekeeping",
+  "primary_consistency": 0.6333333333333333,
+  "top5": [
+   {
+    "id": 29888,
+    "name": "Watches and Timekeeping",
+    "specificity": 2.122,
+    "frac_captions": 0.633,
+    "doc_freq": 525,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 10343,
+    "name": "Landmarks and Monumental Architecture",
+    "specificity": 1.635,
+    "frac_captions": 0.633,
+    "doc_freq": 1134,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20738,
+    "name": "Wind and Brass Instruments",
+    "specificity": 1.617,
+    "frac_captions": 0.35,
+    "doc_freq": 147,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 31464,
+    "name": "Fortifications and Defensive Structures",
+    "specificity": 1.542,
+    "frac_captions": 0.417,
+    "doc_freq": 370,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8772,
+    "name": "Skyscrapers and Iconic Towers",
+    "specificity": 1.435,
+    "frac_captions": 0.383,
+    "doc_freq": 354,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 32.16
+   },
+   {
+    "id": 29888,
+    "name": "Watches and Timekeeping",
+    "weight_sum": 28.71
+   },
+   {
+    "id": 9759,
+    "name": "Public Signage and Street Art",
+    "weight_sum": 27.71
+   }
+  ]
+ },
+ "vase": {
+  "coco_id": 86,
+  "supercategory": "indoor",
+  "n_captions": 60,
+  "primary": 15958,
+  "primary_name": "Ancient Greek Pottery Vessels",
+  "primary_consistency": 0.8833333333333333,
+  "top5": [
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "specificity": 2.522,
+    "frac_captions": 0.883,
+    "doc_freq": 862,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21730,
+    "name": "Pottery and 'ot' tokens",
+    "specificity": 2.188,
+    "frac_captions": 0.717,
+    "doc_freq": 707,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22425,
+    "name": "Letter V tokens",
+    "specificity": 1.727,
+    "frac_captions": 0.717,
+    "doc_freq": 1347,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 8348,
+    "name": "Flowers and Blooms",
+    "specificity": 1.664,
+    "frac_captions": 0.467,
+    "doc_freq": 423,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "specificity": 1.631,
+    "frac_captions": 0.9,
+    "doc_freq": 2449,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 15958,
+    "name": "Ancient Greek Pottery Vessels",
+    "weight_sum": 49.02
+   },
+   {
+    "id": 27240,
+    "name": "Gifts and Festive Decorations",
+    "weight_sum": 44.26
+   },
+   {
+    "id": 3252,
+    "name": "Flowers and Floral Arrangements",
+    "weight_sum": 44.15
+   }
+  ]
+ },
+ "scissors": {
+  "coco_id": 87,
+  "supercategory": "indoor",
+  "n_captions": 60,
+  "primary": 11225,
+  "primary_name": "Needles and Sterile Instruments",
+  "primary_consistency": 0.5833333333333334,
+  "top5": [
+   {
+    "id": 11225,
+    "name": "Needles and Sterile Instruments",
+    "specificity": 2.783,
+    "frac_captions": 0.583,
+    "doc_freq": 126,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 17184,
+    "name": "Sharp Blades and Edges",
+    "specificity": 1.708,
+    "frac_captions": 0.35,
+    "doc_freq": 113,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 22453,
+    "name": "Commodities and Manufactured Goods",
+    "specificity": 1.657,
+    "frac_captions": 0.817,
+    "doc_freq": 1970,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 28149,
+    "name": "Eyes and Vision/Ophthalmology",
+    "specificity": 1.544,
+    "frac_captions": 0.517,
+    "doc_freq": 754,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 2048,
+    "name": "Ear anatomy and conditions",
+    "specificity": 1.533,
+    "frac_captions": 0.35,
+    "doc_freq": 187,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 16776,
+    "name": "Plural Facilities and Venues",
+    "weight_sum": 48.48
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 37.24
+   },
+   {
+    "id": 33651,
+    "name": "Fiction Dialogue and Reaction Beats",
+    "weight_sum": 30.58
+   }
+  ]
+ },
+ "teddy bear": {
+  "coco_id": 88,
+  "supercategory": "indoor",
+  "n_captions": 60,
+  "primary": 11395,
+  "primary_name": "Children's Picture Books",
+  "primary_consistency": 0.4166666666666667,
+  "top5": [
+   {
+    "id": 11395,
+    "name": "Children's Picture Books",
+    "specificity": 1.198,
+    "frac_captions": 0.417,
+    "doc_freq": 846,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 9929,
+    "name": "Wildlife Documentary Footage",
+    "specificity": 1.187,
+    "frac_captions": 0.517,
+    "doc_freq": 1507,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 33610,
+    "name": "Cute Affectionate Child Scenes",
+    "specificity": 1.107,
+    "frac_captions": 0.783,
+    "doc_freq": 3649,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 943,
+    "name": "Vertebrate animal taxonomy",
+    "specificity": 1.067,
+    "frac_captions": 0.317,
+    "doc_freq": 515,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 6832,
+    "name": "Children's toys and play",
+    "specificity": 1.027,
+    "frac_captions": 0.433,
+    "doc_freq": 1401,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 132.92
+   },
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 105.92
+   },
+   {
+    "id": 7949,
+    "name": "Sculptural and Ornamental Artifacts",
+    "weight_sum": 84.7
+   }
+  ]
+ },
+ "hair drier": {
+  "coco_id": 89,
+  "supercategory": "indoor",
+  "n_captions": 1,
+  "primary": 11225,
+  "primary_name": "Needles and Sterile Instruments",
+  "primary_consistency": 1.0,
+  "top5": [
+   {
+    "id": 11225,
+    "name": "Needles and Sterile Instruments",
+    "specificity": 4.772,
+    "frac_captions": 1.0,
+    "doc_freq": 126,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 20526,
+    "name": "Visceral Audiovisual Intensity",
+    "specificity": 4.364,
+    "frac_captions": 1.0,
+    "doc_freq": 190,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 21334,
+    "name": "Progress and Forward Direction",
+    "specificity": 4.067,
+    "frac_captions": 1.0,
+    "doc_freq": 256,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 30710,
+    "name": "Chess Pieces and Gameplay",
+    "specificity": 3.956,
+    "frac_captions": 1.0,
+    "doc_freq": 286,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 27561,
+    "name": "Reflexive self-reference",
+    "specificity": 3.919,
+    "frac_captions": 1.0,
+    "doc_freq": 297,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 2.43
+   },
+   {
+    "id": 33651,
+    "name": "Fiction Dialogue and Reaction Beats",
+    "weight_sum": 2.35
+   },
+   {
+    "id": 16452,
+    "name": "Art and craft supplies",
+    "weight_sum": 1.84
+   }
+  ]
+ },
+ "toothbrush": {
+  "coco_id": 90,
+  "supercategory": "indoor",
+  "n_captions": 50,
+  "primary": 1698,
+  "primary_name": "Toothbrushing and Flossing Technique",
+  "primary_consistency": 0.72,
+  "top5": [
+   {
+    "id": 1698,
+    "name": "Toothbrushing and Flossing Technique",
+    "specificity": 2.571,
+    "frac_captions": 0.72,
+    "doc_freq": 421,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 29148,
+    "name": "Tooth eruption and development",
+    "specificity": 2.559,
+    "frac_captions": 0.4,
+    "doc_freq": 24,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 18254,
+    "name": "Dentistry and Oral Health",
+    "specificity": 2.277,
+    "frac_captions": 0.5,
+    "doc_freq": 157,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 14795,
+    "name": "Dental hygiene products",
+    "specificity": 2.233,
+    "frac_captions": 0.32,
+    "doc_freq": 13,
+    "in_vvis_caption": true
+   },
+   {
+    "id": 11225,
+    "name": "Needles and Sterile Instruments",
+    "specificity": 2.004,
+    "frac_captions": 0.42,
+    "doc_freq": 126,
+    "in_vvis_caption": true
+   }
+  ],
+  "top3_by_raw_weight": [
+   {
+    "id": 28722,
+    "name": "Animal Species",
+    "weight_sum": 64.97
+   },
+   {
+    "id": 22056,
+    "name": "Image Caption Scene Descriptions",
+    "weight_sum": 47.01
+   },
+   {
+    "id": 18254,
+    "name": "Dentistry and Oral Health",
+    "weight_sum": 36.72
+   }
+  ]
+ }
+}

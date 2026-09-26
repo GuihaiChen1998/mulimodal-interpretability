@@ -1,0 +1,38 @@
+[
+  {
+    "n_pos": 25,
+    "n_nan_hidden_rows": 0,
+    "n_zero_norm_rows": 0,
+    "n_nan_composed_rows": 0,
+    "seq_len": 25,
+    "max_rel_err_composed_bf16": 0.002649541012942791,
+    "max_abs_hidden": 21.625,
+    "bf16_ulp_at_max": 0.08447265625,
+    "max_rel_err_fp32_recompute": 0.0,
+    "logits_from_composed_vs_hidden_argmax_agree": 1.0
+  },
+  {
+    "n_pos": 18,
+    "n_nan_hidden_rows": 0,
+    "n_zero_norm_rows": 0,
+    "n_nan_composed_rows": 0,
+    "seq_len": 18,
+    "max_rel_err_composed_bf16": 0.003200674895197153,
+    "max_abs_hidden": 19.875,
+    "bf16_ulp_at_max": 0.07763671875,
+    "max_rel_err_fp32_recompute": 2.3282539785007828e-10,
+    "logits_from_composed_vs_hidden_argmax_agree": 1.0
+  },
+  {
+    "n_pos": 18,
+    "n_nan_hidden_rows": 0,
+    "n_zero_norm_rows": 0,
+    "n_nan_composed_rows": 0,
+    "seq_len": 18,
+    "max_rel_err_composed_bf16": 0.002709906781092286,
+    "max_abs_hidden": 21.125,
+    "bf16_ulp_at_max": 0.08251953125,
+    "max_rel_err_fp32_recompute": 0.0,
+    "logits_from_composed_vs_hidden_argmax_agree": 1.0
+  }
+]

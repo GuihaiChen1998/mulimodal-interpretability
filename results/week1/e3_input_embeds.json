@@ -1,0 +1,15 @@
+{
+  "ids_vs_embeds_max_abs_logit_diff": 0.0,
+  "seq_len": 593,
+  "text_start_pos": 576,
+  "text_start_block": 9,
+  "text_start_is_block_boundary": true,
+  "visibility": {
+    "perturb_block8__max_change_in_blocks0-7": 0.0,
+    "perturb_block8__min_change_in_text": 0.5,
+    "perturb_tok_in_block3__min_change_other_tokens_block3": 0.125,
+    "perturb_tok_in_block3__max_change_blocks0-2": 0.0,
+    "perturb_block0__min_change_in_text": 0.75
+  },
+  "pass": true
+}
