@@ -470,3 +470,43 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 
 ### 待决定
 - [ ] 正式 M0 的 K 是否加到 512（与 SIM 原文对齐，时间约翻倍）。
+
+---
+
+## 2026-09-27 · 第 19 次讨论（M0 的 K 维持不变；全模态数据；训练加速与 Stage 1 启动）
+
+### 用户决定 / 提出的问题
+1. **M0 的 K 先不加到 512**，维持 (8, 32, 128, 256)。
+2. 为以后扩展到全模态（文本、图像、音频、视频）做准备：收集音频、视频概念数据（例如 VGGSound）。
+3. 开始下一步实验。
+4. 训练过程中陆续问到能否用 Unsloth、DeepSpeed、XTuner、PiSSA/GaLore 加速；能否用 AudioCLIP、VideoCLIP 这类模型。
+
+### 加速方案的结论（均有实测或论证）
+- **Unsloth / XTuner：**只支持它们适配过的标准架构（自回归因果 LM），Steerling 是自定义的块因果扩散模型，用不上。XTuner 的打包在我们的场景下收益也很小（样本长度整齐）。
+- **DeepSpeed ZeRO-1/2 + Offload：**确实能在单卡上放大显存，但它只卸载**可训练**参数的优化器状态和梯度。我们只训练约 2100 万参数的接入层（约 0.34–0.5GB），显存大头是冻结权重（16.8GB）和激活值（约 39GB），所以几乎省不下。
+- **PiSSA / GaLore / DoRA / VeRA：**作用对象是 LLM 的权重，Stage 1 不训练 LLM，所以不适用；到 Stage 2 可以考虑 PiSSA（收敛更快）。但它会调整权重的主方向，可能扰动概念结构，要用 M0 指标和 LoRA 对比。
+- **实测一：跳过概念头的快速损失**（composed = hidden，所以数学上等价）。损失一致（差异 0.04%），梯度相差约 1%（bf16），只快约 10%，瓶颈在 8B 骨干本身（`check_fast_loss.json`）。
+- **实测二：batch 与激活值检查点**（`bench_batch.json`）：
+  - MLP：B=8 为 131 ms/样本，B=12 为 134 ms，开检查点后为 185 ms，所以选 B=8、累积 8 步；
+  - 重采样器：B=8 为 46 ms，**B=32 为 40 ms**，B=64 为 40 ms 但要 70GB，所以选 B=32、累积 2 步；
+  - 检查点在两种接入方式下都更慢。
+- **实测三（关键发现）：flex_attention 的动态形状重编译让训练慢 2.4–2.9 倍。**一出现第二种序列长度，PyTorch 就自动切换到动态形状内核（640 个 token 从 1.00 秒变成 2.39 秒）。改为按长度静态编译（`use_static_flex`，加载时默认启用）后恢复全速（`bench_flex_*.json`）。第一次启动的训练因此重启。
+
+### 全模态数据（详见 `docs/omni_concept_data.md`）
+- 已下载：
+  - 音频：AudioSet 本体（527 类）、ESC-50、AudioCaps 与 Clotho 的描述文本；
+  - 视频：VGGSound 标签表（约 310 类）、Kinetics-700 标注、VATEX 描述、MSR-VTT（视频加描述）。
+- FSD50K：HF 镜像对 Pod IP 限流，改从 Zenodo 下载（进行中）。
+- 采纳用户建议，文本侧相似度改用模态专用编码器：**CLAP**（`laion/larger_clap_general`，音频；AudioCLIP 在 HF 上没有维护良好的版本）和 **X-CLIP**（`microsoft/xclip-base-patch32`，视频；在 Kinetics-400 上训练，有偏乐观的风险）。LanguageBind 留作将来的全模态统一编码器。
+- `scripts/omni_concept_map.py`：沿用 COCO 的协议（mask 位置读出 + 特异性 + 模态文本相似度 + 词面匹配），输出 V_audio、V_video 和各词表的映射。VGGSound 归入音频模态。小规模试跑通过：试跑中 V_audio 632 个、V_video 668 个概念（只用了 128 条描述，正式数字以完整运行为准）。
+
+### 实验进度
+- **Stage 1（MLP）已开始**：10 万样本，B=8 × 累积 8，lr 1e-3，约 3.7 小时。
+  - 第 0 步：COCO 探针上 IMG −3.21 对 NONE −2.20（差 −1.01，只有 28% 的样本图像更好），这是训练要扭转的起点。
+- **Pod 流水线**（`tools/pod/pipeline_after_mlp.sh`）：MLP 完成后，依次运行音频、视频概念映射 → 重采样器 Stage 1 → 两种接入方式的 M0 诊断。
+- 新增：`src/smm/coco_probe.py`（诊断和训练评估共用）、`scripts/stage1_train.py`、`enable_block_checkpointing`、`use_static_flex`、`mdm_loss_fast`。
+
+### 待决定
+- [ ] Stage 2 用 LoRA 还是 PiSSA（或两者都做并比较对概念结构的影响）。
+- [ ] 是否提供 HF_TOKEN（避免 Pod IP 被 Hugging Face 限流）。
+- [ ] VGGSound / Kinetics 原始片段何时下载（需要的时候再按分片取）。

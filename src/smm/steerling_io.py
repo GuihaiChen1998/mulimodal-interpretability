@@ -19,6 +19,8 @@ def load_steerling(model_id: str = MODEL_ID, device: str = "cuda", freeze: bool 
     model = AutoModel.from_pretrained(model_id, trust_remote_code=True, dtype=torch.bfloat16)
     tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     model.to(device).eval()
+    if os.environ.get("STEERLING_USE_FLEX_ATTN") == "1":
+        use_static_flex(model)  # automatic dynamic shapes made training 2.4-2.9x slower (bench_flex_*.json)
     if freeze:
         for p in model.parameters():
             p.requires_grad_(False)
@@ -45,3 +47,38 @@ def answer_ids(tok, answer: str) -> list[int]:
     full = tok.apply_chat_template(user + [{"role": "assistant", "content": answer}], tokenize=False)
     assert full.startswith(prompt), "chat template: assistant turn does not extend the generation prompt"
     return tok.encode(full[len(prompt):], add_special_tokens=False)
+
+
+def enable_block_checkpointing(model, every: int = 1) -> int:
+    """Activation checkpointing on Steerling's transformer blocks (the HF wrapper does not support
+    gradient checkpointing). Recomputes each wrapped block's forward during backward: trades ~1/3 more
+    compute for most of the activation memory. Returns the number of wrapped blocks."""
+    from torch.utils.checkpoint import checkpoint
+
+    n = 0
+    for i, blk in enumerate(model.transformer.blocks):
+        if i % every:
+            continue
+        fwd = blk.forward
+
+        def wrapped(x, _fwd=fwd):
+            if torch.is_grad_enabled():
+                return checkpoint(_fwd, x, use_reentrant=False)
+            return _fwd(x)
+
+        blk.forward = wrapped
+        n += 1
+    return n
+
+
+def use_static_flex(model, cache_size_limit: int = 64) -> None:
+    """Compile flex_attention per sequence length (dynamic=False) instead of torch's automatic dynamic
+    shapes. With automatic dynamic shapes, the second distinct length triggers a symbolic-shape
+    recompile whose kernel can be much slower; training only ever sees a few block-multiple lengths."""
+    import sys as _sys
+
+    from torch.nn.attention.flex_attention import flex_attention
+
+    torch._dynamo.config.cache_size_limit = max(torch._dynamo.config.cache_size_limit, cache_size_limit)
+    mod = _sys.modules[type(model.transformer.blocks[0].attn).__module__]
+    mod.compiled_flex_attention = torch.compile(flex_attention, fullgraph=True, dynamic=False)

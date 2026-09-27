@@ -1,6 +1,7 @@
 # Omni-modal concept data, tier 1: label vocabularies + caption corpora (small), plus FSD50K audio and
 # MSR-VTT videos (medium). Each item is independent; failures are logged and skipped.
 # Usage on the pod: bash tools/pod/download_omni.sh > /workspace/logs/download_omni.log 2>&1
+source /workspace/env.sh  # provides the `hf` CLI (venv on the container disk)
 export HF_HOME=/workspace/hf HF_HUB_ENABLE_HF_TRANSFER=1
 O=/workspace/data/omni
 mkdir -p $O/audio $O/video
