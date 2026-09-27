@@ -11,6 +11,9 @@ For a modality we build
        lex   (name hit, LM-head token hit);
      score = 0.5 spec_n + 0.3 clip_n + 0.1 name_hit + 0.1 token_hit, with a high/review confidence flag.
 
+Caption corpora are pooled with sentences from AVoCaDO's audiovisual captions (Qwen2.5-Omni-7B captioner,
+ICLR 2026; training-set captions, Apache-2.0 model), which describe picture, sound and speech together.
+
 Vocabularies / captions (under /workspace/data/omni, see tools/pod/download_omni.sh):
   audio: AudioSet ontology (527 labels), ESC-50 (50), VGGSound (~310 sound-source labels of an audio-visual
          dataset); captions: AudioCaps + Clotho
@@ -44,6 +47,8 @@ ap.add_argument("--limit_labels", type=int, default=None)
 ap.add_argument("--n_caps", type=int, default=15000)
 ap.add_argument("--per_label", type=int, default=60)
 ap.add_argument("--max_caps", type=int, default=120000, help="captions searched for label matches")
+ap.add_argument("--av_sentences", type=int, default=60000,
+                help="sentences taken from AVoCaDO audiovisual captions (0 = off)")
 args = ap.parse_args()
 os.makedirs(args.out, exist_ok=True)
 rng = random.Random(0)
@@ -83,7 +88,31 @@ def load_vocab_and_captions(mod, O):
     return vocabs, caps
 
 
+def load_av_sentences(O, n):
+    """Sentences from AVoCaDO's temporally aligned audiovisual captions (106,959 long paragraphs that
+    describe picture, sound and speech). Split into sentences so they fit Steerling's 128-token read-out."""
+    path = f"{O}/av/avocado/AVoCaDO_training_set.jsonl"
+    if n <= 0 or not os.path.exists(path):
+        return []
+    sents = set()
+    with open(path) as f:
+        for line in f:
+            for m in json.loads(line)["messages"]:
+                if m["role"] != "assistant":
+                    continue
+                for snt in re.split(r"(?<=[.!?])\s+", m["content"]):
+                    snt = snt.strip()
+                    if 5 <= len(snt.split()) <= 60:
+                        sents.add(snt)
+    sents = sorted(sents)
+    random.Random(1).shuffle(sents)
+    return sents[:n]
+
+
 vocabs, all_caps = load_vocab_and_captions(args.modality, args.omni)
+n_mod_caps = len(all_caps)
+av_caps = load_av_sentences(args.omni, args.av_sentences)
+all_caps += av_caps
 rng.shuffle(all_caps)
 n_caps_total = len(all_caps)
 all_caps = all_caps[: args.max_caps]
@@ -253,6 +282,7 @@ def map_label(item):
 
 
 summary = {"modality": args.modality, "n_caption_docs": n_docs, "n_captions_total": n_caps_total, "n_captions_searched": len(all_caps),
+           "caption_sources": {"modality_corpora": n_mod_caps, "avocado_av_sentences": len(av_caps)},
            "n_v_mod": len(vmod), "n_v_mod_steerable": sum(rows[i]["is_steerable"] == "TRUE" for i in vmod),
            "most_frequent_v_mod": [(rows[i]["concept_name"], int(df[i])) for i in sorted(vmod, key=lambda i: -df[i])[:25]],
            "vocabs": {}}

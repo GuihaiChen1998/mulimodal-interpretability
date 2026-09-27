@@ -30,11 +30,17 @@
 | VATEX | 约 2.6 万个视频 × 10 条英文描述（Kinetics-600 片段） | 63MB（文本） | 描述 CC BY 4.0 | ✅ 文本 |
 | MSR-VTT | 1 万个视频 × 20 条描述（含视频） | 2.2GB | 仅限研究 | ✅ 视频 + 文本 |
 
+**音视频描述**
+| 数据 | 内容 | 规模 | 许可 | 状态 |
+|---|---|---|---|---|
+| AVoCaDO 训练集描述（`AVoCaDO-Captioner/training_set`） | 106,959 段带时间对齐的音视频描述，同时写画面、声音和对话；切句后取 6 万句并入音频、视频两边的描述语料 | 362MB（仅文本；视频 568GB 不下载） | 数据集页未标注许可；视频来自 TikTok-10M、FineVideo、YouTube-Commons 等 | ✅ |
+| AVoCaDO 模型（`AVoCaDO-Captioner/AVoCaDO`） | 音视频描述生成器，基于 Qwen2.5-Omni-7B 微调（ICLR 2026） | 17.9GB | Apache-2.0 | ⏳ 下载中 |
+
 **与模态对齐的编码器**（用于文本侧相似度；将来也可作为模型的音频、视频编码器）
 | 模型 | 用途 | 许可 | 状态 |
 |---|---|---|---|
 | `laion/larger_clap_general`（CLAP） | 音频-文本对齐；AudioCLIP 的主流后继（AudioCLIP 在 HF 上没有维护良好的版本） | Apache-2.0 | ✅ 已缓存 |
-| `microsoft/xclip-base-patch32`（X-CLIP） | 视频-文本对齐；**在 Kinetics-400 上训练，对 Kinetics 标签的相似度可能偏乐观** | MIT | ✅ 已缓存 |
+| `microsoft/xclip-base-patch32`（X-CLIP） | 视频-文本对齐；**在 Kinetics-400 上训练，对 Kinetics 标签的相似度可能偏乐观**；试跑中区分度较弱，只作为辅助信号 | MIT | ✅ 已缓存 |
 | LanguageBind（Video/Audio FT） | 视频、音频、图像统一对齐到语言，适合将来做全模态统一编码器；需要安装它自己的代码包 | MIT | ☐ 后续 |
 
 ## 3. 构建协议（与 COCO 映射相同，`scripts/omni_concept_map.py`）
@@ -54,3 +60,9 @@
 
 ## 5. 状态
 - 小规模试跑通过（音频、视频各取 3 个标签）。完整的映射已排进 Pod 流水线，在 MLP 的 Stage 1 训练结束后自动运行，输出到 `results/omni/`。
+
+## 6. AVoCaDO 的角色（第 20 次讨论）
+- **AVoCaDO 是生成式的描述模型，不是对齐嵌入模型**，给不出"标签和概念名的文本相似度"，不能在原位置上直接替换 X-CLIP。它的价值在于**描述**：
+  1. **现在：**把它训练集里的音视频描述（切句后 6 万句）并入描述语料。原有语料的缺口是 VATEX、MSR-VTT 几乎不写声音，AudioCaps、Clotho 又不写画面；这批描述两者都有。
+  2. **之后：**用 AVoCaDO 模型为没有描述的片段（VGGSound、Kinetics、FSD50K、MSR-VTT）生成音视频描述。这样既能按片段得到概念集，也能作为音频、视频版 M2 的"文本→概念蒸馏"目标。7B 模型的推理需要 GPU，排在当前流水线之后。
+- **X-CLIP 的去留：**完整映射跑完后，比较"去掉 X-CLIP 项"和"保留 X-CLIP 项"两种情况下的主概念与人工抽查结果。如果它没有带来帮助，就去掉，并把这 0.3 的权重转给 CLIP 或 CLAP 的文本相似度。

@@ -510,3 +510,25 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 - [ ] Stage 2 用 LoRA 还是 PiSSA（或两者都做并比较对概念结构的影响）。
 - [ ] 是否提供 HF_TOKEN（避免 Pod IP 被 Hugging Face 限流）。
 - [ ] VGGSound / Kinetics 原始片段何时下载（需要的时候再按分片取）。
+
+---
+
+## 2026-09-27 · 第 20 次讨论（AVoCaDO；HF token）
+
+### 用户提出
+1. 如果 X-CLIP 不好用，就换成 AVoCaDO（*An Audiovisual Video Captioner Driven by Temporal Orchestration*，ICLR 2026）。
+2. 提供了临时的 Hugging Face token（已设为环境变量）。
+
+### 核实与处理
+- **AVoCaDO：**
+  - 权重在 `AVoCaDO-Captioner/AVoCaDO`，17.9GB，Apache-2.0，基于 Qwen2.5-Omni-7B 微调。
+  - 训练集在 `AVoCaDO-Captioner/training_set`：描述 jsonl 362MB，共 106,959 段；视频 568GB。
+  - 项目页 avocado-captioner.github.io，arXiv 2510.10395。
+- **它是生成式描述模型，不是对齐嵌入模型**，所以不能在原位置替换 X-CLIP（给不出文本相似度）。定位改为：
+  1. **现在：**把训练集描述切句后取 6 万句，并入音频、视频两边的描述语料（已实现，`--av_sentences`）。弥补原有语料"视频描述不写声音、音频描述不写画面"的缺口。
+  2. **之后：**用模型给 VGGSound、Kinetics、FSD50K、MSR-VTT 片段生成音视频描述，得到片段级概念，也作为音频、视频版 M2 的蒸馏目标。模型权重正在后台下载。
+- **X-CLIP 的去留：**完整映射跑完后做"有 X-CLIP 项"和"无 X-CLIP 项"的对比与人工抽查，再决定。
+- **HF token：**当前会话读不到新设的环境变量（需要新会话），所以在 Pod 上用 `hf auth login` 登录。token 存在 Pod 持久盘的 HF 缓存目录里，**没有写进仓库**。用户说明这是临时 token，项目结束后建议吊销。
+
+### 训练进度（MLP Stage 1）
+- 第 200 步：留出集上配对与打乱配对的损失差从 0.03 扩大到 0.37；COCO 上 IMG − NONE 从 −1.01 缩小到 −0.40（图像更好的样本比例从 28% 升到 38%）。方向正确，但还没有转正。
