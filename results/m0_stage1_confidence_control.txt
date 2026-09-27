@@ -1,0 +1,10 @@
+results/m0_stage1_mlp/m0_pilot_records.json
+  raw known share IMG/TXT/NONE: 79.0% / 80.8% / 73.6%
+  logp slope (per nat): +2.70pp [+1.95, +3.49]
+  IMG vs TXT: -0.45pp [-1.65, +0.74]
+  NONE vs TXT: -4.48pp [-6.07, -2.83]
+results/m0_stage1_resampler/m0_pilot_records.json
+  raw known share IMG/TXT/NONE: 71.2% / 80.8% / 73.6%
+  logp slope (per nat): +2.47pp [+1.62, +3.34]
+  IMG vs TXT: -4.97pp [-7.03, -2.95]
+  NONE vs TXT: -4.71pp [-6.31, -3.11]
