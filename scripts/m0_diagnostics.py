@@ -36,8 +36,10 @@ ap.add_argument("--n", type=int, default=200)
 ap.add_argument("--n_sim", type=int, default=24)
 ap.add_argument("--seed", type=int, default=0)
 ap.add_argument("--connector", default="mlp", help="mlp | resampler | resampler<N>")
+ap.add_argument("--ks", default="8,32,128,256", help="nested K values for the SIM test")
 args = ap.parse_args()
 os.makedirs(args.out, exist_ok=True)
+KS = tuple(int(k) for k in args.ks.split(","))
 random.seed(args.seed)
 
 INSTR = "Give a brief description of the image."
@@ -145,7 +147,8 @@ for si, s in enumerate(samples):
         r["mapped_weight"] = w0[ids0.index(mapped)] if mapped in ids0 else 0.0
         del r["known_topk_ids"], r["known_topk_w"]
         if si < args.n_sim and ctx is not None:
-            r["sim"] = sim_violation(lm, parts, ctx, pos[0], tg[0])
+            m = len(enc(s["capB"])) if cond == "IMG" else None  # size-matched to the caption context
+            r["sim"] = sim_violation(lm, parts, ctx, pos[0], tg[0], ks=KS, matched_m=m)
         rec[cond] = r
     records.append(rec)
     if si % 10 == 0:
