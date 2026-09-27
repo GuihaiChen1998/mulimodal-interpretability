@@ -1,8 +1,13 @@
 """COCO masked-object probe shared by M0 diagnostics and Stage-1 evaluation.
 
-A sample = (COCO val image, caption A containing a word for an object annotated in the image, another
-caption B of the same image). The object word in caption A is masked; three conditions supply the
-information: IMG (image tokens), TXT (caption B in the prompt), NONE (language prior only).
+A sample = (COCO val image, caption A containing a target word, another caption B of the same image).
+The target word in caption A is masked; three conditions supply the information: IMG (image tokens),
+TXT (caption B in the prompt), NONE (language prior only).
+
+target_type "object" (default): a word for an object category annotated in the image (via the COCO concept
+map). The other types (M0 v2) pick a word from a fixed lexicon of visual information that need not have a
+ready-made named concept: color, count, spatial (relations / positions), attribute (size, material, state).
+Those words come from the human captions, so they are grounded by the annotators, not by instance labels.
 """
 
 from __future__ import annotations
@@ -19,9 +24,26 @@ from smm.steerling_io import answer_ids
 
 INSTR = "Give a brief description of the image."
 
+LEXICON = {
+    "color": ["red", "blue", "green", "yellow", "white", "black", "brown", "orange", "pink", "purple", "gray",
+              "grey", "silver", "gold", "tan", "beige", "colorful"],
+    "count": ["two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "several", "many", "couple",
+              "pair", "few", "multiple", "dozen", "both", "single", "lone"],
+    # contrastive positions only: "next (to)", "(in) front (of)", "(on) top (of)", "near" are mostly fixed by the
+    # surrounding phrase, so the language prior alone would fill them
+    "spatial": ["left", "right", "above", "below", "under", "underneath", "beneath", "behind", "beside", "bottom",
+                "inside", "between", "atop", "across", "outside", "background", "foreground", "upside"],
+    "attribute": ["large", "small", "big", "little", "tall", "tiny", "huge", "long", "short", "wooden", "metal",
+                  "plastic", "glass", "stone", "brick", "old", "new", "empty", "full", "wet", "dry", "dirty",
+                  "clean", "open", "closed", "snowy", "grassy", "sunny", "cloudy", "dark", "bright", "busy",
+                  "crowded", "messy", "striped", "broken"],
+}
+TARGET_TYPES = ("object",) + tuple(LEXICON)
+
 
 class CocoProbe:
-    def __init__(self, tok, coco_dir: str, cmap: dict, n: int, seed: int = 0):
+    def __init__(self, tok, coco_dir: str, cmap: dict, n: int, seed: int = 0, target_type: str = "object"):
+        assert target_type in TARGET_TYPES, target_type
         self.tok, self.coco_dir, self.cmap = tok, coco_dir, cmap
         self.mask_id = tok.convert_tokens_to_ids("<|mask|>")
         ann = json.load(open(os.path.join(coco_dir, "annotations", "instances_val2017.json")))
@@ -36,34 +58,40 @@ class CocoProbe:
         img_file = {i["id"]: i["file_name"] for i in ann["images"]}
 
         rng = random.Random(seed)
+        self.target_type = target_type
         self.samples = []
         ids = sorted(img_caps)
         rng.shuffle(ids)
         for iid in ids:
-            cands = sorted(c for c in img_cats.get(iid, ()) if c in cmap)
-            rng.shuffle(cands)
-            done = False
-            for cat in cands:
-                phrases = cmap[cat].get("phrases", [cat])
-                pat = re.compile(r"\b(" + "|".join(re.escape(p) for p in sorted(phrases, key=len, reverse=True))
-                                 + r")\b", re.I)
-                for ci, capA in enumerate(img_caps[iid]):
-                    m = pat.search(capA)
-                    if not m:
-                        continue
-                    capB = [c for j, c in enumerate(img_caps[iid]) if j != ci][0]
-                    ans = answer_ids(tok, capA)
-                    a, b = len(self.enc(capA[: m.start()].rstrip())), len(self.enc(capA[: m.end()]))
-                    if b <= a or m.group(0).lower() not in tok.decode(ans[a:b]).lower():
-                        continue
-                    self.samples.append({"image_id": iid, "file": img_file[iid], "category": cat,
-                                         "word": m.group(0), "capA": capA, "capB": capB, "ans": ans, "span": (a, b)})
-                    done = True
-                    break
-                if done:
+            if target_type == "object":
+                cands = sorted(c for c in img_cats.get(iid, ()) if c in cmap)
+                rng.shuffle(cands)
+                pats = [(cat, cmap[cat].get("phrases", [cat])) for cat in cands]
+            else:
+                pats = [(target_type, LEXICON[target_type])]
+            for cat, phrases in pats:
+                s = self._first_match(iid, cat, phrases, img_caps[iid], img_file[iid])
+                if s is not None:
+                    self.samples.append(s)
                     break
             if len(self.samples) >= n:
                 break
+
+    def _first_match(self, iid, cat, phrases, caps, file):
+        pat = re.compile(r"\b(" + "|".join(re.escape(p) for p in sorted(phrases, key=len, reverse=True)) + r")\b",
+                         re.I)
+        for ci, capA in enumerate(caps):
+            m = pat.search(capA)
+            if not m:
+                continue
+            capB = [c for j, c in enumerate(caps) if j != ci][0]
+            ans = answer_ids(self.tok, capA)
+            a, b = len(self.enc(capA[: m.start()].rstrip())), len(self.enc(capA[: m.end()]))
+            if b <= a or m.group(0).lower() not in self.tok.decode(ans[a:b]).lower():
+                continue
+            return {"image_id": iid, "file": file, "category": cat, "word": m.group(0), "capA": capA,
+                    "capB": capB, "b_has_word": bool(pat.search(capB)), "ans": ans, "span": (a, b)}
+        return None
 
     def enc(self, s: str) -> list[int]:
         return self.tok.encode(s, add_special_tokens=False)

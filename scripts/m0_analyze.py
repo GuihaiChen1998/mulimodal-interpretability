@@ -55,7 +55,8 @@ for c in CONDS:
         "known_c": boot(per_sample(c, "known_c")), "disc_c": boot(per_sample(c, "disc_c")),
         "eps_c": boot(per_sample(c, "eps_c")),
         "logp": boot(per_sample(c, "logp")),
-        "mapped_in_top32": boot([float(r[c]["mapped_in_top32"]) for r in recs]),
+        "mapped_in_top32": (boot([float(r[c]["mapped_in_top32"]) for r in recs])
+                            if recs[0][c].get("mapped_in_top32") is not None else None),
     }
 fk = {c: fracs(c)[0] for c in CONDS}
 lp = {c: per_sample(c, "logp") for c in CONDS}

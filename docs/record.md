@@ -725,3 +725,29 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 
 ### 重采样器 v2 结果（详见 `docs/m0_stage1.md` 的补充一节）
 - 留出集差值 0.91；但在 COCO 物体词上 IMG≈NONE，所以 M0 的比较不能用来检验 H1。
+
+---
+
+## 2026-09-27 · 第 26 次讨论（M0 v2 在本地 4×A6000 并行跑）
+
+### 用户问题
+- 同意做 M0 v2（目标词换成颜色、数量、空间关系、属性），但先不要开 Pod。
+- 如果每换一种目标词都要训练一次，能否放到本地 4 卡 A6000 上跑，一张卡对应一个任务并行？还要能指定用哪几张卡，因为有的卡可能被别人占着。
+
+### 回答
+- **不需要每种目标词各训练一次。**接入层（Stage 1 MLP）只训练一次，已经训好。M0 是诊断：换目标词只改变"mask 哪个词"，每种类型是一次独立的推理加梯度计算。5 个任务（object 作为环境一致性对照，加上 4 种新类型）互不依赖，一张卡跑一个即可。
+- **本地运行包已完成**（使用方法见 `docs/local_runbook.md`）：
+  - `src/smm/coco_probe.py` 新增 `target_type` 参数和 `LEXICON`。目标词取自 COCO 人工描述。object 类型的样本与之前的实验逐一相同（已验证）。每种类型能取到 200 个样本；描述 B 中也出现该词的比例：object 51%，color 14%，count 23%，spatial 5%，attribute 12%。
+  - 空间词只保留有方向对比的词（left/right/behind/under/inside/outside 等）。next、front、top、near 被排除：它们大多被固定搭配决定（next to、in front of、on top of），不看图像只靠语言先验也能填出来。
+  - `scripts/m0_diagnostics.py` 新增 `--target_type` 参数；非 object 类型没有映射概念，记录为 null。
+  - `tools/local/run_jobs.py`：一张卡一个任务的调度器。
+    - `--gpus` 指定卡号或 auto；
+    - 启动前检查剩余显存，被别人占用的卡跳过并等待；
+    - 卡号按 PCI 顺序，与 nvidia-smi 一致；
+    - 记录 status.json，重跑时跳过已完成的任务。
+    - 已用模拟 nvidia-smi 测试过：忙的卡被跳过，任务排队，失败的任务被记录。
+  - `tools/local/{local_env.sh, setup_local.sh, download_local.sh, check_env.py}`：环境配置（torch 2.8.0+cu126，不行就用 2.6.0+cu124）、下载、自检。
+  - `scripts/m0_v2_report.py`：生成跨类型的汇总表、总览图、summary.json，以及 `_run_info.md`（自动收集环境信息、任务状态和日志末尾）。已用模拟数据测试。
+  - 置信度控制的代码移到了 `src/smm/m0_stats.py`，输出与之前一致。
+- **沟通方式：**用户运行 report 后 git push，并在对话里说"已推送"，我拉下来分析。任务失败时也照样 push，`_run_info.md` 足够用来排查。
+- **待办：**训好的 MLP 权重还在已停机的 Pod 上，需要短暂开机约 10 分钟取回并放进仓库的 `weights/`（等用户同意）；也可以在本地重新训练 Stage 1（A6000 上约 8 小时，不推荐）。

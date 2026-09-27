@@ -1,0 +1,10 @@
+# M0 v2: the same trained MLP connector (Stage 1), diagnostics with different kinds of masked target words.
+# No training: every job is inference + gradients only (~1 h each on an A6000). One job per GPU.
+# "object" repeats the A100 run as a consistency check of the local environment (compare with
+# results/m0_stage1_mlp); the other four are the new target types.
+# Paths come from tools/local/local_env.sh (edit it once).
+object    | source tools/local/local_env.sh && python scripts/m0_diagnostics.py $MLP_CONNECTOR $COCO_DIR results/week1/e7/coco2concept_v1_reviewed.json results/m0_v2/{name} --connector mlp --n 200 --n_sim 40 --target_type {name}
+color     | source tools/local/local_env.sh && python scripts/m0_diagnostics.py $MLP_CONNECTOR $COCO_DIR results/week1/e7/coco2concept_v1_reviewed.json results/m0_v2/{name} --connector mlp --n 200 --n_sim 40 --target_type {name}
+count     | source tools/local/local_env.sh && python scripts/m0_diagnostics.py $MLP_CONNECTOR $COCO_DIR results/week1/e7/coco2concept_v1_reviewed.json results/m0_v2/{name} --connector mlp --n 200 --n_sim 40 --target_type {name}
+spatial   | source tools/local/local_env.sh && python scripts/m0_diagnostics.py $MLP_CONNECTOR $COCO_DIR results/week1/e7/coco2concept_v1_reviewed.json results/m0_v2/{name} --connector mlp --n 200 --n_sim 40 --target_type {name}
+attribute | source tools/local/local_env.sh && python scripts/m0_diagnostics.py $MLP_CONNECTOR $COCO_DIR results/week1/e7/coco2concept_v1_reviewed.json results/m0_v2/{name} --connector mlp --n 200 --n_sim 40 --target_type {name}
