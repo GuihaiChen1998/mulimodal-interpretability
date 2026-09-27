@@ -561,3 +561,14 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 | 400 | 0.97 | −0.21 | 42% |
 
 - AVoCaDO 模型（17.9GB）已下载完成；FSD50K 仍在从 Zenodo 下载。
+
+---
+
+## 2026-09-27 · 第 22 次讨论（AVoCaDO 数据集是否开源、能否获取）
+
+### 核实结果
+- `AVoCaDO-Captioner/training_set` **公开、无需申请**（private=False，gated=False）。
+- 内容：描述文件 `AVoCaDO_training_set.jsonl`（362MB，106,959 条，字段为 `messages` 和 `video_id`，已下载）+ **27 个视频分片**（`videos.part-000…026.tar.gz`，每片约 21.4GB，合计 567.6GB）。
+- **实测可获取：**从第 0 片流式读出开头几个文件，都是 `videos/<video_id>.mp4`，文件名与 jsonl 中的 `video_id` 一一对应。抽查的 3 个文件**都带音轨和视频轨**，时长约 28–59 秒。各分片中的 id 是打乱的，所以每片大约是 4K 个片段的随机子集。
+- **许可：**数据集仓库**没有 README 和许可证声明**（模型本身是 Apache-2.0）。视频来源为 TikTok-10M、FineVideo、YouTube-Commons 等，各有自己的许可，只宜用于研究，发布衍生数据前要逐一核对。
+- 全量 568GB 超出 Pod 磁盘（200GB），只能按分片取用。
