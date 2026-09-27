@@ -64,3 +64,17 @@ def mdm_loss(logits: torch.Tensor, labels: torch.Tensor, weights: torch.Tensor) 
     sel = labels != -100
     ce = F.cross_entropy(logits[sel].float(), labels[sel], reduction="none")
     return (ce * weights[sel]).sum() / labels.shape[0]
+
+
+def mdm_loss_fast(lm, x: torch.Tensor, labels: torch.Tensor, weights: torch.Tensor) -> torch.Tensor:
+    """Same loss (and gradients) as mdm_loss(lm(None, input_embeds=x)[0], ...), computed cheaply.
+
+    Steerling's epsilon correction makes composed == hidden exactly, so the output logits equal
+    lm_head(hidden). Training therefore skips both concept heads (33K + 101K concepts) and evaluates the
+    100K-way vocabulary projection only at the masked positions that carry loss.
+    """
+    hidden = lm.transformer(None, input_embeds=x, return_hidden=True)
+    sel = labels != -100
+    logits = lm.transformer.lm_head(hidden[sel])
+    ce = F.cross_entropy(logits.float(), labels[sel], reduction="none")
+    return (ce * weights[sel]).sum() / labels.shape[0]

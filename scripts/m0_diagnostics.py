@@ -15,16 +15,15 @@ import argparse
 import json
 import os
 import random
-import re
 import sys
 import time
 
 import torch
-from PIL import Image
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+from smm.coco_probe import CocoProbe  # noqa: E402
 from smm.diagnostics import logit_contributions, sim_violation  # noqa: E402
-from smm.steerling_io import answer_ids, load_steerling  # noqa: E402
+from smm.steerling_io import load_steerling  # noqa: E402
 from smm.vlm import VisionEncoder, build_connector  # noqa: E402
 
 ap = argparse.ArgumentParser()
@@ -42,94 +41,24 @@ os.makedirs(args.out, exist_ok=True)
 KS = tuple(int(k) for k in args.ks.split(","))
 random.seed(args.seed)
 
-INSTR = "Give a brief description of the image."
 lm, tok = load_steerling(attn="sdpa")
-mask_id = tok.convert_tokens_to_ids("<|mask|>")
 emb = lm.transformer.tok_emb
 vision = VisionEncoder().cuda()
 proj = build_connector(args.connector, vision.dim).cuda()
 proj.load_state_dict(torch.load(args.projector))
 proj.eval()
 cmap = json.load(open(args.coco_map))
-
-ann = json.load(open(os.path.join(args.coco_dir, "annotations", "instances_val2017.json")))
-caps = json.load(open(os.path.join(args.coco_dir, "annotations", "captions_val2017.json")))
-catname = {c["id"]: c["name"] for c in ann["categories"]}
-img_cats: dict[int, set] = {}
-for a in ann["annotations"]:
-    img_cats.setdefault(a["image_id"], set()).add(catname[a["category_id"]])
-img_caps: dict[int, list] = {}
-for c in caps["annotations"]:
-    img_caps.setdefault(c["image_id"], []).append(c["caption"].strip())
-img_file = {i["id"]: i["file_name"] for i in ann["images"]}
-
-
-def chat_text(user):
-    return tok.apply_chat_template([{"role": "user", "content": user}], tokenize=False, add_generation_prompt=True)
-
-
-def enc(s):
-    return tok.encode(s, add_special_tokens=False)
-
-
-# ---- build samples -----------------------------------------------------------------------------
-samples = []
-ids = list(img_caps)
-random.shuffle(ids)
-for iid in ids:
-    cands = [c for c in img_cats.get(iid, ()) if c in cmap]
-    random.shuffle(cands)
-    done = False
-    for cat in cands:
-        phrases = cmap[cat].get("phrases", [cat])
-        pat = re.compile(r"\b(" + "|".join(re.escape(p) for p in sorted(phrases, key=len, reverse=True)) + r")\b", re.I)
-        for ci, capA in enumerate(img_caps[iid]):
-            m = pat.search(capA)
-            if not m:
-                continue
-            others = [c for j, c in enumerate(img_caps[iid]) if j != ci]
-            capB = others[0]
-            ans = answer_ids(tok, capA)
-            a, b = len(enc(capA[: m.start()].rstrip())), len(enc(capA[: m.end()]))
-            if b <= a or m.group(0).lower() not in tok.decode(ans[a:b]).lower():
-                continue
-            samples.append({"image_id": iid, "file": img_file[iid], "category": cat, "word": m.group(0),
-                            "capA": capA, "capB": capB, "ans": ans, "span": (a, b)})
-            done = True
-            break
-        if done:
-            break
-    if len(samples) >= args.n:
-        break
+probe = CocoProbe(tok, args.coco_dir, cmap, n=args.n, seed=args.seed)
+samples = probe.samples
 print(f"{len(samples)} samples", flush=True)
 
 
 def build(s, cond):
-    """Returns (embedding parts, context part index, absolute target positions, target ids)."""
-    a, b = s["span"]
-    ans = list(s["ans"])
-    targets = ans[a:b]
-    ans[a:b] = [mask_id] * (b - a)
-    ans_e = emb(torch.tensor([ans], device="cuda"))
-    if cond == "TXT":
-        t = chat_text(INSTR + "\nReference description: " + s["capB"])
-        i = t.index(s["capB"])
-        pre, cap, post = enc(t[:i]), enc(t[i: i + len(s["capB"])]), enc(t[i + len(s["capB"]):])
-        parts = [emb(torch.tensor([pre], device="cuda")), emb(torch.tensor([cap], device="cuda")),
-                 emb(torch.tensor([post], device="cuda")), ans_e]
-        ctx = 1
-    else:
-        parts = [emb(torch.tensor([enc(chat_text(INSTR))], device="cuda")), ans_e]
-        ctx = None
-        if cond == "IMG":
-            im = Image.open(os.path.join(args.coco_dir, "val2017", s["file"])).convert("RGB")
-            pv = vision.processor(images=[im], return_tensors="pt")["pixel_values"].cuda()
-            with torch.no_grad():
-                img = proj(vision(pv).float()).to(torch.bfloat16)
-            parts = [img] + parts
-            ctx = 0
-    off = sum(p.shape[1] for p in parts[:-1])
-    return parts, ctx, [off + a + j for j in range(b - a)], targets
+    return probe.build(s, cond, emb, vision, proj)
+
+
+def enc(x):
+    return probe.enc(x)
 
 
 records = []
