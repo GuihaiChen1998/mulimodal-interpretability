@@ -1,0 +1,275 @@
+{
+  "modality": "video",
+  "n_caption_docs": 15000,
+  "n_captions_total": 548684,
+  "n_captions_searched": 120000,
+  "caption_sources": {
+    "modality_corpora": 488684,
+    "avocado_av_sentences": 60000
+  },
+  "n_v_mod": 4109,
+  "n_v_mod_steerable": 2446,
+  "most_frequent_v_mod": [
+    [
+      "Punctuation and Markup Symbols",
+      7462
+    ],
+    [
+      "Repeated punctuation/delimiter runs",
+      7353
+    ],
+    [
+      "Generic Expository English Prose",
+      7313
+    ],
+    [
+      "Comma-separated code parameters",
+      7201
+    ],
+    [
+      "Temporal/contrastive conjunctions multilingual",
+      7186
+    ],
+    [
+      "Legal and Policy Governance",
+      7137
+    ],
+    [
+      "Effusive Praise and Admiration",
+      7023
+    ],
+    [
+      "Code and Math Syntax",
+      6920
+    ],
+    [
+      "Demographic Person Descriptors",
+      6899
+    ],
+    [
+      "Code Syntax and Numerical Computation",
+      6693
+    ],
+    [
+      "Letter-fragmented / subword-split text",
+      6681
+    ],
+    [
+      "Past-tense -ed verb endings",
+      6643
+    ],
+    [
+      "Plural Human Categories",
+      6636
+    ],
+    [
+      "Closing punctuation clusters",
+      6598
+    ],
+    [
+      "Body Postures and Positions",
+      6513
+    ],
+    [
+      "Punctuation and Delimiter Symbols",
+      6461
+    ],
+    [
+      "Plural Facilities and Venues",
+      6418
+    ],
+    [
+      "Quoted Code String Tokens",
+      6327
+    ],
+    [
+      "Sensory atmospheric prose imagery",
+      6306
+    ],
+    [
+      "Preposition 'on' and onHandlers",
+      6305
+    ],
+    [
+      "Asterisk Characters and Banners",
+      6208
+    ],
+    [
+      "Letter 'A' Token Density",
+      6185
+    ],
+    [
+      "Pejorative Negative Adjectives",
+      6158
+    ],
+    [
+      "GitHub PR Markdown Boilerplate",
+      6130
+    ],
+    [
+      "Quoted Speech and Attribution",
+      6007
+    ]
+  ],
+  "vocabs": {
+    "kinetics700": {
+      "n_labels": 700,
+      "with_captions": 628,
+      "high_confidence": 173,
+      "no_captions": 72,
+      "distinct_primary": 437,
+      "examples": [
+        [
+          "abseiling",
+          "Risk, Danger, and Threat",
+          "review",
+          1
+        ],
+        [
+          "bee keeping",
+          "Beekeeping and apiculture",
+          "review",
+          5
+        ],
+        [
+          "breaking glass",
+          "Windows and glass panes",
+          "high",
+          8
+        ],
+        [
+          "casting fishing line",
+          "Lures, bait, and nasty objects",
+          "review",
+          4
+        ],
+        [
+          "climbing ladder",
+          "Architectural Building Elements",
+          "review",
+          60
+        ],
+        [
+          "cutting apple",
+          "Vegetables and produce preparation",
+          "review",
+          19
+        ],
+        [
+          "dribbling basketball",
+          "Basketball and the NBA",
+          "high",
+          60
+        ],
+        [
+          "falling off bike",
+          "Bicycles and Motorcycles",
+          "review",
+          6
+        ],
+        [
+          "gold panning",
+          "Gold Rush and Prospecting",
+          "high",
+          19
+        ],
+        [
+          "hugging (not baby)",
+          "Cute Affectionate Child Scenes",
+          "review",
+          60
+        ],
+        [
+          "kissing",
+          "Romantic Relationships and Dating",
+          "review",
+          60
+        ],
+        [
+          "making balloon shapes",
+          "Balloons and Inflation",
+          "high",
+          3
+        ],
+        [
+          "mountain climber (exercise)",
+          "Exercise and Fitness Modalities",
+          "review",
+          18
+        ],
+        [
+          "photobombing",
+          "Sudden Unexpected Events",
+          "no-captions",
+          0
+        ],
+        [
+          "playing didgeridoo",
+          "Traditional Musical Instruments",
+          "high",
+          16
+        ],
+        [
+          "playing pinball",
+          "Video games and genres",
+          "review",
+          7
+        ],
+        [
+          "pouring milk",
+          "Brewing and Liquid Preparation",
+          "review",
+          5
+        ],
+        [
+          "recording music",
+          "Music streaming and industry",
+          "review",
+          18
+        ],
+        [
+          "sawing wood",
+          "Forestry and Timber",
+          "review",
+          11
+        ],
+        [
+          "shucking oysters",
+          "Cutting and Slicing",
+          "review",
+          7
+        ],
+        [
+          "smoking pipe",
+          "Smoking and tobacco harms",
+          "review",
+          6
+        ],
+        [
+          "sucking lolly",
+          "Pediatric dental care",
+          "high",
+          1
+        ],
+        [
+          "testifying",
+          "Legal compulsion to testify",
+          "high",
+          6
+        ],
+        [
+          "tying shoe laces",
+          "Shoes and Feet",
+          "high",
+          6
+        ],
+        [
+          "washing dishes",
+          "Meals and Times of Day",
+          "review",
+          21
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "modality": "audio",
+  "n_caption_docs": 15000,
+  "n_captions_total": 146833,
+  "n_captions_searched": 120000,
+  "caption_sources": {
+    "modality_corpora": 86833,
+    "avocado_av_sentences": 60000
+  },
+  "n_v_mod": 4275,
+  "n_v_mod_steerable": 2550,
+  "most_frequent_v_mod": [
+    [
+      "Legal and Policy Governance",
+      7485
+    ],
+    [
+      "Image Caption Scene Descriptions",
+      7339
+    ],
+    [
+      "Female Gender and Names",
+      7334
+    ],
+    [
+      "Enthusiastic Blog Comment Gushing",
+      7317
+    ],
+    [
+      "Blog/CMS Template Scaffolding",
+      7204
+    ],
+    [
+      "Code Syntax and Numerical Computation",
+      7150
+    ],
+    [
+      "GitHub PR Markdown Boilerplate",
+      7101
+    ],
+    [
+      "Punctuation and Markup Symbols",
+      7041
+    ],
+    [
+      "Sound and Acoustic Phenomena",
+      7040
+    ],
+    [
+      "Code and Math Syntax",
+      7027
+    ],
+    [
+      "Self-Help Motivational Imperatives",
+      7008
+    ],
+    [
+      "Outdoor Landscape and Terrain",
+      6805
+    ],
+    [
+      "Closing punctuation clusters",
+      6726
+    ],
+    [
+      "Quoted Code String Tokens",
+      6674
+    ],
+    [
+      "Comma-separated code parameters",
+      6532
+    ],
+    [
+      "Nearness and Approximation",
+      6499
+    ],
+    [
+      "Discrete Events and Phenomena",
+      6477
+    ],
+    [
+      "Plural Facilities and Venues",
+      6397
+    ],
+    [
+      "Quoted Speech and Attribution",
+      6358
+    ],
+    [
+      "Suspenseful Action Scene Narration",
+      6283
+    ],
+    [
+      "Film Scenes and Shots",
+      6072
+    ],
+    [
+      "Person-role nouns",
+      6071
+    ],
+    [
+      "Auditory Noise Descriptors",
+      6040
+    ],
+    [
+      "Body Postures and Positions",
+      5854
+    ],
+    [
+      "Past-tense historical narration",
+      5674
+    ]
+  ],
+  "vocabs": {
+    "audioset": {
+      "n_labels": 527,
+      "with_captions": 478,
+      "high_confidence": 131,
+      "no_captions": 49,
+      "distinct_primary": 321,
+      "examples": [
+        [
+          "Speech",
+          "Speeches and Discourse Genres",
+          "review",
+          60
+        ],
+        [
+          "Chuckle, chortle",
+          "Humor, Jokes, and Comedy",
+          "review",
+          60
+        ],
+        [
+          "Wheeze",
+          "Coughing and Airway Constriction",
+          "review",
+          7
+        ],
+        [
+          "Clapping",
+          "Protests and Civil Unrest",
+          "review",
+          60
+        ],
+        [
+          "Hiss",
+          "Visceral Action and Adrenaline",
+          "review",
+          60
+        ],
+        [
+          "Quack",
+          "Waterfowl and Wetland Birds",
+          "review",
+          60
+        ],
+        [
+          "Insect",
+          "Insects and Arthropods",
+          "review",
+          60
+        ],
+        [
+          "Banjo",
+          "Music Genre Labels",
+          "review",
+          4
+        ],
+        [
+          "Bass drum",
+          "Rhythm and Percussion Beats",
+          "review",
+          7
+        ],
+        [
+          "Bowed string instrument",
+          "Traditional Musical Instruments",
+          "review",
+          2
+        ],
+        [
+          "Bagpipes",
+          "Traditional Folk Music & Fiddling",
+          "high",
+          8
+        ],
+        [
+          "Bluegrass",
+          "Folklore and Oral Tradition",
+          "review",
+          1
+        ],
+        [
+          "Music for children",
+          "Children and Young Offspring",
+          "high",
+          18
+        ],
+        [
+          "Christmas music",
+          "Christmas and Holiday Season",
+          "review",
+          4
+        ],
+        [
+          "Ocean",
+          "Oceans and Marine Conservation",
+          "high",
+          60
+        ],
+        [
+          "Race car, auto racing",
+          "Motorsport and Auto Racing",
+          "high",
+          60
+        ],
+        [
+          "Aircraft engine",
+          "Aircraft and Aerospace Engineering",
+          "review",
+          60
+        ],
+        [
+          "Sliding door",
+          "Doors, Gates, and Openings",
+          "high",
+          20
+        ],
+        [
+          "Zipper (clothing)",
+          "Bags and Storage Containers",
+          "high",
+          43
+        ],
+        [
+          "Smoke detector, smoke alarm",
+          "Security and Surveillance Systems",
+          "review",
+          5
+        ],
+        [
+          "Jackhammer",
+          "Construction Contracting and Projects",
+          "review",
+          27
+        ],
+        [
+          "Glass",
+          "Windows and glass panes",
+          "high",
+          60
+        ],
+        [
+          "Electronic tuner",
+          "Electrical Power Distribution",
+          "no-captions",
+          0
+        ],
+        [
+          "Ding",
+          "Rings: jewelry and circular forms",
+          "review",
+          60
+        ],
+        [
+          "Sound effect",
+          "Effect, Impact, Influence",
+          "high",
+          60
+        ],
+        [
+          "Radio",
+          "Radio and Telecommunications",
+          "high",
+          60
+        ]
+      ]
+    },
+    "esc50": {
+      "n_labels": 50,
+      "with_captions": 50,
+      "high_confidence": 12,
+      "no_captions": 0,
+      "distinct_primary": 44,
+      "examples": [
+        [
+          "airplane",
+          "Aircraft and Aerospace Engineering",
+          "review",
+          60
+        ],
+        [
+          "brushing_teeth",
+          "Tooth eruption and development",
+          "review",
+          27
+        ],
+        [
+          "car_horn",
+          "Wind and Brass Instruments",
+          "review",
+          60
+        ],
+        [
+          "chainsaw",
+          "Cutting Tools and Workshop Equipment",
+          "review",
+          60
+        ],
+        [
+          "church_bells",
+          "Church Architecture and Furnishings",
+          "review",
+          60
+        ],
+        [
+          "clock_alarm",
+          "Watches and Timekeeping",
+          "review",
+          35
+        ],
+        [
+          "coughing",
+          "Coughing and Airway Constriction",
+          "high",
+          60
+        ],
+        [
+          "crackling_fire",
+          "Fire and wildfires",
+          "review",
+          5
+        ],
+        [
+          "crow",
+          "Counters and Row Counts",
+          "review",
+          60
+        ],
+        [
+          "dog",
+          "Dog laws and regulations",
+          "high",
+          60
+        ],
+        [
+          "door_wood_knock",
+          "Tools and Fasteners",
+          "review",
+          1
+        ],
+        [
+          "engine",
+          "Engines and Propulsion",
+          "review",
+          60
+        ],
+        [
+          "footsteps",
+          "Foot anatomy and podiatry",
+          "review",
+          60
+        ],
+        [
+          "glass_breaking",
+          "Explosives and Detonation",
+          "review",
+          15
+        ],
+        [
+          "helicopter",
+          "Aircraft and Aerospace Engineering",
+          "review",
+          60
+        ],
+        [
+          "insects",
+          "Insects and Arthropods",
+          "review",
+          60
+        ],
+        [
+          "laughing",
+          "Joyful Expressions and Laughter",
+          "high",
+          60
+        ],
+        [
+          "pig",
+          "Pigs and Farm Animal Stories",
+          "high",
+          60
+        ],
+        [
+          "rain",
+          "Rain and Precipitation",
+          "high",
+          60
+        ],
+        [
+          "sea_waves",
+          "Waves and wave propagation",
+          "review",
+          46
+        ],
+        [
+          "siren",
+          "Emergency Medical Response",
+          "review",
+          60
+        ],
+        [
+          "snoring",
+          "Breathing Exercises and Respiration",
+          "review",
+          60
+        ],
+        [
+          "toilet_flush",
+          "Bathrooms and Bathing Fixtures",
+          "high",
+          60
+        ],
+        [
+          "vacuum_cleaner",
+          "Floor and Upholstery Cleaning",
+          "review",
+          25
+        ],
+        [
+          "water_drops",
+          "Rain and Precipitation",
+          "review",
+          16
+        ]
+      ]
+    },
+    "vggsound": {
+      "n_labels": 310,
+      "with_captions": 183,
+      "high_confidence": 50,
+      "no_captions": 127,
+      "distinct_primary": 244,
+      "examples": [
+        [
+          "air conditioning noise",
+          "Decisions and Judgments",
+          "review",
+          1
+        ],
+        [
+          "barn swallow calling",
+          "Animal Communication and Habitats",
+          "no-captions",
+          0
+        ],
+        [
+          "bull bellowing",
+          "Sacrificial Offerings and Livestock",
+          "no-captions",
+          0
+        ],
+        [
+          "cattle mooing",
+          "Pastoral Livestock Management",
+          "no-captions",
+          0
+        ],
+        [
+          "chipmunk chirping",
+          "Furry Pets and Small Animals",
+          "no-captions",
+          0
+        ],
+        [
+          "dinosaurs bellowing",
+          "Creepy Alien Creatures",
+          "no-captions",
+          0
+        ],
+        [
+          "driving snowmobile",
+          "Motorcycle Racing",
+          "no-captions",
+          0
+        ],
+        [
+          "female speech, woman speaking",
+          "Public Speaking and Presentations",
+          "review",
+          60
+        ],
+        [
+          "francolin calling",
+          "Hunting and Game Regulation",
+          "no-captions",
+          0
+        ],
+        [
+          "horse clip-clop",
+          "Walking and locomotion",
+          "review",
+          33
+        ],
+        [
+          "male singing",
+          "Voice and vocal production",
+          "review",
+          58
+        ],
+        [
+          "opening or closing car electric windows",
+          "Vehicle Sliding and Handling",
+          "no-captions",
+          0
+        ],
+        [
+          "people cheering",
+          "Parades and Public Processions",
+          "review",
+          48
+        ],
+        [
+          "people hiccup",
+          "\"Ch\" Sounds and Lip Articulation",
+          "no-captions",
+          0
+        ],
+        [
+          "people whispering",
+          "Birds and Ornithology",
+          "review",
+          5
+        ],
+        [
+          "playing bass drum",
+          "Latin/Hispanic music and culture",
+          "review",
+          1
+        ],
+        [
+          "playing didgeridoo",
+          "Resonant Vibration Dynamics",
+          "no-captions",
+          0
+        ],
+        [
+          "playing hammond organ",
+          "Musical Group Formation",
+          "no-captions",
+          0
+        ],
+        [
+          "playing sitar",
+          "Bollywood Cinema and Music",
+          "no-captions",
+          0
+        ],
+        [
+          "playing timpani",
+          "Lymphoma Cell Characteristics",
+          "no-captions",
+          0
+        ],
+        [
+          "police radio chatter",
+          "Amateur Radio Communication",
+          "no-captions",
+          0
+        ],
+        [
+          "rowboat, canoe, kayak rowing",
+          "Kayaks and paddlecraft",
+          "review",
+          2
+        ],
+        [
+          "skidding",
+          "Tires and Wheels",
+          "review",
+          60
+        ],
+        [
+          "strike lighter",
+          "Smoking and tobacco harms",
+          "high",
+          1
+        ],
+        [
+          "train horning",
+          "Trains and Railways",
+          "no-captions",
+          0
+        ],
+        [
+          "waterfall burbling",
+          "Leaks, Spills, and Seepage",
+          "review",
+          10
+        ]
+      ]
+    }
+  }
+}

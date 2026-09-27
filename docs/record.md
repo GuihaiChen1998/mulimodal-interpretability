@@ -636,3 +636,30 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 - 已经下完（`tools/pod/download_av_small.sh`）：VALOR-32K 共 5.4GB，放在 `/workspace/data/omni/av/valor32k`；AVE 解出 4097 个 mp4，共 5.4GB，放在 `/workspace/data/omni/av/ave`。
 - 同时回答了用户关于 M0 进度的问题。正式 M0 **还没有做完**：09:22 UTC 时，音频和视频概念映射已经完成，重采样器的 Stage 1 训练到了第 400/1562 步（预计 10:00 左右结束），之后自动跑两种接入层的 M0 诊断。现有的只是 1K 样本投影器上的试跑结果（`docs/m0_pilot.md`），只能说明测量工具可用，不能作为结论。
 - 重采样器在第 200 步时，留出集差值只有 0.005（MLP 同一步是 0.37），IMG−NONE 为 −1.01，图像依赖出现得比 MLP 慢。需要继续观察；如果训练结束时 IMG 仍然不如 NONE，就要先调重采样器（学习率或查询数），再做诊断。
+
+---
+
+## 2026-09-27 · 进展记录（重采样器 Stage 1 结果；音视频概念映射 v1）
+
+### 重采样器 Stage 1（64 个查询，学习率 1e-3，1 个 epoch，用时 50 分钟）
+- **最终结果：**留出集差值 0.23（MLP 为 2.03）；COCO 探针 IMG−NONE = **−0.25**，只有 37% 的样本 IMG 更好。**不满足"图像确实在提供信息"的前提。**
+- **过程：**前 600 步留出集差值约等于 0，说明查询在学习一个与图像无关的前缀；之后才缓慢上升。训练损失稳定在约 4.6，MLP 约 3.9。
+- **处理：**
+  - 已经排队的 M0 诊断照常跑，结果作为"弱接入层"的参照，不作为结论；
+  - GPU 空出来后，做一个短消融（每组 400 步 / 2.56 万样本）：{64, 128 个查询} × {学习率 1e-3, 2e-4}，脚本为 `tools/pod/resampler_ablation.sh`；
+  - 挑出最好的一组再完整训练。AVoCaDO 切窗试跑顺延到消融之后。
+
+### 音视频概念映射 v1（全自动，尚未人工审核；`results/omni/`）
+- **概念集规模：**V_audio 共 4275 个概念（可 steer 的 2550 个）；V_video 共 4109 个（可 steer 的 2446 个）。
+
+| 标签体系 | 标签数 | 找到描述的 | 高置信 | 没有描述的 |
+|---|---|---|---|---|
+| AudioSet | 527 | 478 | 131 | 49 |
+| ESC-50 | 50 | 50 | 12 | 0 |
+| VGGSound | 310 | 183 | 50 | 127 |
+| Kinetics-700 | 700 | 628 | 173 | 72 |
+
+- **抽查：**高置信的大多合理，例如 coughing → Coughing and Airway Constriction，dribbling basketball → Basketball and the NBA。"待审"一档错误很多，大致两类：
+  - 领域错配，例如 dog → Dog laws and regulations，church_bells → Church Architecture；
+  - 字面误配，例如 crow → Counters and Row Counts。
+- **结论：**需要像 COCO 映射那样加一轮审核（参照 `scripts/e7d_review_coco_map.py`）。另外，V_mod 的频次统计被通用枢纽概念占据，词表应该按特异性过滤。VGGSound 有 41% 的标签在描述语料里找不到，需要补充 VGGSound 自身的描述或 VALOR 的描述。
