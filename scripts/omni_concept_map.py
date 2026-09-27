@@ -17,7 +17,7 @@ ICLR 2026; training-set captions, Apache-2.0 model), which describe picture, sou
 Vocabularies / captions (under /workspace/data/omni, see tools/pod/download_omni.sh):
   audio: AudioSet ontology (527 labels), ESC-50 (50), VGGSound (~310 sound-source labels of an audio-visual
          dataset); captions: AudioCaps + Clotho
-  video: Kinetics-700; captions: VATEX (en) + MSR-VTT
+  video: Kinetics-700; captions: VATEX (en) + MSR-VTT + MSVD
 
 Usage: python omni_concept_map.py {audio|video} OMNI_DIR OUT_DIR [--limit_labels N] [--n_caps 15000]
 """
@@ -84,6 +84,11 @@ def load_vocab_and_captions(mod, O):
         caps += [c for v in vat for c in v["enCap"]]
         for v in json.load(open(f"{O}/video/msrvtt/msrvtt_train_9k.json")):
             caps += v["caption"]
+        msvd = f"{O}/video/msvd/msvd_train.json"
+        if os.path.exists(msvd):
+            for v in json.load(open(msvd)):
+                c = v.get("caption", [])
+                caps += c if isinstance(c, list) else [c]
     caps = [c.strip() for c in caps if isinstance(c, str) and c.strip()]
     return vocabs, caps
 
