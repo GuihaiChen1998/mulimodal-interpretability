@@ -19,6 +19,7 @@ import subprocess
 import tempfile
 import time
 
+import numpy as np
 import torch
 from qwen_omni_utils import process_mm_info
 from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor
@@ -59,17 +60,27 @@ def cut(src, start, length, dst):
                     "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", dst], check=True)
 
 
+def load_audio(path, sr=16000):
+    """Mono 16 kHz float32 via ffmpeg. qwen_omni_utils hands librosa an audioread object, which the
+    installed librosa rejects ("Invalid file"), so the audio track is decoded here instead."""
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-vn", "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"],
+                         capture_output=True).stdout
+    return np.frombuffer(raw, dtype=np.float32).copy()
+
+
 @torch.no_grad()
 def caption(path):
     conv = [{"role": "system", "content": [{"type": "text", "text": SYSTEM}]},
             {"role": "user", "content": [{"type": "video", "video": path, "max_pixels": VIDEO_MAX_PIXELS},
                                          {"type": "text", "text": PROMPT}]}]
     text = proc.apply_chat_template(conv, add_generation_prompt=True, tokenize=False)
-    audios, images, videos = process_mm_info(conv, use_audio_in_video=True)
-    inputs = proc(text=text, audio=audios, images=images, videos=videos, return_tensors="pt", padding=True,
-                  use_audio_in_video=True).to(model.device).to(model.dtype)
+    _, images, videos = process_mm_info(conv, use_audio_in_video=False)
+    wav = load_audio(path)
+    use_audio = wav.size > 1600  # clips without an audio track fall back to video only
+    inputs = proc(text=text, audio=[wav] if use_audio else None, images=images, videos=videos, return_tensors="pt",
+                  padding=True, use_audio_in_video=use_audio).to(model.device).to(model.dtype)
     t0 = time.time()
-    ids = model.generate(**inputs, use_audio_in_video=True, do_sample=False,
+    ids = model.generate(**inputs, use_audio_in_video=use_audio, do_sample=False,
                          thinker_max_new_tokens=args.max_new_tokens, return_audio=False)
     torch.cuda.synchronize()
     dt = time.time() - t0
