@@ -751,3 +751,11 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
   - 置信度控制的代码移到了 `src/smm/m0_stats.py`，输出与之前一致。
 - **沟通方式：**用户运行 report 后 git push，并在对话里说"已推送"，我拉下来分析。任务失败时也照样 push，`_run_info.md` 足够用来排查。
 - **待办：**训好的 MLP 权重还在已停机的 Pod 上，需要短暂开机约 10 分钟取回并放进仓库的 `weights/`（等用户同意）；也可以在本地重新训练 Stage 1（A6000 上约 8 小时，不推荐）。
+
+---
+
+## 2026-09-29 · 第 27 次讨论（取权重失败，Pod 保持停机）
+
+- 用户同意开 Pod 取回 MLP 权重。但 Pod 所在主机没有空闲 GPU（"not enough free GPUs on the host machine"），用 0 块 GPU 启动（GraphQL `podResume`，gpuCount=0）也被拒绝。数据在主机的本地持久卷上，只能等这台主机空出 GPU。
+- 后台每 5 分钟重试一次；用户随后决定先不取，等以后自己开机时再说。重试已停止，Pod 的状态为 EXITED（停机，只收存储费，数据保留）。
+- 待办：下次 Pod 能启动时，取回 `/workspace/mm/results/stage1_mlp/connector_stage1_mlp.pt`，放进仓库的 `weights/`。本地的环境配置和数据下载可以先做，不依赖这份权重。
