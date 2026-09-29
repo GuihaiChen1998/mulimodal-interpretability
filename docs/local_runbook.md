@@ -5,7 +5,7 @@
 
 ## 0. 总体流程
 ```
-git pull → setup（一次）→ 下载模型/数据（一次）→ 放好接入层权重（一次）→ check_env
+git pull → setup（一次）→ 下载模型/数据（一次）→ check_env
 → run_jobs（指定显卡，并行）→ m0_v2_report → git push → 在对话里告诉 Claude "结果已推送"
 ```
 
@@ -29,11 +29,10 @@ bash tools/local/download_local.sh   # Steerling-8B-instruct、CLIP-L/336、COCO
   - PyTorch 官方 wheel 源访问不了时：在能上网的机器下载 whl 后拷过来，用 `uv pip install xxx.whl` 安装。
 - 这套环境**不用** vLLM 或 SGLang，和服务器上已有的版本互不影响（独立的 venv，放在 `$MM_DATA/steerling/.venv`）。
 
-## 3. 接入层权重（只做一次）
-训好的 `connector_stage1_mlp.pt`（84MB）在 Runpod 的持久卷上，由 Claude 取回并放进仓库的 `weights/` 目录；拿到后复制过去：
-```bash
-mkdir -p ~/mm_data/weights && cp weights/connector_stage1_mlp.pt ~/mm_data/weights/
-```
+## 3. 接入层权重（已在仓库里）
+`git pull` 之后就有，不需要额外操作：
+- `weights/connector_stage1_mlp.pt`：MLP 接入层，fp32，84MB，md5 `639bb885…`，M0 v2 用这个。`local_env.sh` 默认就指向它。
+- `weights/connector_stage1_resampler_v2_bf16.pt`：重采样器 v2（64 个查询，学习率 2e-4），bf16，62MB，以后需要时用。
 
 ## 4. 环境检查（每次换机器或换卡时做）
 ```bash

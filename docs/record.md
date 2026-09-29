@@ -759,3 +759,14 @@ M0（动机）→ M2 + M3（方法主体）→ M5（第二贡献）；M4 视 M0 
 - 用户同意开 Pod 取回 MLP 权重。但 Pod 所在主机没有空闲 GPU（"not enough free GPUs on the host machine"），用 0 块 GPU 启动（GraphQL `podResume`，gpuCount=0）也被拒绝。数据在主机的本地持久卷上，只能等这台主机空出 GPU。
 - 后台每 5 分钟重试一次；用户随后决定先不取，等以后自己开机时再说。重试已停止，Pod 的状态为 EXITED（停机，只收存储费，数据保留）。
 - 待办：下次 Pod 能启动时，取回 `/workspace/mm/results/stage1_mlp/connector_stage1_mlp.pt`，放进仓库的 `weights/`。本地的环境配置和数据下载可以先做，不依赖这份权重。
+
+---
+
+## 2026-09-29 · 第 28 次讨论（无 GPU 模式开机，取回权重）
+
+- 用户在控制台以无 GPU 模式手动启动了 Pod（$0.795/h）。通过 Jupyter 分块传回两份接入层权重，md5 均与 Pod 上的原文件一致：
+  - `weights/connector_stage1_mlp.pt`：fp32，84MB，md5 639bb885d22389746a0d395fc0375ddd。
+  - `weights/connector_stage1_resampler_v2_bf16.pt`：原文件 124MB（md5 06e8993b…），超过 GitHub 单文件 100MB 的上限，所以转成 bf16（62MB）后入库。
+  - 两份都已验证能用 `build_connector` 正常加载。
+- 取完后 Pod 立即停机（EXITED），开机约 12 分钟。
+- `tools/local/local_env.sh` 默认直接使用仓库里的 MLP 权重，runbook 第 3 步相应简化。本地运行 M0 v2 所需的东西已经齐全。
